@@ -1,0 +1,480 @@
+main {
+	width: 100%;
+	height: fit-content;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+div#menu {
+	margin-left: 0;
+	max-width: fit-content;
+	height: fit-content;
+	background-color: #E88254;
+	padding: 15px;
+}
+
+li {
+	list-style: none;
+}
+
+li img, li svg {
+	margin-bottom: 50px;
+	height: 66px;
+	width: 66px;
+	cursor: pointer;
+}
+
+
+div#ranking {
+	width: 100%;
+	height: fit-content;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+caption {
+	font-size: 24pt;
+	font-weight: bold;
+	background-color: rgba(249, 115, 53, 0.99);
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	color: #FFFFFF;
+	
+}
+
+table {
+	margin-top: 0;
+	background-color: rgba(252, 156, 13, 0.99);
+	border: 1px #797979 solid;
+	border-radius: 10px;
+	border-top-right-radius: 0;
+	border-top-left-radius: 0;
+	width: 50%;
+	box-shadow: 10px 15px 3px rgba(170, 170, 170, 0.99);
+}
+
+th {
+	border: 2px solid black;
+}
+
+th#um {
+	border-right: none;
+}
+
+th#dois {
+	border-left: none;
+}
+
+th, td {
+	width: 15%;
+	height: 5%;
+	text-align: center;
+	padding: 15px;
+	color: white;
+}
+
+table td.tabTitu {
+	font-style: italic;
+}
+
+option {
+	background-color: white;
+}
+
+div#favoritos {
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 75%;
+}
+
+div#favoritos h2, div#favoritos p {
+	text-align: center;
+}
+
+div#favoritos #favoritados{
+	background-color: #f97335;
+	color: white;
+	text-align: start;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 250px;
+	height: 50%;
+	margin: 10px;
+	padding: 20px 5px;
+	box-shadow: 10px 15px 3px rgba(170, 170, 170, 0.99);
+	border-radius: 10px;
+}
+
+div#favoritos #favoritados .imag, div#favoritos #favoritados .imagChat {
+	display: none;
+}
+
+div#solicitar {
+	background-color: #f97335;
+	padding: 25px;
+	min-width: fit-content;
+	width: 50%;
+	height: fit-content;
+	border-radius: 10px;
+	box-shadow: 10px 15px 3px rgba(170, 170, 170, 0.99);
+}
+
+div#solicitar .botoes {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.botoes #prim {
+	margin-right: 0;
+}
+
+div#solicitar h2, div#denuncias h2{
+	margin-bottom: 30px;
+	font-size: 32px;
+}
+
+div#solicitar select, div#denuncias select {
+	font-size: 17px;
+	background-color: rgba(255, 255, 128, 0.3);
+	border: 1px #797979 solid;
+	color: white;
+}
+
+div#solicitar select option {
+	background-color: white;
+}
+
+div#solicitar label {
+	display: block;
+	font-size: 28px;
+}
+
+div#solicitar button, div#denuncias input#prim {
+	display: inline-block;
+	width: 100px;
+	height: 20px;
+	border-radius: 50px;
+	font-size: 17px;
+	background-color: #f8b83f;
+	color: #333333;
+	width: 15%;
+	height: 15%;
+	padding: 5px;
+}
+
+div#solicitar2, div#denuncias {
+	text-align: center;
+	background-color: #f97335;
+	width: fit-content;
+	height: 500px;
+	border-radius: 10px;
+	box-shadow: 10px 15px 3px rgba(170, 170, 170, 0.99);
+}
+
+div#solicitar2 {
+	height: fit-content;
+	width: 75%;
+	padding: 5px;
+	position: absolute;
+}
+
+div#solicitar2 div.titulo {
+	margin-top: 35px;
+	margin-left: 0;
+	margin-right: 20px;
+	display: flex;
+	align-items: center;
+}
+
+div#solicitar2 div.head {
+	display: flex;
+	justify-content: flex-end;
+}
+
+div#solicitar2 div.head img {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+div.titulo p.desc {
+	display: none;
+	background-color: #E06E0B;
+	color: white;
+	padding: 15px;
+}
+
+div#erro p {
+	text-align: center;
+    visibility: visible;
+    color: black;
+}
+
+div#denuncias {
+	height: fit-content;
+	padding: 0 50px 15px 50px;
+}
+
+div#denuncias h2 {
+	color: white;
+}
+
+div#denuncias label {
+	font-size: 36px;
+}
+
+div#denuncias select, div#denuncias input#txt{
+	width: 300px;
+	height: 45px;
+	margin-left: 10px;
+	font-size: 16px;
+	margin-bottom: 15px;
+	border-radius: 8px;
+	background-color: #fc9c0d;
+	border: none;
+}
+
+div#denuncias input#prim {
+	margin-top: 250px;
+	width: 169px;
+	height: 55px;
+	padding: 2px 2px 2px 2px;
+	border-radius: 8px;
+	background-color: red;
+	color: white;
+}
+
+div#modal {
+	text-align: center;
+	background-color: #E85043;
+	color: white;
+	font-size: 24pt;
+	position: absolute;
+	width: 25%;
+	height: 25%;
+	display: flex;
+	align-items: center;
+	display: none;
+}
+
+div#chat {
+	margin-top: 15px;
+	display: flex;
+	box-shadow: 10px 15px 3px rgba(170, 170, 170, 0.99);
+}
+
+div#contatos {
+	background-color: rgba(247, 78, 0, 0.78);
+	display: inline-block;
+	width: 250px;
+	height: 600px;
+	border-right: 3px black solid;
+}
+
+div#contatos h2 {
+	margin-bottom: 15px;
+	font-size: 36px;
+	color: white;
+}
+
+div#contatos div {
+	background-color: #fc9c0d;
+	color: #333333;
+	margin-bottom: 15px;
+	font-size: 28px;
+	border-radius: 13px;
+	padding: 0px 5px;
+	cursor: pointer;
+}
+
+div#conversa {
+	background-color: #fc9c0d;
+	width: 30vw;
+	height: 600px;
+	text-align: end;
+	display: none;
+}
+
+div#conversa h2 {
+	color: white;
+}
+
+div#body {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+div#conversa div#body div.mens {
+	width: fit-content;
+	height: 45px;
+	border: grey 1px solid;
+	padding: 10px;
+	border-radius: 35px;
+	margin-right: 5px;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	visibility: hidden;
+}
+div#conversa form {
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+div#conversa input {
+	margin-top: 241px;
+	width: 75%;
+	height: 10%;
+	border-radius: 10px;
+	background-color: white;
+}
+
+div#conversa input, div#denuncias input {
+	border: none;
+	color: #333333;
+	font-family: 'Secular One', sans-serif;
+	font-size: 18px;
+}
+
+div#conversa button {
+	margin-top: 245px;
+	width: 25%;
+	height: 10%;
+	background-color: #FC130D;
+	color: white;
+	border-radius: 10px;
+}
+
+/*INSERINDO FONTES*/
+
+div#solicitar label, div#solicitar .botoes button, div#solicitar select, div#solicitar2 p.desc, div#favoritados, table tr, div#body, div#denuncias label, div#denuncias select, div#erro p{
+	color: #333333;
+	font-family: 'Secular One', sans-serif;
+	font-size: 18px;
+} 
+
+div#solicitar h2, div#contatos h2, div#denuncias h2, div.head h2 {
+	font-family: 'Arial', sans-serif;
+	color: white;
+}
+
+table caption, div#contatos div, div#conversa h2, div#conversa button, div#modal {
+	font-family: 'Secular One', sans-serif;
+	font-weight: bold;
+}
+
+/*INSERINDO BREAKPOINT COM MEDIA QUERIES*/
+
+@media (max-width: 842px) {
+	main {
+		align-items: center;
+	}
+	div#favoritos #favoritados{
+		width: 100px;
+		height: 200px;
+		font-size: 10px;
+	}
+	div#menu {
+		padding: 5px;
+	}
+	li img, li svg {
+		width: 44px;
+		height: 44px;
+	}
+	.imgChat {
+		width: 30px;
+	}
+}
+
+@media (max-width: 532px) {
+	table {
+		width: 240px;
+	}
+	div#solicitar, div#denuncias {
+		height: 398px;
+		width: 194px;
+		padding: 10px;
+	}
+	div#denuncias {
+		margin-right: 30px;
+		margin-left: 30px;
+	}
+	div#denuncias select, div#denuncias input#txt {
+		width: 150px;
+	}
+	div#denuncias input#prim{
+		margin-top: 45px;
+	}
+	div#solicitar .botoes button {
+		font-size: 10px;
+	}
+	div#solicitar select {
+		font-size: 13px;
+	}
+	img.mot {
+		height: 60px;
+		width: 60px;
+	}
+	img#voltar {
+		width: 25px;
+		height: 25px;
+	}
+	div.head h2 {
+		font-size: 15px;
+	}
+	div#solicitar2 p.desc {
+		font-size: 10px;
+	}
+	div#solicitar2 div.titulo {
+		margin-top: 5px;
+	}
+	div#solicitar2 p.desc img{
+		height: 25px;		
+		width: 25px;		
+	}
+	div#contatos, div#conversa{
+		width: fit-content;
+		height: 300px;
+	}
+	div#contatos h2 {
+		font-size: 25px;
+	}
+	div#contatos div{
+		font-size: 15px;
+	}
+	div#conversa input, div#conversa button{
+		margin-top: 32px;
+		font-size: 11px;
+	}
+	div#conversa h2{
+		font-size: 20px;
+	}
+	div#conversa div#body div.mens {
+		width: fit-content;
+		height: 30px;
+		border-radius: 15px;
+	}
+	div#body {
+		font-size: 13px;
+	}
+	div#modal h3{
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 400px) {
+	div#favoritos #favoritados{
+		height: 130px;
+		font-size: 8px;
+	}
+}

@@ -1,0 +1,43 @@
+main {
+	background-image: linear-gradient(to bottom, rgba(247, 78, 0, 0.79), #FDC16C);
+	margin-bottom: 5px;
+	height: 850px;
+	display: flex;
+	align-items: center;
+}
+
+p{
+	padding: 50px;
+	font-size: x-large;
+	text-align: center;
+}
+
+.info {
+	background-color: #FFFDB6;
+}
+
+.info h2{
+	font-family: 'Arial Bold', sans-serif;
+	font-size: 24pt;
+	text-align: center;
+	text-decoration: underline;
+}
+
+.info p {
+	font-family: 'Secular One', sans-serif;
+}
+
+.info div{
+	background-color: rgb(224, 89, 40);
+	max-width: 500px;
+	display: inline-block;
+	margin: 20px 10px 50px 50px;
+	border: black 5px solid;
+	border-radius: 50px;
+	text-align: center;
+	color: white;
+	box-shadow: 10px 15px 7px rgba(0, 0, 0, 0.500);
+	padding: 10px;
+	font-size: x-large;
+	font-family: 'Secular One', sans-serif;
+}

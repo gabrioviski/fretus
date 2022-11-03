@@ -1,0 +1,59 @@
+body{
+	background-color: white;
+}
+
+main{
+	margin: auto;
+	margin-top: 25px;
+	background-color: coral;
+	border-radius: 15px;
+	max-width: 1000px;
+	height: 750px;
+	border: 1.75px solid;
+}
+
+h3 {
+	background-color: rgb(224, 89, 40);
+	color:white;
+	border-bottom: #242424 1px solid;
+	padding: 15px;
+	font-family: 'Secular One', sans-serif;
+}
+
+li{
+	background-color: coral;
+	color:blue;
+	font-size: large;
+	cursor: pointer;
+}
+
+
+section {
+	border: #242424 5px solid;
+	border-radius: 10px;
+	margin: auto;
+	margin-top: 25px;
+	max-width: 900px;
+	font-size: x-large;
+	box-shadow: 10px 15px 3px rgba(0, 0, 0, 0.499);
+}
+
+details {
+	background-color: rgb(224, 89, 40);
+	font-size: x-large;
+	border-bottom: 2px #242424 solid;
+	color: white;	
+}
+
+details summary {
+	padding: 15px;
+	font-weight: 500;
+	font-family: 'Arial Bold', sans-serif;
+}
+
+details p {
+	background-color: rgba(255, 255, 128, 0.3);
+	padding: 25px;
+	font-style: italic;
+	font-family: 'Raleway', sans-serif;
+}
