@@ -1,5 +1,5 @@
 main {
-    background-color: blue;
+    background-color: rgb(119, 119, 132);
     min-height: calc(100vh - 85px);
     display: grid;
     grid-template-columns: 40% 60%;
