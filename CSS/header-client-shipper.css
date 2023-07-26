@@ -1,0 +1,44 @@
+header {
+    background-color: var(--blue);
+}
+  
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 85px;
+    margin: 0 auto;
+}
+
+header .burguer {
+    display: none;
+    position: relative;
+    z-index: 10000;
+}
+  
+header nav > ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+}
+  
+.nav-menu > ul {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media (max-width: 975px) {
+    header nav > ul {
+        display: none;
+    }
+    header .burguer {
+        display: block;
+    }
+    .menu-burguer.active {
+        translate: 0;
+    }
+}

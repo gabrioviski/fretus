@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fretus - Cadrasto</title>
+    <link rel="stylesheet" href="../../CSS/index.css">
+    <link rel="stylesheet" href="../../CSS/cadastro/cadastro.css">
+</head>
+
+<body>
+    <div class="fretus">
+        <h2><a href="../../index.html">Fretus</a></h2>
+    </div>
+    <div class="container">
+        <h2>Você deseja se cadrastar como?</h2>
+
+        <!-- inicio button entre entregador e cliente -->
+        <div class="buttonsForm">
+            <div class="btnColor"></div>
+            <button id="btnCliente">Cliente</button>
+            <button id="btnEntregador">Entregador</button>
+        </div>
+        <!-- fim  button entre entregador e cliente -->
+        <!--  começo da parte do cliente -->
+        <div class="signup-container">
+            <div class="signup-content">
+                <form id="cliente">
+                    <input type="text" id="nome" placeholder="Nome completo" required>
+                    <input type="text" id="cpf-cnpj" placeholder="CPF/CNPJ" required>
+                    <input type="Email" placeholder="Email">
+                    <input type="password" placeholder="Senha">
+                    <p>Já tem uma conta? <a href="../login/login.html">Acesse aqui.</a></p>
+                    <button type="submit">Criar como cliente</button>
+                </form>
+                <!--  fim da parte do cliente -->
+                <!--  começo da parte do entregador -->
+                <form id="entregador">
+                    <input type="text" id="nome" placeholder="Nome completo" required>
+                    <input type="text" id="cpf-cnpj" placeholder="CPF/CNPJ" required>
+                    <input type="Email" placeholder="Email">
+                    <input type="password" placeholder="Senha">
+                    <p>Já tem uma conta? <a href="../login/login.html">Acesse aqui.</a></p>
+                    <button type="submit">Criar como entregador</button>
+                </form>
+            </div>
+        </div>
+        <!--  fim da parte do Entregador  -->
+
+    </div>
+
+    <script src="../../JS/cadastro/cadastro.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fretus</title>
+    <link rel="stylesheet" href="./CSS/index.css">
+    <link rel="stylesheet" href="./CSS/home/home.css">
+    <link rel="stylesheet" href="./CSS/menu-burguer.css">
+    <link rel="stylesheet" href="./CSS/home/switch.css">
+    <link rel="stylesheet" href="./CSS/home/header.css">
+    <link rel="stylesheet" href="./CSS/home/hero-section.css">
+    <link rel="stylesheet" href="./CSS/cta.css">
+    <link rel="stylesheet" href="./CSS/home/gray-gradient.css">
+    <link rel="stylesheet" href="./CSS/home/cards-container.css">
+    <link rel="stylesheet" href="./CSS/home/vehicles-container.css">
+    <link rel="stylesheet" href="./CSS/home/carousel.css">
+    <link rel="stylesheet" href="./CSS/home/accordion.css">
+    <link rel="stylesheet" href="./CSS/home/mobile-carousel.css">
+    <link rel="stylesheet" href="./CSS/home/form-container.css">
+    <link rel="stylesheet" href="./CSS/home/footer.css">
+</head>
+<body>
+
+    <div class="menu-burguer">
+        <nav>
+            <ul>
+                <li><a href="./HTML/cliente/solicitar-entrega.html">Sou Cliente</a></li>
+                <li><a href="./HTML/entregador/entregas-solicitadas.html">Sou Entregador</a></li>
+                <li><a href="./HTML/login/login.html">Entrar</a></li>
+                <li><a href="./HTML/cadastro/cadastro.html">Cadastrar</a></li>
+            </ul>  
+        </nav>
+    </div>
+    
+    <div class="hero">
+        <header>
+            <h1><a href="/">Fretus</a></h1>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="./HTML/cliente/solicitar-entrega.html">Solicite uma entrega</a></li>
+                    <li><a href="./HTML/entregador/entregas-solicitadas.html">Trabalhe Conosco</a></li>
+                    <li><a href="./HTML/login/login.html">Entrar</a></li>
+                    <li class="cta"><a href="./HTML/cadastro/cadastro.html">Cadastre-se</a></li>
+                </ul>
+                <div class="burguer">
+                    <img src="https://files.axshare.com/gsc/NW3CCE/d7/2e/63/d72e6396c33043df9eca85714bda96d5/images/homepage__mobile_/u14.svg?pageId=474e0aac-b4ee-403d-9bc0-5e2c0892e3b4" alt="">
+                </div>
+            </nav>
+        </header>
+        <section>
+            <h1 class="heading">Entregue com a Fretus</h1>
+            <p class="paragraph">A fretus é uma plataforma de entregas que conecta os clientes com os entregadores.</p>
+            <a href="./HTML/login/login.html" class="cta">Começar</a>
+        </section>
+    </div>
+
+    <div class="switch">
+        <input type="radio" name="change" id="client" checked data-move="0">
+        <label for="client">Cliente</label>
+        <input type="radio" name="change" id="shipper" data-move="150">
+        <label for="shipper">Entregador</label>
+        <span></span>
+    </div>
+
+    <main>
+        <div class="client">
+            <section class="gray-gradient">
+                <h1 class="heading">Rapidez e conveniência para suas <span>entregas.</span></h1>
+                <p class="paragraph">Deixe-nos cuidar das suas entregas para você focar no que é importante.</p>
+                <div class="cards-container">
+                    <div class="card">
+                        <div class="img">
+                            <img src="./imgs/home/client/card-icon-1.svg" alt="">
+                        </div>
+                        <h1>Escolha o entregador que você deseja</h1>
+                        <p>Contrate o melhor entregador e o melhor meio de transporte para levar o seu item.</p>
+                    </div>
+                    <div class="card">
+                        <div class="img">
+                            <img src="./imgs/home/client/card-icon-2.svg" alt="">
+                        </div>
+                        <h1>Converse com o entregador escolhido</h1>
+                        <p>Contrate o melhor entregador e o melhor meio de transporte para levar o seu item.</p>
+                    </div>
+                    <div class="card">
+                        <div class="img">
+                            <img src="./imgs/home/client/card-icon-3.svg" alt="">
+                        </div>
+                        <h1>Acompanhe seu pacote em tempo real</h1>
+                        <p>Contrate o melhor entregador e o melhor meio de transporte para levar o seu item.</p>
+                    </div>
+                    <div class="card">
+                        <div class="img">
+                            <img src="./imgs/home/client/card-icon-4.svg" alt="">
+                        </div>
+                        <h1>Veja sua entrega sendo recebida ao seu destino</h1>
+                        <p>Contrate o melhor entregador e o melhor meio de transporte para levar o seu item.</p>
+                    </div>
+                </div>
+                <a href="./HTML/login/login.html" class="cta">Começar agora</a>
+            </section>
+            <section class="blue-gradient">
+                <h1 class="heading">Quais veículos você poderá escolher</h1>
+                <div class="vehicles-container">
+                    <div class="vehicle-row">
+                        <div class="card show">
+                            <div class="img">
+                                <img src="./imgs/home/client/vehicles-img-1.svg" alt="">
+                            </div>
+                            <h1>Moto</h1>
+                        </div>
+                        <div class="card">
+                            <div class="img">
+                                <img src="./imgs/home/client/vehicles-img-2.svg" alt="">
+                            </div>
+                            <h1>Carro</h1>
+                        </div>
+                    </div>
+                    <div class="vehicle-description">
+                        <div class="card-description show">
+                            <h1>Descrição</h1>
+                            <p>Nossos entregadores de moto são ágeis e eficientes, ideais para entregas rápidas em áreas urbanas.</p>
+                            <h1>Ideal para</h1>
+                            <p>Entregar documentos, pequenos pacotes e encomendas com rapidez.</p>
+                            <h1>Preço Base: R$ 5/Km</h1>
+                        </div>
+                        <div class="card-description">
+                            <h1>Descrição</h1>
+                            <p>Nossos motoristas de carro estão prontos para atender a uma variedade de necessidades de entrega.</p>
+                            <h1>Ideal para</h1>
+                            <p>Transportar encomendas de tamanhos maiores, alimentos, produtos e muito mais.</p>
+                            <h1>Preço Base: R$ 8/Km</h1>
+                        </div>
+                    </div>
+                    <div class="vehicle-row">
+                        <div class="card">
+                            <div class="img">
+                                <img src="./imgs/home/client/vehicles-img-3.svg" alt="">
+                            </div>
+                            <h1>Van</h1>
+                        </div>
+                        <div class="card">
+                            <div class="img">
+                                <img src="./imgs/home/client/vehicles-img-4.svg" alt="">
+                            </div>
+                            <h1>Caminhão</h1>
+                        </div>
+                    </div>
+                    <div class="vehicle-description">
+                        <div class="card-description">
+                            <h1>Descrição</h1>
+                            <p>Com maior capacidade de carga, para entregas maiores ou mais volumosas, nossas vans são ideais.</p>
+                            <h1>Ideal para</h1>
+                            <p>Encomendas de médio porte, móveis, eletrodomésticos e outras cargas maiores.</p>
+                            <h1>Preço Base: R$ 15/Km</h1>
+                        </div>
+                        <div class="card-description">
+                            <h1>Descrição</h1>
+                            <p>Com capacidade de carga significativa, para cargas pesadas ou volumosas, nossos caminhões são a escolha certa.</p>
+                            <h1>Ideal para</h1>
+                            <p>Entregas de grande porte, mudanças residenciais, cargas comerciais e outras necessidades de transporte pesado.</p>
+                            <h1>Preço Base: R$ 18/Km</h1>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="gray-gradient">
+                <h1 class="heading">Alguns depoimentos de clientes</h1>
+                <div class="carousel">
+                    <div class="content">
+                        <div class="card">
+                            <div class="photo">
+                                <img src="./imgs/home/client/carousel-photos-1.jpg" alt="">
+                            </div>
+                            <div class="text">
+                                <p class="paragraph">Estava com um problema com um motoboy do meu restaurante. Ainda bem que a Fretus conseguiu me ajudar. A entrega do meu pedido foi muito rápida e eficiente.</p>
+                                <h1>Juliana | Dona de Restaurante</h1>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="photo">
+                                <img src="./imgs/home/client/carousel-photos-2.jpg" alt="">
+                            </div>
+                            <div class="text">
+                                <p class="paragraph">Estava com receio de enviar um produto frágil e delicado. O entregador foi muito atencioso e cuidadoso, garantindo que o produto chegasse em perfeitas condições.</p>
+                                <h1>Fernando</h1>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="photo">
+                                <img src="./imgs/home/client/carousel-photos-3.jpg" alt="">
+                            </div>
+                            <div class="text">
+                                <p class="paragraph">Eu precisava enviar uma encomenda urgente para um cliente. O entregador chegou no horário combinado e entregou o pacote muito rápido.</p>
+                                <h1>Ana | Pequena Empresária</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="controls">
+                    <input type="radio" checked name="control" id="a1" data-index="0">
+                    <label for="a1"></label>
+                    <input type="radio" name="control" id="a2" data-index="1">
+                    <label for="a2"></label>
+                    <input type="radio" name="control" id="a3" data-index="2">
+                    <label for="a3"></label>
+                </div>
+            </section>
+            <section class="blue-gradient">
+                <h1 class="heading">Dúvidas Frequentes.</h1>
+                <div class="accordion">
+                    <input type="radio" name="acc" id="acc1">
+                    <label for="acc1" class="question">
+                        <h1>Quais tipos de pacotes podem ser enviados?</h1>
+                    </label>
+                    <div class="answer">
+                        <p>Aceitamos uma ampla variedade de pacotes, desde documentos e encomendas pequenas até cargas maiores. No entanto, algumas restrições podem se aplicar, como itens proibidos por lei ou que representem risco à segurança. Recomendamos consultar nossas políticas de envio para obter mais informações.</p>
+                    </div>
+                    <input type="radio" name="acc" id="acc2">
+                    <label for="acc2" class="question">
+                        <h1>Qual é o prazo de entrega para as encomendas?</h1>
+                    </label>
+                    <div class="answer">
+                        <p>O prazo de entrega pode variar de acordo com a distância, o tipo de serviço escolhido e outros fatores. Você pode verificar os prazos estimados durante o processo de solicitação de entrega.</p>
+                    </div>
+                    <input type="radio" name="acc" id="acc3">
+                    <label for="acc3" class="question">
+                        <h1>Como acompanho o status da minha entrega?</h1>
+                    </label>
+                    <div class="answer">
+                        <p>Você pode acompanhar o status da sua entrega em tempo real por meio do nosso sistema de rastreamento. Basta ir a sua página de "Sou cliente", ir a página de "Minhas entregas", e verificar as atualizações sobre o progresso da entrega.</p>
+                    </div>
+                    <input type="radio" name="acc" id="acc4">
+                    <label for="acc4" class="question">
+                        <h1>Como são calculados os preços das entregas?</h1>
+                    </label>
+                    <div class="answer">
+                        <p>Os preços das entregas podem variar de acordo com a distância, tamanho e peso do pacote, além do serviço escolhido. Nossos preços são calculados com base em critérios objetivos, e você pode obter uma estimativa do valor durante o processo de solicitação de entrega.</p>
+                    </div>
+                    <input type="radio" name="acc" id="acc5">
+                    <label for="acc5" class="question">
+                        <h1>Como posso entrar em contato com o suporte ao cliente?</h1>
+                    </label>
+                    <div class="answer">
+                        <p>Você pode entrar em contato com nosso suporte ao cliente por telefone ou por e-mail. Estamos disponíveis para ajudar com dúvidas, informações sobre as entregas e qualquer outra necessidade que você possa ter.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="shipper">
+            <section class="gray-gradient">
+                <h1 class="heading">Ganhe dinheiro com <span>liberdade e flexibilidade.</span></h1>
+                <p class="paragraph">Deixe-nos cuidar das suas entregas para você focar no que é importante.</p>
+                <div class="cards-container">
+                    <div class="card">
+                        <div class="img">
+                            <img src="./imgs/home/shipper/card-icon-1.svg" alt="">
+                        </div>
+                        <h1>Crie a sua conta e comprove seus documentos</h1>
+                        <p>Após você criar sua conta, nós iremos solicitar seus documentos (CNH)</p>
+                    </div>
+                    <div class="card">
+                        <div class="img">
+                            <img src="./imgs/home/shipper/card-icon-2.svg" alt="">
+                        </div>
+                        <h1>Personalize o seu perfil para atrair mais clientes</h1>
+                        <p>Desse jeito você chamará mais atenção dos clientes, e consequentemente receberá mais entregas.</p>
+                    </div>
+                    <div class="card">
+                        <div class="img">
+                            <img src="./imgs/home/shipper/card-icon-3.svg" alt="">
+                        </div>
+                        <h1>Converse com o cliente para acertar a entrega</h1>
+                        <p>Combine a entrega de modo que nem você, nem o cliente, saiam insatisfeitos.</p>
+                    </div>
+                    <div class="card">
+                        <div class="img">
+                            <img src="./imgs/home/shipper/card-icon-4.svg" alt="">
+                        </div>
+                        <h1>Realize a entrega como foi planejada</h1>
+                        <p>Depois de realizar a entrega, espere a avaliação do cliente, e se esforce para que ela seja positiva!</p>
+                    </div>
+                </div>
+                <a href="./HTML/login/login.html" class="cta">Começar agora</a>
+            </section>
+            <section class="blue-gradient">
+                <h1 class="heading">Como funciona?</h1>
+                <div class="mobile-wrapper">
+                    <div class="mobile-carousel">
+                        <div class="mobile-content">
+                            <div class="content-item show">
+                                <img src="imgs/home/shipper/carousel-shipper-1.png" alt="">
+                            </div>
+                            <div class="content-item">
+                                <img src="imgs/home/shipper/carousel-shipper-2.png" alt="">
+                            </div>
+                            <div class="content-item">
+                                <img src="imgs/home/shipper/carousel-shipper-3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mobile-controls">
+                        <input type="radio" name="mobile-control" id="m-c1" checked>
+                        <label for="m-c1">
+                            <div class="step">1</div>
+                            <p>Veja suas Entregas Solicitadas</p>
+                        </label>
+                        <input type="radio" name="mobile-control" id="m-c2">
+                        <label for="m-c2">
+                            <div class="step">2</div>
+                            <p>Converse com o Cliente</p>
+                        </label>
+                        <input type="radio" name="mobile-control" id="m-c3">
+                        <label for="m-c3">
+                            <div class="step">3</div>
+                            <p>Consulte seus resultados</p>
+                        </label>
+                    </div>
+                </div>
+                <a href="./HTML/login/login.html" class="cta">Começar agora</a>
+            </section>
+            <section class="gray-gradient">
+                <h1 class="heading">Alguns depoimentos de clientes</h1>
+                <div class="carousel">
+                    <div class="content">
+                        <div class="card">
+                            <div class="photo">
+                                <img src="./imgs/home/shipper/carousel-photo-1.jpg" alt="">
+                            </div>
+                            <div class="text">
+                                <p class="paragraph">Trabalhar como entregador nesse site tem sido uma oportunidade incrível para mim. Eu posso organizar meu próprio horário de trabalho, o que me permite ter mais tempo para mim. A plataforma é fácil de usar e eficiente.</p>
+                                <h1>Carlos, entregador há 3 meses</h1>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="photo">
+                                <img src="./imgs/home/shipper/carousel-photo-2.jpg" alt="">
+                            </div>
+                            <div class="text">
+                                <p class="paragraph">Ser entregadora nesse site tem sido uma experiência fantástica! Eu adoro a flexibilidade que tenho para aceitar e realizar as entregas de acordo com minha disponibilidade.</p>
+                                <h1>Maria, entregadora há 1 ano</h1>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="photo">
+                                <img src="./imgs/home/shipper/carousel-photo-3.jpg" alt="">
+                            </div>
+                            <div class="text">
+                                <p class="paragraph">A plataforma me oferece todas as ferramentas necessárias para realizar as entregas de forma eficiente. A transparência nas informações sobre as entregas e remuneração é excepcional.</p>
+                                <h1>José, entregador há 6 meses</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="controls">
+                    <input type="radio" checked name="controlShipper" id="b1" data-index="0">
+                    <label for="b1"></label>
+                    <input type="radio" name="controlShipper" id="b2" data-index="1">
+                    <label for="b2"></label>
+                    <input type="radio" name="controlShipper" id="b3" data-index="2">
+                    <label for="b3"></label>
+                </div>
+            </section>
+            <section class="blue-gradient">
+                <h1 class="heading">Descubra se você está elegível para trabalhar conosco.</h1>
+                <form class="form-container">
+                    <div class="form-row">
+                        <label for="email">Endereço de E-Mail</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="nasc">Data de Nascimento</label>
+                        <input type="date" id="nasc" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-column">
+                            <label for="cep">CEP</label>
+                            <input type="text" id="cep" required>
+                        </div>
+                        <div class="form-column">
+                            <label for="estado">Estado</label>
+                            <select name="estado" id="estado">
+                                <option value=""></option>
+                            </select>
+                        </div>
+                        <div class="form-column">
+                            <label for="cidade">Cidade</label>
+                            <input type="text" id="cidade" required>
+                        </div>
+                        <div class="form-column">
+                            <label for="tipoVei">Tipo de Veículo</label>
+                            <select name="tipoVei" id="tipoVei">
+                                <option value="">Moto</option>
+                                <option value="">Carro</option>
+                                <option value="">Van</option>
+                                <option value="">Caminhão</option>
+                            </select>
+                        </div>
+                        <div class="form-column">
+                            <label for="modelVei">Modelo do Veículo</label>
+                            <input type="text" id="modelVei" required>
+                        </div>
+                        <div class="form-column">
+                            <label for="anoVei">Ano do Veículo</label>
+                            <input type="number" min="2000" id="anoVei" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-checkbox">
+                            <input type="checkbox" name="chs" id="ch1">
+                            <label for="ch1">Possui CNH válida?</label>
+                        </div>
+                        <div class="form-checkbox">
+                            <input type="checkbox" name="chs" id="ch2">
+                            <label for="ch2">Possui seguro de veículo válido?</label>
+                        </div>
+                        <div class="form-checkbox">
+                            <input type="checkbox" name="chs" id="ch3">
+                            <label for="ch3">Quero receber ofertas e descontos exclusivos no meu e-mail.</label>
+                        </div>
+                    </div>
+                    <input type="submit" class="cta" value="Verificar">
+                </form>
+            </section>
+            <section class="gray-gradient">
+                <h1 class="heading">Dúvidas Frequentes.</h1>
+                <div class="accordion">
+                    <input type="radio" name="accS" id="accS1">
+                    <label for="accS1" class="question">
+                        <h1>Quais são os requisitos para me tornar um entregador?</h1>
+                    </label>
+                    <div class="answer">
+                        <p>Para se tornar um entregador conosco, você precisa ter um veículo (moto, carro, van, caminhão) em boas condições, possuir uma carteira de motorista válida, ser maior de idade e ter disponibilidade para atender aos pedidos de entrega. Além disso, é necessário preencher nosso formulário de cadastro, enviar a documentação necessária e passar por uma avaliação do perfil.</p>
+                    </div>
+                    <input type="radio" name="accS" id="accS2">
+                    <label for="accS2" class="question">
+                        <h1>E se der algum problema durante uma entrega?</h1>
+                    </label>
+                    <div class="answer">
+                        <p>Nós oferecemos suporte completo aos nossos entregadores. Se você tiver algum problema durante uma entrega, como um endereço incorreto, item danificado ou outra situação, você poderá entrar em contato conosco por meio de nosso suporte ao cliente. Estamos sempre disponíveis para ajudar a resolver qualquer problema que possa surgir durante suas entregas.</p>
+                    </div>
+                    <input type="radio" name="accS" id="accS3">
+                    <label for="accS3" class="question">
+                        <h1>Quanto posso ganhar como entregador?</h1>
+                    </label>
+                    <div class="answer">
+                        <p>Como entregador, você tem a oportunidade de ganhar dinheiro extra com base no número de entregas que realizar. A remuneração pode variar dependendo do tipo de entrega, distância percorrida, tempo de espera e outras variáveis. Nós oferecemos uma remuneração competitiva e transparente, para que você possa ganhar de acordo com seu esforço e dedicação.</p>
+                    </div>
+                    <input type="radio" name="accS" id="accS4">
+                    <label for="accS4" class="question">
+                        <h1>Como são calculados os preços das entregas?</h1>
+                    </label>
+                    <div class="answer">
+                        <p>Os preços das entregas podem variar de acordo com a distância, tamanho e peso do pacote, além do serviço escolhido. Nossos preços são calculados com base em critérios objetivos, e você pode obter uma estimativa do valor durante o processo de solicitação de entrega.</p>
+                    </div>
+                    <input type="radio" name="accS" id="accS5">
+                    <label for="accS5" class="question">
+                        <h1>Como posso entrar em contato com o suporte ao cliente?</h1>
+                    </label>
+                    <div class="answer">
+                        <p>Você pode entrar em contato com nosso suporte ao cliente por telefone ou por e-mail. Estamos disponíveis para ajudar com dúvidas, informações sobre as entregas e qualquer outra necessidade que você possa ter.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="grid-container">
+            <p><a href="#">Solicite uma entrega</a></p>
+            <p><a href="#">Trabalhe como entregador</a></p>
+            <p><a href="#">Central de Ajuda</a></p>
+            <p><a href="#">Cliente</a></p>
+            <p><a href="#">Entregador</a></p>
+            <p><a href="#">Fale conosco</a></p>
+        </div>
+    </footer>
+
+    <script src="./JS/switch-button.js"></script>
+    <script src="./JS/burguer.js"></script>
+    <script src="./JS/carousel.js"></script>
+    <script src="./JS/vehicles-container.js"></script>
+    <script src="./JS/mobile-carousel.js"></script>
+    <script src="./JS/form.js"></script>
+</body>
+</html>

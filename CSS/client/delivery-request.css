@@ -1,0 +1,110 @@
+main {
+    background-color: red;
+    min-height: calc(100vh - 85px);
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.form, .map {
+    min-height: 100%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: var(--gray-gradient);
+}
+
+.form > form {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.form h1 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.form input:not(.cta) {
+    display: block;
+    color: #333;
+    width: 100%;
+    margin-bottom: 20px;
+    height: 50px;
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-family: var(--font-2);
+    font-size: 16px;
+}
+
+.form .schedules-container {
+    min-height: 177px;
+    margin-bottom: 50px;
+}
+
+.schedules-container > label {
+    color: #333;
+    display: block;
+    width: 100%;
+    margin: 15px 0;
+    font-size: 18px;
+    font-family: var(--font-2);
+    position: relative;
+    cursor: pointer;
+}
+
+.schedules-container > label span {
+    color: var(--orange);
+    font-size: 20px;
+    display: inline-block;
+    margin: 0 15px;
+    position: absolute;
+    top: -2px;
+    transition: transform .3s;
+}
+
+.schedules-container > input[type="checkbox"] {
+    display: none;
+}
+
+.schedules-container > .schedule-content {
+    height: 0px;
+    overflow: hidden;
+}
+
+.schedules-container > input[type="checkbox"]:checked + label span {
+    transform: rotate(90deg);
+}
+
+.schedules-container > input[type="checkbox"]:checked ~ .schedule-content {
+    height: 100%;
+}
+
+form > .cta {
+    width: 100%;
+    border-radius: 5px;
+}
+
+@media (max-width: 975px), (max-height: 768px) {
+    main {
+        grid-template-columns: 100%;
+    }
+    .map {
+        display: none;
+    }
+    .form {
+        padding: 45px 0;
+    }
+    .form > form {
+        width: 90%;
+    }
+}
+
+@media (max-width: 425px) {
+    .form h1 {
+        font-size: 28px;
+    }
+}

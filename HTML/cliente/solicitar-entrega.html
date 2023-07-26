@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fretus - Solicitar Entrega</title>
+    <link rel="stylesheet" href="../../CSS/index.css">
+    <link rel="stylesheet" href="../../CSS/home/home.css">
+    <link rel="stylesheet" href="../../CSS/cta.css">
+    <link rel="stylesheet" href="../../CSS/menu-burguer.css">
+    <link rel="stylesheet" href="../../CSS/header-client-shipper.css">
+    <link rel="stylesheet" href="../../CSS/client/delivery-request.css">
+    <link rel="stylesheet" href="../../CSS/client/delivery-request-carousel.css">
+</head>
+<body>
+
+    <div class="menu-burguer">
+        <nav>
+            <ul>
+                <li><a href="./solicitar-entrega.html">Solicitar Entrega</a></li>
+                <li><a href="#">Chat</a></li>
+                <li><a href="#">Favoritos</a></li>
+                <li><a href="#">Histórico</a></li>
+                <li><a href="./configuracoes.html">Configurações</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <header>
+        <div class="header-content">
+            <h1><a href="/">Fretus</a></h1>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="./solicitar-entrega.html">Solicitar Entrega</a></li>
+                    <li><a href="#">Chat</a></li>
+                    <li><a href="#">Favoritos</a></li>
+                    <li><a href="#">Histórico</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <ul>
+                    <a href="">
+                        <li><img src="../../imgs/client/profile-icon.svg" alt=""></li>
+                    </a>
+                    <a href="./configuracoes.html">
+                        <li><img src="../../imgs/client/config-icon.svg" alt=""></li>
+                    </a>
+                </ul>
+            </nav>
+            <div class="burguer">
+                <img src="https://files.axshare.com/gsc/NW3CCE/d7/2e/63/d72e6396c33043df9eca85714bda96d5/images/homepage__mobile_/u14.svg?pageId=474e0aac-b4ee-403d-9bc0-5e2c0892e3b4" alt="">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="form">
+            <form>
+                <h1>Solicitar Entrega</h1>
+                <input type="text" placeholder="Local de partida">
+                <input type="text" placeholder="Local de destino">
+                
+                <div class="schedules-container">
+                    <input type="checkbox" name="schedule" id="schedule">
+                    <label for="schedule">Agendamento <span>></span></label>
+                    <div class="schedule-content">
+                        <input type="date">
+                        <input type="time">
+                    </div>
+                </div>
+
+                <div class="vehicles-container">
+                    <h1>Veículos</h1>
+                    <div class="vehicles-carousel">
+                        <div class="content">
+                            <input type="radio" name="vehicles" id="vehicles1">
+                            <label for="vehicles1">
+                                <div class="card">
+                                    <div class="icon">
+                                        <img src="https://files.axshare.com/gsc/NW3CCE/d7/2e/63/d72e6396c33043df9eca85714bda96d5/images/area_do_cliente__desktop_/p0.svg?pageId=a1cd8bfa-51f9-4251-8edd-b9adceed65b6" alt="">
+                                    </div>
+                                    <div class="text-content">
+                                        <h1>Moto</h1>
+                                        <p>Peso máximo: 20 Kg</p>
+                                    </div>
+                                </div>
+                            </label>
+                            <input type="radio" name="vehicles" id="vehicles2">
+                            <label for="vehicles2">
+                                <div class="card">
+                                    <div class="icon">
+                                        <img src="https://files.axshare.com/gsc/NW3CCE/d7/2e/63/d72e6396c33043df9eca85714bda96d5/images/area_do_cliente__desktop_/p1.svg?pageId=a1cd8bfa-51f9-4251-8edd-b9adceed65b6" alt="">
+                                    </div>
+                                    <div class="text-content">
+                                        <h1>Carro</h1>
+                                        <p>Peso máximo: 250 Kg</p>
+                                    </div>
+                                </div>
+                            </label>
+                            <input type="radio" name="vehicles" id="vehicles3">
+                            <label for="vehicles3">
+                                <div class="card">
+                                    <div class="icon">
+                                        <img src="https://files.axshare.com/gsc/NW3CCE/d7/2e/63/d72e6396c33043df9eca85714bda96d5/images/area_do_cliente__desktop_/p2.svg?pageId=a1cd8bfa-51f9-4251-8edd-b9adceed65b6" alt="">
+                                    </div>
+                                    <div class="text-content">
+                                        <h1>Van</h1>
+                                        <p>Peso máximo: 1000 Kg</p>
+                                    </div>
+                                </div>
+                            </label>
+                            <input type="radio" name="vehicles" id="vehicles4">
+                            <label for="vehicles4">
+                                <div class="card">
+                                    <div class="icon">
+                                        <img src="https://files.axshare.com/gsc/NW3CCE/d7/2e/63/d72e6396c33043df9eca85714bda96d5/images/area_do_cliente__desktop_/p3.svg?pageId=a1cd8bfa-51f9-4251-8edd-b9adceed65b6" alt="">
+                                    </div>
+                                    <div class="text-content">
+                                        <h1>Caminhão</h1>
+                                        <p>Peso máximo: 2500 Kg</p>
+                                    </div>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="carousel-controls">
+                        <div class="back">
+                            <
+                        </div>
+                        <div class="next">
+                            >
+                        </div>
+                    </div>
+                </div>
+
+                <input type="button" value="Continuar" class="cta">
+            </form>
+        </div>
+        <div class="map">Mapa</div>
+    </main>
+
+    <script src="../../JS/burguer.js"></script>
+    <script src="../../JS/client/vehicles-carousel.js"></script>
+</body>
+</html>

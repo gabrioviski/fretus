@@ -1,0 +1,78 @@
+.form .vehicles-container {
+    width: 100%;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.vehicles-container > .vehicles-carousel {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.vehicles-carousel > .content {
+    width: calc(400% + (15px * 3));
+    height: 100%;
+    display: flex;
+    column-gap: 15px;
+}
+
+.content > input[type="radio"] {
+    display: none;
+}
+
+.content > label {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.content .card {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+    border: solid transparent;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    transition: all .3s;
+}
+
+.card > .icon {
+    flex-shrink: 0;
+    width: 100px;
+    height: 100px;
+    padding: 15px;
+    border-radius: 100%;
+    background-color: var(--gray);
+}
+
+.icon img {
+    width: 70px;
+}
+
+.card > .text-content {
+    width: calc(100% - (100px + 20px));
+}
+
+.card > .text-content * {
+    color: #333;
+}
+
+.content > input:checked + label > .card {
+    border: solid var(--orange);
+}
+
+.vehicles-container > .carousel-controls {
+    color: #333;
+    font-weight: 700;
+    display: flex;
+    column-gap: 10px;
+    position: absolute;
+    top: 15px;
+    right: 0;
+}

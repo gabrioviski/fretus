@@ -1,0 +1,86 @@
+body {
+    background-image: var(--gray-gradient);
+    min-height: 100vh;
+    color: #333;
+}
+
+main {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+main > h1 {
+    margin-bottom: 12px;
+}
+
+.requests-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    gap: 15px;
+}
+
+.requests-container > .card {
+    background-color: #fffbff;
+    height: 250px;
+    border-radius: 15px;
+    padding: 15px;
+    opacity: 1;
+    transition: all .7s;
+}
+
+.card > .top {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.top > .row {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.top > .row.track {
+    width: fit-content;
+    margin-left: 9px;
+}
+
+.card > .bottom {
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.bottom > .btns {
+    display: flex;
+    column-gap: 7px;
+}
+
+.btns .btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    cursor: pointer;
+}
+
+.btn.accept {
+    background-color: var(--orange);
+}
+
+.btn.denied {
+    background-color: var(--gray);
+}
+
+@media (max-width: 795px) {
+    .requests-container {
+        grid-template-columns: 100%;
+    }
+}

@@ -1,0 +1,24 @@
+footer {
+    padding: 50px;
+    margin-top: 45px;
+    background-color: var(--blue-2);
+    display: flex;
+    justify-content: space-around;
+}
+
+footer > .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    text-align: center;
+}
+
+.grid-container > p a {
+    color: white;
+    text-decoration: none;
+}
+
+.grid-container > p a:hover {
+    text-decoration: underline;
+}
+

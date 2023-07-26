@@ -1,0 +1,26 @@
+body {
+    background-image: var(--gray-gradient);
+    min-height: 100vh;
+}
+
+main {
+    padding: 50px 0;
+}
+
+main > .history-container {
+    background-color: white;
+    width: 90%;
+    margin: 0 auto;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+main > h1 {
+    width: 90%;
+    margin: 0 auto 13px;
+    color: #333;
+}
+
+.history-container > table {
+    width: 100%;
+}

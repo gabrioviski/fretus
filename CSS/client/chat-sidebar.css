@@ -1,0 +1,98 @@
+main {
+    height: calc(100vh - 85px);
+}
+
+.sidebar {
+    height: 100%;
+    overflow: auto;
+}
+
+.sidebar > .nav {
+    height: fit-content;
+    margin: 25px 0;
+}
+
+.sidebar li {
+    border-bottom: none;
+    height: auto;
+    padding: 15px;
+    width: 100%;
+}
+
+.sidebar li > .chat-contact {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.chat-contact > .contact-info {
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
+}
+
+.contact-info > .photo {
+    flex-shrink: 0;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    background-color: var(--gray);
+    display: flex;
+    justify-content: center;
+}
+
+.photo img {
+    width: 80%;
+    height: auto;
+}
+
+.chat-contact h1 {
+    font-family: var(--font-1);
+    font-size: 18px;
+}
+
+.chat-contact p {
+    font-size: 12px;
+}
+
+.contact-time p {
+    text-align: end;
+}
+
+@media (max-width: 1000px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+    .sidebar {
+        position: absolute;
+        z-index: 99;
+        translate: -100%;
+        transition: translate .3s ease-in-out;
+        width: 100%;
+        height: calc(100% - 85px);
+    }
+    .sidebar > .nav {
+        margin-top: 75px;
+    }
+    .sidebar.show {
+        translate: 0;
+    }
+    main > .chat {
+        position: relative;
+    }
+    .chat .burguer {
+        display: block;
+        width: 36px;
+        height: 36px;
+        position: absolute;
+        top: 30px;
+        left: 15px;
+        z-index: 100;
+        background-color: white;
+        padding: 5px;
+        border-radius: 100%;
+    }
+    .burguer > img {
+        width: 100%;
+    }
+}

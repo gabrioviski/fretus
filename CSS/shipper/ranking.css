@@ -1,0 +1,13 @@
+table td.title {
+    display: table-cell;
+}
+
+@media (max-width: 680px) {
+    .table-container .title::before {
+        content: "Posição ";
+    }
+    table td.title {
+        display: block;
+        border: 1px solid var(--gray);
+    }
+}
