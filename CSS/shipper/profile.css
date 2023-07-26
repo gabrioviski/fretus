@@ -24,6 +24,7 @@ body {
     resize: none;
     font-size: 20px;
     font-family: var(--font-2);
+    color: #333;
 }
 
 .edit-row > .input-container {
