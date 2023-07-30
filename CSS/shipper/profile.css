@@ -45,4 +45,9 @@ body {
     width: 78px;
     color: #333;
     align-self: flex-end;
+    display: none;
+}
+
+.edit-row > .input-container.edit textarea + span {
+    display: block;
 }

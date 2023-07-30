@@ -2,6 +2,7 @@ const textarea = document.querySelector('textarea')
 const count = document.querySelector('.count')
 textarea.addEventListener('input', resize)
 count.innerText = `${textarea.value.length}/200`
+
 function resize(e) {
     textarea.style = `height: 48px;`
     let height = textarea.scrollHeight
