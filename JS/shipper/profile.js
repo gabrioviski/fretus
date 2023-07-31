@@ -1,18 +1,25 @@
-const textarea = document.querySelector('textarea')
+const textarea = document.querySelectorAll('textarea')
 const count = document.querySelector('.count')
-textarea.addEventListener('input', resize)
-count.innerText = `${textarea.value.length}/200`
+
+textarea.forEach((item, i) => {
+    item.addEventListener('input', resize)
+    count.innerText = `${textarea[0].value.length}/200`
+})
+
+window.addEventListener('resize', resize)
 
 function resize(e) {
-    textarea.style = `height: 48px;`
-    let height = textarea.scrollHeight
-    let value = textarea.value
-    textarea.style = `height: ${height}px;`
-    count.innerText = `${value.length}/200`
-    count.style = 'color: #333;'
-    if (value.length >= 200) {
-        textarea.value = textarea.value.substring(0, 200)
-        count.style = 'color: red;'
-        return
-    }
+    textarea.forEach(item => {
+        item.style = `height: 48px;`
+        let height = item.scrollHeight
+        let value = textarea[0].value
+        item.style = `height: ${height}px;`
+        count.innerText = `${value.length}/200`
+        count.style = 'color: #333;'
+        if (value.length >= 200) {
+            textarea[0].value = textarea.value.substring(0, 200)
+            count.style = 'color: red;'
+            return
+        }
+    })
 }

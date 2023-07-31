@@ -4,6 +4,10 @@ body {
     color: #333;
 }
 
+main {
+    padding-top: 50px;
+}
+
 .profile-container {
     width: min(750px, 90%);
     padding: 25px;
@@ -14,6 +18,10 @@ body {
 .profile-container > * {
     width: 100%;
     margin-bottom: 11px;
+}
+
+.profile-container > img {
+    width: 100%;
 }
 
 .row textarea {
