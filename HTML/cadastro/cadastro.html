@@ -27,21 +27,21 @@
         <!--  começo da parte do cliente -->
         <div class="signup-container">
             <div class="signup-content">
-                <form id="cliente">
+                <form id="cliente" action="../cliente/solicitar-entrega.html">
                     <input type="text" id="nome" placeholder="Nome completo" required>
                     <input type="text" id="cpf-cnpj" placeholder="CPF/CNPJ" required>
-                    <input type="Email" placeholder="Email">
-                    <input type="password" placeholder="Senha">
+                    <input type="email" placeholder="Email" required>
+                    <input type="password" placeholder="Senha" required>
                     <p>Já tem uma conta? <a href="../login/login.html">Acesse aqui.</a></p>
                     <button type="submit">Criar como cliente</button>
                 </form>
                 <!--  fim da parte do cliente -->
                 <!--  começo da parte do entregador -->
-                <form id="entregador">
+                <form id="entregador" action="../entregador/entregas-solicitadas.html">
                     <input type="text" id="nome" placeholder="Nome completo" required>
                     <input type="text" id="cpf-cnpj" placeholder="CPF/CNPJ" required>
-                    <input type="Email" placeholder="Email">
-                    <input type="password" placeholder="Senha">
+                    <input type="Email" placeholder="Email" required>
+                    <input type="password" placeholder="Senha" required>
                     <p>Já tem uma conta? <a href="../login/login.html">Acesse aqui.</a></p>
                     <button type="submit">Criar como entregador</button>
                 </form>
