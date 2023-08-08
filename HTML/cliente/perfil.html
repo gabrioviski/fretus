@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fretus - Configurações</title>
+    <title>Fretus - Perfil</title>
     <link rel="stylesheet" href="../../CSS/index.css">
     <link rel="stylesheet" href="../../CSS/header-client-shipper.css">
     <link rel="stylesheet" href="../../CSS/menu-burguer.css">
+    <link rel="stylesheet" href="../../CSS/shipper/config.css">
     <link rel="stylesheet" href="../../CSS/shipper/requests-modal.css">
-    <link rel="stylesheet" href="../../CSS/shipper/sidebar-config.css">
-    <link rel="stylesheet" href="../../CSS/shipper/notification-config.css">
+    <link rel="stylesheet" href="../../CSS/shipper/profile.css">
 </head>
 <body>
     <div class="menu-burguer">
@@ -51,50 +51,38 @@
             </div>
         </div>
     </header>
-
+    
     <main>
-        <div class="sidebar">
-            <div class="nav">
-                <ul>
-                    <a href="./configuracoes.html">
-                        <li>Privacidade</li>
-                    </a>
-                    <a href="./configuracoes-pagamento.html">
-                        <li>Pagamento</li>
-                    </a>
-                    <a href="./configuracoes-notificacoes.html">
-                        <li>Notificações</li>
-                    </a>
-                </ul>
+        <div class="profile-container">
+            <img src="../../imgs/shipper/img-profile.svg" alt="">
+            <div class="row">
+                <label for="name">Nome</label>
+                <div class="edit-row">
+                    <div class="input-container">
+                        <input type="text" readonly id="name" value="Cliente 1">
+                        <input type="button" class="btn" value="Cancelar">
+                        <input type="button" class="btn confirm" value="Confirmar">
+                    </div>
+                    <span>Alterar</span>
+                </div>
             </div>
-        </div>
-        <div class="config">
-            <div class="config-container">
-                <div class="burguer">
-                    <img src="../../imgs/burguer-config-icon.png" alt="">
-                </div>
-                <h1>Notificações</h1>
-                <p>Receber notificações promocionais, descontos, institucionais e etc.</p>
-                <div class="row">
-                    <span>SMS</span>
-                    <input checked type="checkbox" id="sms">
-                    <label for="sms" class="toogle">
-                        <div class="ball"></div>
-                    </label>
-                </div>
-                <div class="row">
-                    <span>E-mail</span>
-                    <input checked type="checkbox" id="email">
-                    <label for="email" class="toogle">
-                        <div class="ball"></div>
-                    </label>
+            <div class="row">
+                <label for="description">Descrição</label>
+                <div class="edit-row">
+                    <div class="input-container">
+                        <textarea readonly id="description" placeholder="Digite sua descrição">Cliente confiável, com várias necessidades de entrega.</textarea>
+                        <span class="count">0/200</span>
+                        <input type="button" class="btn" value="Cancelar">
+                        <input type="button" class="btn confirm" value="Confirmar">
+                    </div>
+                    <span>Alterar</span>
                 </div>
             </div>
         </div>
     </main>
-    
+
     <script src="../../JS/burguer.js"></script>
     <script src="../../JS/shipper/change.js"></script>
-    <script src="../../JS/shipper/burguer-config.js"></script>
+    <script src="../../JS/shipper/profile.js"></script>
 </body>
 </html>
