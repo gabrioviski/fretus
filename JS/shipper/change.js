@@ -15,6 +15,9 @@ change.forEach(item => {
         input = inputContainer.firstElementChild
         inputValue = input.value
         input.removeAttribute('readonly')
+        if (input.id == 'password') {
+            input.type = 'text'
+        }
         inputContainer.classList.add('edit')
         input.focus()
         input.addEventListener('blur', resetInput)
@@ -38,6 +41,9 @@ function resetInput() {
     }
     changed.style = 'display: block;'
     input.setAttribute('readonly', 'true')
+    if (input.id == 'password') {
+        input.type = 'password'
+    }
     inputContainer.classList.remove('edit')
     removeEvents()
 }
