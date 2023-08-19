@@ -8,8 +8,11 @@ const map = new mapboxgl.Map({
     style: 'mapbox://styles/mapbox/streets-v12',
     center: [-46.625290, -23.533773],
     zoom: 12,
+    minZoom: 10,
     language: 'pt'
 })
+
+map.addControl(new mapboxgl.NavigationControl());
 
 const start = new mapboxgl.Marker({
     color: '#ef9652',
