@@ -26,6 +26,8 @@ main {
     margin-bottom: 15px;
 }
 
+/* INICIO DELIVERY-REQUEST-SUG */
+
 .form input:not(.cta) {
     display: block;
     color: #333;
@@ -40,17 +42,21 @@ main {
     font-size: 16px;
 }
 
-/* INICIO DELIVERY-REQUEST-SUG */
+.form input:not(.cta) {
+    border-bottom-left-radius: 0;
+}
 
 form input:not(.cta) + .suggestions {
     width: 100%;
+    position: relative;
 }
 
 form input:not(.cta) + .suggestions .suggestions-options {
     color: #333;
-    background-color: rgb(255, 130, 130);
+    background-color: white;
     width: 100%;
     list-style: none;
+    top: -20px;
     position: absolute;
     display: none;
 }
