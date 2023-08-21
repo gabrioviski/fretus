@@ -40,6 +40,27 @@ main {
     font-size: 16px;
 }
 
+/* INICIO DELIVERY-REQUEST-SUG */
+
+form input:not(.cta) + .suggestions {
+    width: 100%;
+}
+
+form input:not(.cta) + .suggestions .suggestions-options {
+    color: #333;
+    background-color: rgb(255, 130, 130);
+    width: 100%;
+    list-style: none;
+    position: absolute;
+    display: none;
+}
+
+form input:not(.cta):focus + .suggestions .suggestions-options  {
+    display: block;
+}
+
+/* FIM DELIVERY-REQUEST-SUG */
+
 .form .schedules-container {
     min-height: 177px;
     margin-bottom: 50px;
