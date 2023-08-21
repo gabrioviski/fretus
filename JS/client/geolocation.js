@@ -8,7 +8,7 @@ const map = new mapboxgl.Map({
     style: 'mapbox://styles/mapbox/streets-v12',
     center: [-46.625290, -23.533773],
     zoom: 12,
-    minZoom: 7,
+    minZoom: 8,
     language: 'pt'
 })
 
