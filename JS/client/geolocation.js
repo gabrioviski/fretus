@@ -8,7 +8,7 @@ const map = new mapboxgl.Map({
     style: 'mapbox://styles/mapbox/streets-v12',
     center: [-46.625290, -23.533773],
     zoom: 12,
-    minZoom: 10,
+    minZoom: 7,
     language: 'pt'
 })
 
@@ -43,8 +43,7 @@ inputs.forEach((input, i) => {
                     end.setLngLat(coords).addTo(map)
                 }
                 map.flyTo({
-                    center: coords,
-                    zoom: 12
+                    center: coords
                 })
             })
             results[i].appendChild(suggestionItem)
