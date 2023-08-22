@@ -47,6 +47,7 @@ inputs.forEach((input, i) => {
                 map.flyTo({
                     center: coords
                 })
+                removeSuggestions(input, i)
             })
             results[i].appendChild(suggestionItem)
         })
@@ -56,8 +57,14 @@ inputs.forEach((input, i) => {
 inputs.forEach((input, i) => {
     document.addEventListener('click', (e) => {
         if (!input.contains(e.target) && !results[i].contains(e.target)) {
-            results[i].innerHTML = ''
-            input.classList.remove('border')
+            /* results[i].innerHTML = ''
+            input.classList.remove('border') */
+            removeSuggestions(input, i)
         }
     })
 })
+
+function removeSuggestions(input, i) {
+    results[i].innerHTML = ''
+    input.classList.remove('border')
+}
