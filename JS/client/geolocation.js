@@ -57,8 +57,6 @@ inputs.forEach((input, i) => {
 inputs.forEach((input, i) => {
     document.addEventListener('click', (e) => {
         if (!input.contains(e.target) && !results[i].contains(e.target)) {
-            /* results[i].innerHTML = ''
-            input.classList.remove('border') */
             removeSuggestions(input, i)
         }
     })
