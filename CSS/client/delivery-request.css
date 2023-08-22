@@ -28,41 +28,45 @@ main {
 
 /* INICIO DELIVERY-REQUEST-SUG */
 
-.form input:not(.cta) {
+.form input.address, .form input.date-time {
     display: block;
     color: #333;
     width: 100%;
     margin-bottom: 20px;
     height: 50px;
-    border-radius: 5px;
     padding: 10px;
     border: none;
+    border-radius: 5px;
     outline: none;
     font-family: var(--font-2);
     font-size: 16px;
 }
 
-.form input:not(.cta) {
+.form input.address.border {
     border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
-form input:not(.cta) + .suggestions {
+form input.address + .suggestions {
     width: 100%;
     position: relative;
+    z-index: 20000;
 }
 
-form input:not(.cta) + .suggestions .suggestions-options {
+form input.address + .suggestions .suggestions-options {
     color: #333;
     background-color: white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     width: 100%;
+    min-height: 0;
     list-style: none;
     top: -20px;
     position: absolute;
-    display: none;
 }
 
-form input:not(.cta):focus + .suggestions .suggestions-options  {
-    display: block;
+form input.address.border + .suggestions .suggestions-options {
+    padding: 10px;
 }
 
 /* FIM DELIVERY-REQUEST-SUG */
