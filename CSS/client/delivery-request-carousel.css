@@ -19,7 +19,11 @@
 }
 
 .content > input[type="radio"] {
-    display: none;
+    /* visibility: hidden; */
+    position: absolute;
+    z-index: -100;
+    left: 50%;
+    bottom: 0;
 }
 
 .content > label {

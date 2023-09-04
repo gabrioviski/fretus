@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="../../CSS/client/delivery-request.css">
     <link rel="stylesheet" href="../../CSS/client/delivery-request-suggestions.css">
     <link rel="stylesheet" href="../../CSS/client/delivery-request-carousel.css">
+    <link rel="stylesheet" href="../../CSS/client/pay-modal.css">
 </head>
 <body>
 
@@ -61,11 +62,11 @@
         <div class="form">
             <form>
                 <h1>Solicitar Entrega</h1>
-                <input type="text" class="address start" placeholder="Local de partida">
+                <input type="text" required class="address start" placeholder="Local de partida">
                 <div class="suggestions">
                     <ul class="suggestions-options"></ul>
                 </div>
-                <input type="text" class="address end" placeholder="Local de destino">
+                <input type="text" required class="address end" placeholder="Local de destino">
                 <div class="suggestions">
                     <ul class="suggestions-options"></ul>
                 </div>
@@ -83,7 +84,7 @@
                     <h1>Veículos</h1>
                     <div class="vehicles-carousel">
                         <div class="content">
-                            <input type="radio" name="vehicles" id="vehicles1">
+                            <input type="radio" name="vehicles" id="vehicles1" required>
                             <label for="vehicles1">
                                 <div class="card">
                                     <div class="icon">
@@ -143,16 +144,26 @@
                     </div>
                 </div>
 
-                <input type="button" value="Continuar" class="cta">
+                <input type="submit" value="Continuar" class="cta">
                 <a style="text-decoration: underline; color: blue;" href="./geolocation.html">Mapa</a>
             </form>
         </div>
         <div class="map" id="map"></div>
     </main>
+    <dialog class="pay-modal">
+        <div class="modal-content">
+            <input placeholder="Digite aqui o valor desejado. (Apenas números)" type="number">
+            <div class="btn-container">
+                <button class="yes">Aceitar</button>
+                <button class="no">Cancelar</button>
+            </div>
+        </div>
+    </dialog>
     
 
     <script src="../../JS/burguer.js"></script>
     <script src="../../JS/client/vehicles-carousel.js"></script>
     <script src="../../JS/client/geolocation.js"></script>
+    <script src="../../JS/client/modal-confirm.js"></script>
 </body>
 </html>

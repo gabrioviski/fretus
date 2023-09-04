@@ -26,17 +26,19 @@ const end = new mapboxgl.Marker({
 
 inputs.forEach((input, i) => {
     input.addEventListener('input', async () => {
+        input.setCustomValidity('Endereço não está valido!')
         input.classList.add('border')
         const bbox = "-53.305664,-25.204941,-45.439453,-19.849394"
         const url = `https://api.mapbox.com/geocoding/v5/mapbox.places/${input.value}.json?access_token=${accessToken}&language=pt&bbox=${bbox}&limit=3`
         const res = await fetch(url)
         const dataRes = await res.json()
-        console.log(dataRes)
+        // console.log(dataRes)
         results[i].innerHTML = ''
         dataRes.features.forEach((suggestion) => {
             const suggestionItem = document.createElement('li')
             suggestionItem.innerText = suggestion.place_name
             suggestionItem.addEventListener('click', (e) => {
+                input.setCustomValidity('')
                 const coords = suggestion.geometry.coordinates
                 input.value = e.target.innerText
                 if (input.classList.contains('start')) {
