@@ -1,4 +1,6 @@
 .gray-gradient > .cards-container {
+    max-width: 1045px;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
