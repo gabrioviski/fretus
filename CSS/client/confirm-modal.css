@@ -1,0 +1,11 @@
+.pay-modal h1 {
+    font-size: 28px;
+}
+
+.pay-modal .cta {
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+}

@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="../../CSS/client/delivery-request-suggestions.css">
     <link rel="stylesheet" href="../../CSS/client/delivery-request-carousel.css">
     <link rel="stylesheet" href="../../CSS/client/pay-modal.css">
+    <link rel="stylesheet" href="../../CSS/client/confirm-modal.css">
 </head>
 <body>
 
@@ -152,11 +153,13 @@
     </main>
     <dialog class="pay-modal">
         <div class="modal-content">
-            <input placeholder="Digite aqui o valor desejado. (Apenas números)" type="number">
-            <div class="btn-container">
-                <button class="yes">Aceitar</button>
-                <button class="no">Cancelar</button>
+            <h1>Preço Sugerido: R$<span>25,00</span></h1>
+            <p>Você pode escolher negociar esse preço com o entregador. Essa escolha aparecerá para o entregador, que poderá ou não negociar com você. A negociação será feita pelo chat, e não nos responsabilizamos por nada disso.</p>
+            <div class="confirm">
+                <input type="checkbox" name="confirm-negotiation" id="confirm-negotiation">
+                <label for="confirm-negotiation">Entendo essas condições e desejo negociar o preço.</label>
             </div>
+            <a href="" class="cta">Continuar</a>
         </div>
     </dialog>
     

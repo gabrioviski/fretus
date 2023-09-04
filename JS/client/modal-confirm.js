@@ -10,5 +10,3 @@ submit.addEventListener('click', (e) => {
         modal.showModal()
     }
 })
-
-// console.log(vehicle)
