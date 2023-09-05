@@ -1,8 +1,39 @@
-.pay-modal h1 {
+body {
+    position: relative;
+}
+
+.modal {
+    display: none;
+}
+
+.modal.show {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+}
+
+.modal .modal-content {
+    background-color: white;
+    color: #333;
+    width: min(75%, 705px);
+    padding: 25px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.modal h1 {
     font-size: 28px;
 }
 
-.pay-modal .cta {
+.modal .cta {
     width: 100%;
     height: 30px;
     border-radius: 5px;
