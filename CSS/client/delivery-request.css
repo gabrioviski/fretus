@@ -3,6 +3,7 @@ main {
     min-height: calc(100vh - 85px);
     display: grid;
     grid-template-columns: 40% 60%;
+    position: relative;
 }
 
 .form, .map {
@@ -74,26 +75,45 @@ form > .cta {
     border-radius: 5px;
 }
 
+main .return-form {
+    display: none;
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    top: 30px;
+    left: 15px;
+    z-index: 100;
+    background-color: white;
+    padding: 5px;
+    border-radius: 100%;
+}
+
+.return-form > img {
+    width: 100%;
+}
+
 @media (max-width: 975px), (max-height: 768px) {
     main {
         grid-template-columns: 100%;
     }
     .form {
-        padding: 45px 0;
-        justify-content: flex-start;
-        position: absolute;
+        /* padding: 45px 0 20px; */
+        /* justify-content: center; */
+        position: relative;
         width: 100%;
         transition: all .3s;
         left: 0;
         z-index: 100;
     }
     .map {
-        /* display: none; */
         position: absolute;
         z-index: 99;
     }
     .form > form {
         width: 90%;
+    }
+    .return-form.show {
+        display: block;
     }
 }
 

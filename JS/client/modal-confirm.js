@@ -5,6 +5,7 @@ const submit = document.querySelector('[type="submit"].cta')
 const modal = document.querySelector('.modal')
 const formContainer = document.querySelector('main > .form')
 const mapContainer = document.querySelector('main > .map')
+const backForm = document.querySelector('.return-form')
 
 submit.addEventListener('click', (e) => {
     /* if (inputStart.validity.valid == true && inputEnd.validity.valid == true && vehicle.validity.valid) { */
@@ -12,8 +13,12 @@ submit.addEventListener('click', (e) => {
         modal.classList.add('show')
         formContainer.classList.add('mobile')
         mapContainer.classList.add('mobile')
+        backForm.classList.add('show')
     /* } */
 })
 
+backForm.addEventListener('click', () => {
+    formContainer.classList.toggle('mobile')
+})
 
-// console.log(formContainer, mapContainer)
+// console.log(backForm)
