@@ -1,6 +1,5 @@
-:root {
-    --white-color: #fffbff;
-    --bege: #e4e4dd; 
+main {
+    padding-bottom: 45px;
 }
 
 .product-wrapper {
@@ -30,10 +29,12 @@
 .controls > * {
     color: #333;
     font-weight: 700;
+    cursor: pointer;
 }
 
 .carousel {
     overflow-x: hidden;
+    scroll-behavior: smooth;
     width: 100%;
 }
 
@@ -49,7 +50,7 @@
     width: 250px;
     height: 440px;
     padding: 15px;
-    background-color: var(--white-color);
+    background-color: var(--light-gray);
 }
 
 .products > .photo {
@@ -57,7 +58,7 @@
     height: 250px;
     border-radius: 10px;
     margin-bottom: 15px;
-    background-color: var(--bege);
+    background-color: #e4e4dd;
 }
 
 .products > h1 {
