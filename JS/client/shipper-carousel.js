@@ -1,33 +1,34 @@
-const carousel = document.querySelectorAll('.carousel')
+const carousel = Array.from(document.querySelectorAll('.carousel'))
 const content = document.querySelectorAll('.content')
 const items = document.querySelectorAll('.content > .products')
 const controls = document.querySelectorAll('.controls > *')
-let index = 0
+let index = carousel.map(() => 0)
 
 let acts = {
-    next() {
-        index++
+    next(idx) {
+        index[idx]++
     },
-    prev() {
-        index--
+    prev(idx) {
+        index[idx]--
     }
 }
 
 controls.forEach((item, i) => {
     item.addEventListener('click', (e) => {
-        acts[item.id]()
-        changeState(parseInt(i / 2))
+        let idx = parseInt(i / 2)
+        acts[item.id](idx)
+        changeState(idx)
     })
 })
 
 function changeState(idx) {
     let width = carousel[idx].clientWidth
-    let visibleItems = Math.floor(width / 260)
+    let visibleItems = Math.floor(width / (items[0].clientWidth))
     let clicks = (items.length / carousel.length) - visibleItems
-    if (index > clicks) {
-        index = 0
-    } else if (index < 0) {
-        index = clicks
+    if (index[idx] > clicks) {
+        index[idx] = 0
+    } else if (index[idx] < 0) {
+        index[idx] = clicks
     }
-    carousel[idx].scrollLeft = 260 * index
+    carousel[idx].scrollLeft = (items[0].clientWidth + 10) * index[idx]
 }

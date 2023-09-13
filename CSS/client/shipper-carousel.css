@@ -71,3 +71,9 @@ main {
     font-family: var(--font-2);
     color: #333;
 }
+
+@media (max-width: 310px) {
+    .content > .products {
+        width: 200px;
+    }
+}
