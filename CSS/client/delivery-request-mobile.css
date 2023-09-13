@@ -1,4 +1,7 @@
 @media (max-width: 975px), (max-height: 768px) {
+    .modal .close {
+        display: none;
+    }
     .modal.show {
         /* display: none; */
         height: fit-content;

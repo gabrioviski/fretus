@@ -27,6 +27,26 @@ body {
     display: flex;
     flex-direction: column;
     row-gap: 15px;
+    position: relative;
+}
+
+.modal .close {
+    position: absolute;
+    top: -5px;
+    left: -10px;
+    background-color: var(--orange);
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.modal .close img {
+    filter: invert();
 }
 
 .modal h1 {
