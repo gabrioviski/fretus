@@ -30,38 +30,3 @@ table th {
 table td.title {
     display: none;
 }
-
-@media (max-width: 680px) {
-    main table {
-        border-collapse: separate;
-    }
-    thead {
-        display: none;
-    }
-    table tbody tr {
-        display: block;
-        margin-bottom: 15px;
-        border-bottom: none;
-    }
-    td, table td.title {
-        display: block;
-        border: 1px solid var(--gray);
-        border-bottom: none;
-    }
-    td:last-child {
-        border-bottom: 1px solid var(--gray);
-    }
-    table tr td.title {
-        font-family: var(--font-1);
-        font-size: 18px;
-        text-align: center;
-    }
-    tr td:not(.title) {
-        display: grid;
-        grid-template-columns: 10ch auto;
-    }
-    tr td:not(.title)::before {
-        content: attr(data-content) ":";
-        font-weight: bold;
-    }
-}
