@@ -7,8 +7,11 @@
     <link rel="stylesheet" href="../../CSS/index.css">
     <link rel="stylesheet" href="../../CSS/header-client-shipper.css">
     <link rel="stylesheet" href="../../CSS/menu-burguer.css">
-    <link rel="stylesheet" href="../../CSS/shipper/results-history.css">
+    <link rel="stylesheet" href="../../CSS/cta.css">
     <link rel="stylesheet" href="../../CSS/shipper/history.css">
+    <link rel="stylesheet" href="../../CSS/shipper/requests.css">
+    <link rel="stylesheet" href="../../CSS/client/confirm-modal.css">
+    <link rel="stylesheet" href="../../CSS/client/rate-modal.css">
 </head>
 <body>
     <div class="menu-burguer">
@@ -52,91 +55,93 @@
     </header>
 
     <main>
-        <h1>Histórico</h1>
-        <div class="history-container">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Status</th>
-                        <th>Rota</th>
-                        <th>Motorista</th>
-                        <th>Preço</th>
-                    </tr>
-                </thead>
-                <tr>
-                    <td class="title">Entrega 1</td>
-                    <td data-content="Status">A caminho</td>
-                    <td data-content="Rota">Acompanhe a rota em tempo real</td>
-                    <td data-content="Motorista">Pedro</td>
-                    <td data-content="Preço">R$14,00</td>
-                </tr>
-                <tr>
-                    <td class="title">Entrega 2</td>
-                    <td data-content="Status">Entregue</td>
-                    <td data-content="Rota">R. João C. - R. das Flores</td>
-                    <td data-content="Motorista">Fernanda</td>
-                    <td data-content="Preço">R$20,00</td>
-                </tr>
-                <tr>
-                    <td class="title">Entrega 3</td>
-                    <td data-content="Status">Entregue</td>
-                    <td data-content="Rota">R. Tiradentes - R. das Olarias</td>
-                    <td data-content="Motorista">Paulo</td>
-                    <td data-content="Preço">RS33,00</td>
-                </tr>
-                <tr>
-                    <td class="title">Entrega 4</td>
-                    <td data-content="Status">Entregue</td>
-                    <td data-content="Rota">R. Sta. Cruz - José Bonifácio</td>
-                    <td data-content="Motorista">Eduardo</td>
-                    <td data-content="Preço">R$45.00</td>
-                </tr>
-                <tr>
-                    <td class="title">Entrega 5</td>
-                    <td data-content="Status">Entregue</td>
-                    <td data-content="Rota">R. 25 de Março - R. 3 de Abril</td>
-                    <td data-content="Motorista">Lucas</td>
-                    <td data-content="Preço">R$23.00</td>
-                </tr>
-                <tr>
-                    <td class="title">Entrega 6</td>
-                    <td data-content="Status">Entregue</td>
-                    <td data-content="Rota">R. Carlos G. - R. Cacique</td>
-                    <td data-content="Motorista">Igor</td>
-                    <td data-content="Preço">R$13.00</td>
-                </tr>
-                <tr>
-                    <td class="title">Entrega 7</td>
-                    <td data-content="Status">Entregue</td>
-                    <td data-content="Rota">R. João C. - R. das Flores</td>
-                    <td data-content="Motorista">Fernanda</td>
-                    <td data-content="Preço">R$23.00</td>
-                </tr>
-                <tr>
-                    <td class="title">Entrega 8</td>
-                    <td data-content="Status">Entregue</td>
-                    <td data-content="Rota">R. João C. - R. das Flores</td>
-                    <td data-content="Motorista">Paulo</td>
-                    <td data-content="Preço">R$13.00</td>
-                </tr>
-                <tr>
-                    <td class="title">Entrega 9</td>
-                    <td data-content="Status">Entregue</td>
-                    <td data-content="Rota">R. Sta. Cruz - José Bonifácio</td>
-                    <td data-content="Motorista">Eduardo</td>
-                    <td data-content="Preço">R$45.00</td>
-                </tr>
-                <tr>
-                    <td class="title">Entrega 10</td>
-                    <td data-content="Status">Entregue</td>
-                    <td data-content="Rota">R. 25 de Março - R. 3 de Abril</td>
-                    <td data-content="Motorista">Lucas</td>
-                    <td data-content="Preço">R$23.00</td>
-                </tr>
-            </table>            
+        <div class="history-header">
+            <h1>Histórico</h1>
+            <nav class="history-nav">
+                <select>
+                    <option>Ordenar Por</option>
+                </select>
+            </nav>
+        </div>
+
+        <div class="requests-container">
+            <div class="card">
+                <div class="top">
+                    <div class="row">
+                        <img src="https://files.axshare.com/gsc/NW3CCE/d7/2e/63/d72e6396c33043df9eca85714bda96d5/images/area_do_entregador__desktop_/u12.svg?pageId=162fbb92-5d69-4bc4-b5d2-9ac969f79156" alt="">
+                        <span>Rua Carlos José de Castilho</span>
+                    </div>
+                    <div class="row track">
+                        <img src="../../imgs/shipper/track.png" alt="">
+                    </div>
+                    <div class="row">
+                        <img src="https://files.axshare.com/gsc/NW3CCE/d7/2e/63/d72e6396c33043df9eca85714bda96d5/images/area_do_entregador__desktop_/u13.svg?pageId=162fbb92-5d69-4bc4-b5d2-9ac969f79156" alt="">
+                        <span>Rua Carneiro Leão</span>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <span class="price">R$51,00</span>
+                    <span class="rate">Avaliar Entrega</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="top">
+                    <div class="row">
+                        <img src="https://files.axshare.com/gsc/NW3CCE/d7/2e/63/d72e6396c33043df9eca85714bda96d5/images/area_do_entregador__desktop_/u12.svg?pageId=162fbb92-5d69-4bc4-b5d2-9ac969f79156" alt="">
+                        <span>Rua Carlos José de Castilho</span>
+                    </div>
+                    <div class="row track">
+                        <img src="../../imgs/shipper/track.png" alt="">
+                    </div>
+                    <div class="row">
+                        <img src="https://files.axshare.com/gsc/NW3CCE/d7/2e/63/d72e6396c33043df9eca85714bda96d5/images/area_do_entregador__desktop_/u13.svg?pageId=162fbb92-5d69-4bc4-b5d2-9ac969f79156" alt="">
+                        <span>Rua Carneiro Leão</span>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <span class="price">R$51,00</span>
+                    <span class="rate">Avaliar Entrega</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="top">
+                    <div class="row">
+                        <img src="https://files.axshare.com/gsc/NW3CCE/d7/2e/63/d72e6396c33043df9eca85714bda96d5/images/area_do_entregador__desktop_/u12.svg?pageId=162fbb92-5d69-4bc4-b5d2-9ac969f79156" alt="">
+                        <span>Rua Carlos José de Castilho</span>
+                    </div>
+                    <div class="row track">
+                        <img src="../../imgs/shipper/track.png" alt="">
+                    </div>
+                    <div class="row">
+                        <img src="https://files.axshare.com/gsc/NW3CCE/d7/2e/63/d72e6396c33043df9eca85714bda96d5/images/area_do_entregador__desktop_/u13.svg?pageId=162fbb92-5d69-4bc4-b5d2-9ac969f79156" alt="">
+                        <span>Rua Carneiro Leão</span>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <span class="price">R$51,00</span>
+                    <span class="rate">Avaliar Entrega</span>
+                </div>
+            </div>       
         </div>
     </main>
-    
+    <div class="modal show">
+        <div class="modal-content">
+            <div class="close">
+                <img src="../../imgs/client/close-icon.svg" alt="">
+            </div>
+            <h1>Avaliar o Motorista</h1>
+            <div class="stars">
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+            </div>
+            <button class="cta">Enviar</button>
+        </div>
+    </div>
+
     <script src="../../JS/burguer.js"></script>
+    <script src="../../JS/client/rate-modal.js"></script>
 </body>
 </html>

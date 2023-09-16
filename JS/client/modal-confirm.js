@@ -9,12 +9,12 @@ const backForm = document.querySelector('.return-form')
 const close = document.querySelector('.close')
 
 submit.addEventListener('click', e => {
-    if (inputStart.validity.valid == true && inputEnd.validity.valid == true && vehicle.validity.valid) {
-        e.preventDefault()
-        modal.classList.add('show')
-        formContainer.classList.add('mobile')
-        mapContainer.classList.add('mobile')
-        backForm.classList.add('show')
+        if (inputStart.validity.valid == true && inputEnd.validity.valid == true && vehicle.validity.valid) {
+            e.preventDefault()
+            modal.classList.add('show')
+            formContainer.classList.add('mobile')
+            mapContainer.classList.add('mobile')
+            backForm.classList.add('show')
         }
     })
     

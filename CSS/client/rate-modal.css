@@ -1,0 +1,27 @@
+.modal .stars {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.stars > .star {
+    min-width: 75px;
+    height: 75px;
+    border-radius: 2px;
+    flex-shrink: 0;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    transition: all .3s;
+    background-color: var(--gray);
+}
+
+.stars > .star {
+    background-color: var(--gray);
+}
+
+.stars > .star.checked {
+    background-color: var(--orange); /* COR MAIS CLARA */
+}
+
+.stars > .star:hover, .stars > .star:hover ~ * {
+    background-color: blue; /* COR MAIS FORTE */
+}
