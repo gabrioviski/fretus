@@ -22,6 +22,12 @@ section.blue-gradient {
     background-image: var(--blue-gradient);
 }
 
-.shipper {
+/* dadsd */
+
+main > .client, main > .shipper {
     display: none;
+}
+
+main > *.show {
+    display: block;
 }
