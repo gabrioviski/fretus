@@ -6,24 +6,29 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
-    /* gap: 10px; */
 }
 
 .stars > .star {
     width: min(50%, 75px);
-    aspect-ratio: 1/1;
-    border-radius: 2px;
+    aspect-ratio: 1 / 1;
+    cursor: pointer;
+}
+
+.star > .star-form {
+    height: 100%;
     clip-path: var(--star-form);
     transition: all .3s;
-    cursor: pointer;
     background-color: var(--gray);
 }
 
-.star.checked, .star.checked:hover, .star.checked:hover ~ * {
+.star.checked > .star-form,
+.star.checked:hover > .star-form,
+.star.checked:hover ~ * > .star-form {
     background-color: var(--orange);
 }
 
-.star:hover, .star:hover ~ * {
+.star:hover > .star-form, 
+.star:hover ~ * > .star-form {
     background-color: var(--orange);
 }
 
@@ -35,4 +40,14 @@
     padding: 8px;
     font-family: var(--font-2);
     font-size: 16px;
+}
+
+.modal span {
+    display: none;
+}
+
+.modal .error {
+    display: block;
+    color: red;
+    font-weight: 700;
 }
