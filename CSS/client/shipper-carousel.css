@@ -72,6 +72,24 @@ main {
     color: #333;
 }
 
+.products a {
+    display: block;
+    width: fit-content;
+    margin-top: 50px;
+    margin-left: auto;
+}
+
+.products img {
+    width: 30px;
+    height: 30px;
+    display: block;
+    opacity: .60;
+}
+
+.products img:hover {
+    opacity: .85;
+}
+
 @media (max-width: 310px) {
     .content > .products {
         width: 200px;
