@@ -1,13 +1,137 @@
-table td.title {
-    display: table-cell;
+.ranking {
+    width: min(600px, 95%);
+    margin: 0 auto;
 }
 
-@media (max-width: 680px) {
-    .table-container .title::before {
-        content: "Posição ";
-    }
-    table td.title {
-        display: block;
-        border: 1px solid var(--gray);
-    }
+.ranking > .switch {
+   width: min(450px, 90%);
+   margin-top: 45px;
+}
+
+.ranking > .switch span {
+    width: calc(100% / 3);
+}
+
+/* ranking-poduim.css */
+
+.ranking > .ranking-podium {
+    width: 100%;
+    display: flex;
+    gap: 7px;
+}
+
+.ranking-podium > .places {
+    color: #333;
+    width: calc(100% / 3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.places.first-place {
+    order: 2;
+}
+
+.places.second-place {
+    order: 1;
+}
+
+.places.third-place {
+    order: 3;
+}
+
+.places.second-place, .places.third-place {
+    margin-top: 36px;
+}
+
+.places .photo  {
+    border: 1px solid #33333333;
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.places img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.places > .description {
+    text-align: center;
+}
+
+.description .name {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.description .orders, .ranking-position {
+    font-family: var(--font-2);
+}
+
+/* ranking-position.css */
+
+.ranking-position {
+    width: 85%;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 60px auto 35px;
+    opacity: .6;
+    background-color: white;
+    color: #333;
+    text-align: center;
+} 
+
+/* ranking-table.css */
+
+.ranking-table {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    margin-bottom: 15px;
+}
+
+.ranking-table > .row {
+    display: flex;
+    align-items: center;
+    column-gap: 9px;
+    color: #333;
+}
+
+.row > .row-info {
+    width: 100%;
+    padding: 5px 16px 5px 5px;
+    background-color: rgba(255, 255, 255, .6);
+    border-radius: 30px;
+    display: flex;
+    column-gap: 18px;
+}
+
+.row-info > .photo {
+    width: 52px;
+    height: 52px;
+    flex-shrink: 0;
+    border-radius: 100%;
+    background-color: #c4c4c4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row-info img {
+    width: 75%;
+    opacity: .75;
+}
+
+.row-info > .description {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fretus - Ranking</title>
     <link rel="stylesheet" href="../../CSS/index.css">
+    <link rel="stylesheet" href="../../CSS/home/home.css">
     <link rel="stylesheet" href="../../CSS/header-client-shipper.css">
     <link rel="stylesheet" href="../../CSS/menu-burguer.css">
-    <link rel="stylesheet" href="../../CSS/shipper/results-history.css">
-    <link rel="stylesheet" href="../../CSS/shipper/history.css">
+    <link rel="stylesheet" href="../../CSS/home/switch.css">
     <link rel="stylesheet" href="../../CSS/shipper/ranking.css">
 </head>
 <body>
@@ -52,56 +52,142 @@
         </div>
     </header>
 
-    <main class="table-container">
-        <h1>Ranking</h1>
-        <div class="history-container">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Posição</th>
-                        <th>Nome</th>
-                        <th>Avaliação</th>
-                    </tr>
-                </thead>
-                <tr>
-                    <td class="title">1</td>
-                    <td data-content="Nome">José</td>
-                    <td data-content="Avaliação">5 estrelas</td>
-                </tr>
-                <tr>
-                    <td class="title">2</td>
-                    <td data-content="Nome">Mario</td>
-                    <td data-content="Avaliação">5 estrelas</td>
-                </tr>
-                <tr>
-                    <td class="title">3</td>
-                    <td data-content="Nome">Carlos</td>
-                    <td data-content="Avaliação">4.5 estrelas</td>
-                </tr>
-                <tr>
-                    <td class="title">4</td>
-                    <td data-content="Nome">Henrique</td>
-                    <td data-content="Avaliação">4.5 estrelas</td>
-                </tr>
-                <tr>
-                    <td class="title">5</td>
-                    <td data-content="Nome">Magno</td>
-                    <td data-content="Avaliação">4.5 estrelas</td>
-                </tr>
-                <tr>
-                    <td class="title">6</td>
-                    <td data-content="Nome">Erick</td>
-                    <td data-content="Avaliação">4 estrelas</td>
-                </tr>
-                <tr>
-                    <td class="title">35</td>
-                    <td data-content="Nome">Você</td>
-                    <td data-content="Avaliação">3 estrelas</td>
-                </tr>
-            </table>            
+    <main class="ranking">
+        <div class="switch">
+            <input type="radio" name="change" id="all-time" checked>
+            <label for="all-time">Geral</label>
+            <input type="radio" name="change" id="month">
+            <label for="month">Mês</label>
+            <input type="radio" name="change" id="week">
+            <label for="week">Semana</label>
+            <span></span>
+        </div>
+        <div class="ranking-podium">
+            <div class="places first-place">
+                <div class="position">1.</div>
+                <div class="photo">
+                    <img src="../../imgs/home/shipper/carousel-photo-2.jpg">
+                </div>
+                <div class="description">
+                    <p class="name">Nome</p>
+                    <p class="orders">85 entregas</p>
+                </div>
+            </div>
+            <div class="places second-place">
+                <div class="position">2.</div>
+                <div class="photo">
+                    <img src="../../imgs/home/shipper/carousel-photo-1.jpg">
+                </div>
+                <div class="description">
+                    <p class="name">Nome</p>
+                    <p class="orders">85 entregas</p>
+                </div>
+            </div>
+            <div class="places third-place">
+                <div class="position">3.</div>
+                <div class="photo">
+                    <img src="../../imgs/home/shipper/carousel-photo-3.jpg">
+                </div>
+                <div class="description">
+                    <p class="name">Nome</p>
+                    <p class="orders">85 entregas</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="ranking-position">
+            <p class="position">Você está na posição #36 dos 1243 entregadores da plataforma</p>
+        </div>
+        
+        <div class="ranking-table">
+            <div class="row">
+                <div class="position">4.</div>
+                <div class="row-info">
+                    <div class="photo">
+                        <img src="../../imgs/home/shipper/card-icon-1.svg">
+                    </div>
+                    <div class="description">
+                        <p class="name">Nome</p>
+                        <p class="orders">69 entregas</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="position">5.</div>
+                <div class="row-info">
+                    <div class="photo">
+                        <img src="../../imgs/home/shipper/card-icon-1.svg">
+                    </div>
+                    <div class="description">
+                        <p class="name">Nome</p>
+                        <p class="orders">68 entregas</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="position">6.</div>
+                <div class="row-info">
+                    <div class="photo">
+                        <img src="../../imgs/home/shipper/card-icon-1.svg">
+                    </div>
+                    <div class="description">
+                        <p class="name">Nome</p>
+                        <p class="orders">67 entregas</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="position">7.</div>
+                <div class="row-info">
+                    <div class="photo">
+                        <img src="../../imgs/home/shipper/card-icon-1.svg">
+                    </div>
+                    <div class="description">
+                        <p class="name">Nome</p>
+                        <p class="orders">69 entregas</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="position">8.</div>
+                <div class="row-info">
+                    <div class="photo">
+                        <img src="../../imgs/home/shipper/card-icon-1.svg">
+                    </div>
+                    <div class="description">
+                        <p class="name">Nome</p>
+                        <p class="orders">68 entregas</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="position">9.</div>
+                <div class="row-info">
+                    <div class="photo">
+                        <img src="../../imgs/home/shipper/card-icon-1.svg">
+                    </div>
+                    <div class="description">
+                        <p class="name">Nome</p>
+                        <p class="orders">67 entregas</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="position">10.</div>
+                <div class="row-info">
+                    <div class="photo">
+                        <img src="../../imgs/home/shipper/card-icon-1.svg">
+                    </div>
+                    <div class="description">
+                        <p class="name">Nome</p>
+                        <p class="orders">69 entregas</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     
     <script src="../../JS/burguer.js"></script>
+    <script src="../../JS/switch-button.js"></script>
 </body>
 </html>
