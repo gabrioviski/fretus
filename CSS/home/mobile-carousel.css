@@ -21,6 +21,7 @@
 .mobile-carousel > .mobile-content {
     height: 100%;
     position: relative;
+    z-index: 500;
 }
 
 .mobile-content > .content-item {

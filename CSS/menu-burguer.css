@@ -1,13 +1,11 @@
 header > nav > .burguer {
     display: none;
-    position: relative;
-    z-index: 10000;
 }
 
 .menu-burguer {
     background-image: var(--gray-gradient);
     position: fixed;
-    z-index: 9000;
+    z-index: 10000;
     translate: 100%;
     padding: 20px;
     width: 100vw;
@@ -15,6 +13,12 @@ header > nav > .burguer {
     background-color: var(--gray);
     color: #333;
     transition: translate .5s;
+}
+
+.menu-burguer .burguer {
+    position: absolute;
+    top: 35px;
+    right: 60px;
 }
 
 .menu-burguer ul {

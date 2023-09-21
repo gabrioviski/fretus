@@ -1,6 +1,8 @@
-const burguer = document.querySelector('.burguer')
+const burguer = document.querySelectorAll('.burguer')
 const menu = document.querySelector('.menu-burguer')
 
-burguer.addEventListener('click', () => {
-    menu.classList.toggle('active')
+burguer.forEach(item => {
+    item.addEventListener('click', () => {
+        menu.classList.toggle('active')
+    })
 })
