@@ -1,3 +1,4 @@
+
 .config-container .row {
     margin-top: 15px
 }
@@ -73,4 +74,60 @@
 
 .edit-row span:hover {
     text-decoration: underline;
+}
+
+/* ! Perfil */
+
+.action-perfil{
+    text-align: center;
+    margin: 30px;
+    position: relative;
+    left: -27px;
+}
+.action__upload-btn {
+    color: lightsalmon;
+    font-family: sans-serif;
+    font-size: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all .2s ease-out;
+    position: relative;
+    display: flex; 
+    top: 250px;
+    justify-content: center; 
+}
+.action__upload-btn:hover {
+    color: chocolate;
+}
+.action__hiddenField {
+    display: none;
+}
+.profile-p{
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;  
+}
+.profile__image,
+.profile__preview {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;    
+}
+.profile__image {
+    width: 240px;
+    height: 240px;
+    position: relative;
+    top: -60PX;
+    text-align: center;
+    display: inline-block;
+    margin: auto
+}
+.profile__preview {
+    width: 50px;
+    height: 50px;
+    margin-left: 15px;
 }

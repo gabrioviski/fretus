@@ -13,15 +13,12 @@ main {
     padding: 25px;
     margin: 0 auto;
     background-color: white;
+    border-radius: 5px;
 }
 
 .profile-container > * {
     width: 100%;
     margin-bottom: 11px;
-}
-
-.profile-container > img {
-    width: 100%;
 }
 
 .row textarea {
@@ -58,4 +55,23 @@ main {
 
 .edit-row > .input-container.edit textarea + span {
     display: block;
+}
+select{
+    margin: 10px;
+    width: 140px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 20px;
+    text-align: center;
+    position: relative;
+    left: 25px;
+    font-size: 15px;
+    color:white;
+    background: darkgrey;
+    appearance: none;
+    cursor: pointer;
+    border:none;
+}
+footer{
+    padding: 25px; 
 }
