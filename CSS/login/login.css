@@ -8,6 +8,13 @@ body {
     justify-content: center;
 }
 
+:root {
+
+    --secondary: #6F7E8C;
+    --hover: #F5F5F5;
+    --text: #212121;
+}
+
 .fretus {
     position: absolute;
     top: 25px;
@@ -28,7 +35,8 @@ body {
     position: relative;
 }
 
-.container h1, .container p {
+.container h1,
+.container p {
     margin-bottom: 15px;
 }
 
@@ -66,54 +74,64 @@ p a {
     color: var(--orange);
     font-weight: bold;
     text-decoration: none;
-    transition: all .3s ease-out; ;
+    transition: all .3s ease-out;
+
 }
 
 p a:hover {
     color: chocolate;
 }
 
-
-  /* Não mexer - OBS: Alex Fazendos testes   */
-  /* Não mexer - OBS: Alex Fazendos testes   */
-  /* Não mexer - OBS: Alex Fazendos testes   */
-  /* Não mexer - OBS: Alex Fazendos testes   */
-  /* Não mexer - OBS: Alex Fazendos testes   */
-  /* Não mexer - OBS: Alex Fazendos testes   */
-
-  /* inicio */
-.alternative{
+.alternative {
     text-align: center;
     padding: 10px;
 
 }
+
 .alternative span {
     font-size: 1.1rem;
-    color: #333; 
+    color: #333;
     font-weight: 400;
     position: relative;
-    
+
 }
- .alternative span::before, main .alternative span::after {
+
+.alternative span::before,
+main .alternative span::after {
     position: absolute;
     content: '';
     height: 1px;
-    width: 115px;
+    width: 110px;
     bottom: 50%;
     right: 50px;
-    background: #434141 ; 
+    background: #434141;
 }
- .alternative span::after {
+
+.alternative span::after {
     left: 50px;
 }
-.social-media{
+
+.social-media {
+    justify-content: center;
+    text-align: center;
     display: flex;
     align-items: center;
     padding: 10px;
 }
-.social-media img{
-    width: 36px;
-    margin-left: 3rem;
+
+.social-icon {
+    margin-left: 2rem;
+    position: relative;
+    left: -14px;
 }
 
-/* fim */
+.input__wrapper {
+    position: relative;
+}
+
+.input__icon {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    top: 5px;
+}
