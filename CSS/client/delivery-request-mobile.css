@@ -1,8 +1,10 @@
+ /* POP-UP */
+
 @media (max-width: 975px), (max-height: 768px) {
-    .modal .close {
+    .popup .close {
         display: none;
     }
-    .modal.show {
+    .popup.show {
         /* display: none; */
         height: fit-content;
         background-color: transparent;
@@ -10,7 +12,7 @@
         bottom: 0;
         z-index: 99;
     }
-    .modal .modal-content {
+    .popup .popup-content {
         width: 100%;
     }
     .form.mobile {

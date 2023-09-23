@@ -1,19 +1,21 @@
 const rate = document.querySelectorAll('.rate')
-const modal = document.querySelector('.modal')
+const popup = document.querySelector('.popup')
 const close = document.querySelector('.close')
 const stars = document.querySelectorAll('.star')
 const submit = document.querySelector('button.cta')
-const error = document.querySelector('.modal span')
+const error = document.querySelector('.popup span')
 const cardBottom = document.querySelectorAll('.card .bottom')
+const rateField = document.querySelector('.rate-field')
+let main = document.querySelector('main')
 
 rate.forEach((item, i) => {
     item.addEventListener('click', () => {
-        modal.classList.add('show')
-        modal.dataset.shipper = i
+        popup.classList.add('show')
+        popup.dataset.shipper = i
     })
 })
 
-close.addEventListener('click', closeModal)
+close.addEventListener('click', closePopup)
 
 stars.forEach((star, i) => {
     star.addEventListener('click', () => {
@@ -32,19 +34,21 @@ submit.addEventListener('click', () => {
 
     if (hasChecked) {
         error.classList.remove('error')
-        rate[modal.dataset.shipper].remove()
+        rate[popup.dataset.shipper].remove()
         let msg = document.createElement('span')
         msg.innerText = 'Avaliação Feita'
-        cardBottom[modal.dataset.shipper].appendChild(msg)
-        closeModal()
+        cardBottom[popup.dataset.shipper].appendChild(msg)
+        closePopup()
+        showModal()
     } else {
         error.classList.add('error')
     }
 })
 
-function closeModal() {
-    modal.classList.remove('show')
+function closePopup() {
+    popup.classList.remove('show')
     removeClass(stars, 'checked')
+    rateField.value = ''
 }
 
 function removeClass(el, className) {
@@ -59,4 +63,15 @@ function addClass(el, i) {
     for (let j = el.length - 1; j >= i; j--) {
         el[j].classList.add('checked')
     }
+}
+
+function showModal() {
+    if (main.children.length > 2) {
+        main.children[2].remove()
+    }
+    let modal = document.createElement('div')
+    modal.innerHTML = `<p>Avaliação enviada com sucesso!</p>
+    <div class="loading"></div>`
+    modal.classList.add('modal', 'active')
+    main.appendChild(modal)
 }
