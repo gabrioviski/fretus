@@ -50,7 +50,8 @@ input {
 }
 
 input[type="email"],
-input[type="password"] {
+input[type="password"],
+input[type="text"] {
     margin-bottom: 15px;
 }
 
