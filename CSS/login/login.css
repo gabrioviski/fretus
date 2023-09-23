@@ -58,6 +58,7 @@ input[type="submit"]:hover {
 }
 
 .container p {
+    font-size: 15px;
     color: #333;
 }
 
@@ -71,3 +72,48 @@ p a {
 p a:hover {
     color: chocolate;
 }
+
+
+  /* Não mexer - OBS: Alex Fazendos testes   */
+  /* Não mexer - OBS: Alex Fazendos testes   */
+  /* Não mexer - OBS: Alex Fazendos testes   */
+  /* Não mexer - OBS: Alex Fazendos testes   */
+  /* Não mexer - OBS: Alex Fazendos testes   */
+  /* Não mexer - OBS: Alex Fazendos testes   */
+
+  /* inicio */
+.alternative{
+    text-align: center;
+    padding: 10px;
+
+}
+.alternative span {
+    font-size: 1.1rem;
+    color: #333; 
+    font-weight: 400;
+    position: relative;
+    
+}
+ .alternative span::before, main .alternative span::after {
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 115px;
+    bottom: 50%;
+    right: 50px;
+    background: #434141 ; 
+}
+ .alternative span::after {
+    left: 50px;
+}
+.social-media{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.social-media img{
+    width: 36px;
+    margin-left: 3rem;
+}
+
+/* fim */
