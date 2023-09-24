@@ -114,3 +114,51 @@ form p {
 form p a {
     color: var(--orange);
 }
+.alternative {
+    text-align: center;
+    padding: 10px;
+
+}
+
+.alternative span {
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: 400;
+    position: relative;
+
+}
+
+.alternative span::before,
+main .alternative span::after {
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 110px;
+    bottom: 50%;
+    right: 50px;
+    background: #434141;
+}
+
+.alternative span::after {
+    left: 50px;
+}
+.social-media {
+    justify-content: space-evenly;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 10px; 
+
+}
+
+
+.input__wrapper {
+    position: relative;
+}
+
+.input__icon {
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+    top: 30px;
+}

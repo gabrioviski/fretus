@@ -82,6 +82,8 @@ p a:hover {
     color: chocolate;
 }
 
+ /* começa aqui */
+ 
 .alternative {
     text-align: center;
     padding: 10px;
@@ -116,7 +118,7 @@ main .alternative span::after {
     text-align: center;
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: 10px; 
 }
 
 .social-icon {
