@@ -131,3 +131,24 @@
     height: 50px;
     margin-left: 15px;
 }
+
+.containerm-p {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+    
+}
+
+p a {
+    color: var(--blue-2);
+    font-weight: bold;
+    text-decoration: none;
+    transition: all .3s ease-out;
+
+
+}
+
+p a:hover {
+    color: var(--blue)
+}

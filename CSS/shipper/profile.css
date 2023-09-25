@@ -10,10 +10,10 @@ main {
 
 .profile-container {
     width: min(750px, 90%);
-    padding: 25px;
+    padding: 40px;
     margin: 0 auto;
     background-color: white;
-    border-radius: 5px;
+    border-radius: 20px;
 }
 
 .profile-container > * {
