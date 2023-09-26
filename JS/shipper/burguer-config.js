@@ -1,4 +1,4 @@
-const burger = document.querySelector('main .burguer')
+const burger = document.querySelector('main .sidebar-burguer')
 const container = document.querySelector('main')
 const sidebar = document.querySelector('.sidebar')
 

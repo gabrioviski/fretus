@@ -80,7 +80,7 @@ main {
     main > .chat {
         position: relative;
     }
-    .chat .burguer {
+    .chat .sidebar-burguer {
         display: block;
         width: 36px;
         height: 36px;
@@ -92,7 +92,7 @@ main {
         padding: 5px;
         border-radius: 100%;
     }
-    .burguer > img {
+    .sidebar-burguer > img {
         width: 100%;
     }
 }

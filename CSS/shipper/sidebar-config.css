@@ -52,7 +52,7 @@ main > .config {
     margin: 0 auto;
 }
 
-.config-container > .burguer, .chat .burguer {
+.config-container > .sidebar-burguer, .chat .sidebar-burguer {
     display: none;
 }
 
@@ -78,7 +78,7 @@ main > .config {
     main > .config {
         padding: 25px 0;
     }
-    .config-container > .burguer, .chat .burguer {
+    .config-container > .sidebar-burguer, .chat .sidebar-burguer {
         display: block;
         width: 36px;
         height: 36px;
@@ -89,7 +89,7 @@ main > .config {
         padding: 5px;
         border-radius: 100%;
     }
-    .burguer > img {
+    .sidebar-burguer > img {
         width: 100%;
     }
 }
