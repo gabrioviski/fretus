@@ -32,6 +32,10 @@ main ol > li {
     margin-bottom: 30px;
 }
 
+main ol > li > ul {
+    list-style: none;
+} 
+
 main ol ul > li {
     font-family: var(--font-2);
     font-weight: 400;
