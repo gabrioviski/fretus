@@ -12,6 +12,7 @@ header {
 }
 
 header.resized {
+    position: fixed;
     height: 75px;
     background-color: rgba(0, 0, 0, 0.6);
 }
