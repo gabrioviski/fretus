@@ -1,19 +1,16 @@
-/* Solução estranha, pra um erro também estranho... */
-const chatContent = document.querySelector('.msgs-content');
+const accept = document.querySelectorAll('.msg.payment .yes')
+const deny = document.querySelectorAll('.msg.payment .no')
 
-chatContent.addEventListener('click', hideBtns)
+accept.forEach((item, i) => {
+    item.addEventListener('click', () => {
+        deny[i].remove()
+        item.innerText = 'Proposta Aceita!'
+    })
+})
 
-function hideBtns(e) {
-    let target = e.target
-    if (target.classList.contains('yes')) {
-        const deny = target.parentElement.querySelector('.no')
-        deny.remove()
-        target.innerText = 'Proposta Aceita!'
-        chatContent.removeEventListener('click', hideBtns)
-    } else if (target.classList.contains('no')) {
-        const accept = target.parentElement.querySelector('.yes')
-        accept.remove()
-        target.innerText = 'Proposta Negada!'
-        chatContent.removeEventListener('click', hideBtns)
-    }
-}
+deny.forEach((item, i) => {
+    item.addEventListener('click', () => {
+        accept[i].remove()
+        item.innerText = 'Proposta Negada!'
+    })
+})
