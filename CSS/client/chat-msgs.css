@@ -11,6 +11,8 @@
 .msgs-container > .msgs-content {
     padding: 25px;
     height: fit-content;
+    display: flex;
+    flex-direction: column;
 }
 
 .msgs-container .row {
@@ -23,6 +25,10 @@
 
 .msgs-container .row.my-msg {
     justify-content: flex-end;
+}
+
+.msgs-container .row:has(.typing) {
+    order: 1;
 }
 
 .row > .user-icon {
