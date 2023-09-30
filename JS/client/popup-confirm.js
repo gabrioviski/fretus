@@ -15,6 +15,8 @@ submit.addEventListener('click', e => {
             formContainer.classList.add('mobile')
             mapContainer.classList.add('mobile')
             backForm.classList.add('show')
+            map.resize()
+            setZoomRoute(route)
         }
     })
     

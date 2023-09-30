@@ -1,6 +1,7 @@
 const inputs = document.querySelectorAll('.address')
 const results = document.querySelectorAll('.suggestions-options')
 const accessToken = 'pk.eyJ1IjoiZ2FicmllbGNhcnZhbGgwIiwiYSI6ImNsa3JvOW55eDJscXgzcWtlY2F5d21kZW4ifQ.Xp_C-dMh7SEjIBFKd8njCA'
+let route
 
 mapboxgl.accessToken = accessToken
 const map = new mapboxgl.Map({
@@ -10,6 +11,10 @@ const map = new mapboxgl.Map({
     zoom: 12,
     minZoom: 5,
     language: 'pt'
+})
+
+window.addEventListener('resize', () => {
+    setZoomRoute(route)
 })
 
 map.addControl(new mapboxgl.NavigationControl());
@@ -89,7 +94,7 @@ async function getRoute(start, end) {
         const url = `https://api.mapbox.com/directions/v5/mapbox/cycling/${startCoords.lng},${startCoords.lat};${endCoords.lng},${endCoords.lat}?steps=false&overview=full&geometries=geojson&access_token=${mapboxgl.accessToken}`
         const res = await fetch(url)
         const data = await res.json()
-        const route = data.routes[0]
+        route = data.routes[0]
         const minutes = Math.floor(route.duration / 60)
         const meters = route.distance
         const geojson = {
@@ -124,7 +129,9 @@ async function getRoute(start, end) {
             });
         }
 
-        const bounds = new mapboxgl.LngLatBounds(
+        setZoomRoute(route)
+
+        /* const bounds = new mapboxgl.LngLatBounds(
             route.geometry.coordinates[0],
             route.geometry.coordinates[0]
         )
@@ -133,8 +140,21 @@ async function getRoute(start, end) {
             bounds.extend(coord)
         })
 
-        map.fitBounds(bounds, { padding: 50 })
+        map.fitBounds(bounds, { padding: 50 }) */
     }
+}
+
+const setZoomRoute = (route) => {
+    const bounds = new mapboxgl.LngLatBounds(
+        route.geometry.coordinates[0],
+        route.geometry.coordinates[0]
+    )
+    
+    route.geometry.coordinates.forEach(coord => {
+        bounds.extend(coord)
+    })
+
+    map.fitBounds(bounds, { padding: 50 })
 }
 
 inputs.forEach((input, i) => {

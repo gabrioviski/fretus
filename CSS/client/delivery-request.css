@@ -96,18 +96,18 @@ main .return-form {
 @media (max-width: 975px), (max-height: 768px) {
     main {
         grid-template-columns: 100%;
+        grid-template-rows: auto max-content;
     }
     .form {
         padding: 20px 0;
         /* justify-content: center; */
-        position: relative;
+        position: absolute;
         width: 100%;
         transition: all .3s;
         left: 0;
         z-index: 100;
     }
     .map {
-        position: absolute;
         z-index: 99;
     }
     .form > form {

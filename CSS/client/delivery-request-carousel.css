@@ -19,7 +19,7 @@
 }
 
 .content > input[type="radio"] {
-    /* visibility: hidden; */
+    opacity: 0;
     position: absolute;
     z-index: -100;
     left: 50%;
