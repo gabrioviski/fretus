@@ -16,6 +16,10 @@
     }
     .form.mobile {
         left: -100%;
+        /* opacity: 0; */
+        max-height: 100%;
+        min-height: 100%;
+        overflow: hidden;
     }
     .map.mobile {
         width: 100%;

@@ -14,7 +14,9 @@ const map = new mapboxgl.Map({
 })
 
 window.addEventListener('resize', () => {
-    setZoomRoute(route)
+    if (route) {
+        setZoomRoute(route)
+    }
 })
 
 map.addControl(new mapboxgl.NavigationControl());
@@ -59,6 +61,7 @@ const dataResult = async (query) => {
 
 inputs.forEach((input, i) => {
     input.addEventListener('input', async () => {
+        input.setCustomValidity('Endereço não está valido!')
         input.classList.add('border')
         const dataRes = await dataResult(input.value)
         results[i].innerHTML = ''
@@ -66,6 +69,7 @@ inputs.forEach((input, i) => {
             const suggestionItem = document.createElement('li')
             suggestionItem.innerText = suggestion.place_name
             suggestionItem.addEventListener('click', (e) => {
+                input.setCustomValidity('')
                 const coords = suggestion.geometry.coordinates
                 input.value = e.target.innerText
                 if (input.classList.contains('start')) {
@@ -144,7 +148,7 @@ async function getRoute(start, end) {
     }
 }
 
-const setZoomRoute = (route) => {
+const setZoomRoute = route => {
     const bounds = new mapboxgl.LngLatBounds(
         route.geometry.coordinates[0],
         route.geometry.coordinates[0]
