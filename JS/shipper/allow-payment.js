@@ -1,12 +1,19 @@
-const accept = document.querySelector('.msg.payment .yes')
-const deny = document.querySelector('.msg.payment .no')
+/* Solução estranha, pra um erro também estranho... */
+const chatContent = document.querySelector('.msgs-content');
 
-accept.addEventListener('click', () => {
-    deny.remove()
-    accept.innerText = 'Proposta Aceita!'
-})
+chatContent.addEventListener('click', hideBtns)
 
-deny.addEventListener('click', () => {
-    accept.remove()
-    deny.innerText = 'Proposta Negada!'
-})
+function hideBtns(e) {
+    let target = e.target
+    if (target.classList.contains('yes')) {
+        const deny = target.parentElement.querySelector('.no')
+        deny.remove()
+        target.innerText = 'Proposta Aceita!'
+        chatContent.removeEventListener('click', hideBtns)
+    } else if (target.classList.contains('no')) {
+        const accept = target.parentElement.querySelector('.yes')
+        accept.remove()
+        target.innerText = 'Proposta Negada!'
+        chatContent.removeEventListener('click', hideBtns)
+    }
+}
