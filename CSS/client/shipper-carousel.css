@@ -72,8 +72,9 @@ main {
     color: #333;
 }
 
-.products a {
-    display: block;
+.products .actions {
+    display: flex;
+    gap: 7px;
     width: fit-content;
     margin-top: 50px;
     margin-left: auto;
@@ -84,6 +85,7 @@ main {
     height: 30px;
     display: block;
     opacity: .60;
+    cursor: pointer;
 }
 
 .products img:hover {
@@ -93,5 +95,8 @@ main {
 @media (max-width: 310px) {
     .content > .products {
         width: 200px;
+    }
+    .products .actions {
+        margin-top: 25px;
     }
 }

@@ -18,22 +18,21 @@ submit.addEventListener('click', e => {
         backForm.classList.add('show')
         map.resize()
         setZoomRoute(route)
-        setPrice(route.distance)
+        setPrice(route.distance / 1000)
     }
 })
 
 const setPrice = distance => {
-    const typeVehicle = document.querySelector('input[name="vehicles"]:checked').id
+    const typeVehicle = document.querySelector('input[name="vehicles"]:checked').id // pega o tipo do veiculo
     const f = new Intl.NumberFormat('pt-br', {
         currency: 'BRL',
         style: 'currency'
-    })
+    }) // classe que transforma qualquer valor em reais
 
     /* fazer os calculos aqui */
 
-    let price = f.format(5)
-    priceContainer.textContent = price
-    console.log(typeVehicle, price)
+    let price = f.format(5) // linha que transforma qualquer valor em reais
+    priceContainer.textContent = price // coloca o preco no popup
 }
     
 backForm.addEventListener('click', () => {
