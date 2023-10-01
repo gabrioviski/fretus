@@ -14,9 +14,9 @@
     <link rel="stylesheet" href="../../CSS/client/delivery-request.css">
     <link rel="stylesheet" href="../../CSS/client/delivery-request-suggestions.css">
     <link rel="stylesheet" href="../../CSS/client/delivery-request-carousel.css">
-    <!-- <link rel="stylesheet" href="../../CSS/client/pay-modal.css"> -->
     <link rel="stylesheet" href="../../CSS/client/confirm-popup.css">
     <link rel="stylesheet" href="../../CSS/client/delivery-request-mobile.css">
+    <link rel="stylesheet" href="../../CSS/client/price-indicator.css">
 </head>
 <body>
 
@@ -86,8 +86,8 @@
                     <h1>Veículos</h1>
                     <div class="vehicles-carousel">
                         <div class="content">
-                            <input type="radio" name="vehicles" id="vehicles1" required>
-                            <label for="vehicles1">
+                            <input type="radio" name="vehicles" id="bike" required>
+                            <label for="bike">
                                 <div class="card">
                                     <div class="icon">
                                         <img src="https://files.axshare.com/gsc/NW3CCE/d7/2e/63/d72e6396c33043df9eca85714bda96d5/images/area_do_cliente__desktop_/p0.svg?pageId=a1cd8bfa-51f9-4251-8edd-b9adceed65b6" alt="">
@@ -98,8 +98,8 @@
                                     </div>
                                 </div>
                             </label>
-                            <input type="radio" name="vehicles" id="vehicles2">
-                            <label for="vehicles2">
+                            <input type="radio" name="vehicles" id="car">
+                            <label for="car">
                                 <div class="card">
                                     <div class="icon">
                                         <img src="https://files.axshare.com/gsc/NW3CCE/d7/2e/63/d72e6396c33043df9eca85714bda96d5/images/area_do_cliente__desktop_/p1.svg?pageId=a1cd8bfa-51f9-4251-8edd-b9adceed65b6" alt="">
@@ -110,8 +110,8 @@
                                     </div>
                                 </div>
                             </label>
-                            <input type="radio" name="vehicles" id="vehicles3">
-                            <label for="vehicles3">
+                            <input type="radio" name="vehicles" id="van">
+                            <label for="van">
                                 <div class="card">
                                     <div class="icon">
                                         <img src="https://files.axshare.com/gsc/NW3CCE/d7/2e/63/d72e6396c33043df9eca85714bda96d5/images/area_do_cliente__desktop_/p2.svg?pageId=a1cd8bfa-51f9-4251-8edd-b9adceed65b6" alt="">
@@ -122,8 +122,8 @@
                                     </div>
                                 </div>
                             </label>
-                            <input type="radio" name="vehicles" id="vehicles4">
-                            <label for="vehicles4">
+                            <input type="radio" name="vehicles" id="truck">
+                            <label for="truck">
                                 <div class="card">
                                     <div class="icon">
                                         <img src="https://files.axshare.com/gsc/NW3CCE/d7/2e/63/d72e6396c33043df9eca85714bda96d5/images/area_do_cliente__desktop_/p3.svg?pageId=a1cd8bfa-51f9-4251-8edd-b9adceed65b6" alt="">
@@ -158,7 +158,8 @@
                 <div class="close">
                     <img src="../../imgs/client/close-icon.svg" alt="">
                 </div>
-                <h1>Preço Sugerido: R$<span>25,00</span></h1>
+                <h1>Preço Sugerido: <span class="price"></span><a href="#" class="price-indicator">?</a>
+                </h1>
                 <p>Você pode escolher negociar esse preço com o entregador. Essa escolha aparecerá para o entregador, que poderá ou não negociar com você. A negociação será feita pelo chat, e não nos responsabilizamos por nada disso.</p>
                 <div class="confirm">
                     <input type="checkbox" name="confirm-negotiation" id="confirm-negotiation">

@@ -38,6 +38,7 @@ start.on('dragend', async () => {
     getRoute(start, end)
     const newAddress = await dataResult(newCoords)
     inputs[0].value = `${newAddress.features[0].place_name}`
+    inputs[0].setCustomValidity('')
 })
 
 end.on('dragend', async () => {
@@ -46,6 +47,7 @@ end.on('dragend', async () => {
     getRoute(start, end)
     const newAddress = await dataResult(newCoords)
     inputs[1].value = `${newAddress.features[0].place_name}`
+    inputs[1].setCustomValidity('')
 })
 
 const dataResult = async (query) => {
@@ -100,7 +102,7 @@ async function getRoute(start, end) {
         const data = await res.json()
         route = data.routes[0]
         const minutes = Math.floor(route.duration / 60)
-        const meters = route.distance
+        // const meters = route.distance
         const geojson = {
             type: 'Feature',
             properties: {},
@@ -134,17 +136,6 @@ async function getRoute(start, end) {
         }
 
         setZoomRoute(route)
-
-        /* const bounds = new mapboxgl.LngLatBounds(
-            route.geometry.coordinates[0],
-            route.geometry.coordinates[0]
-        )
-        
-        route.geometry.coordinates.forEach(coord => {
-            bounds.extend(coord)
-        })
-
-        map.fitBounds(bounds, { padding: 50 }) */
     }
 }
 
