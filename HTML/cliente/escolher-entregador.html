@@ -438,7 +438,7 @@
                 </div>
             </div>
         </div>
-        <div class="popup">
+        <div class="popup show">
             <div class="popup-content">
                 <div class="close">
                     <img src="../../imgs/client/close-icon.svg" alt="">
@@ -455,12 +455,15 @@
                             </div>
                         </div>
                         <div class="card-field field">
-                            <input type="radio" name="pay-method" id="card">
+                            <input checked type="radio" name="pay-method" id="card">
                             <label for="card">Cartão</label>
                             <div class="pay-field">
-                                <input class="input-field" placeholder="Número do Cartão" type="text">
-                                <input class="input-field" placeholder="Validade">
-                                <input class="input-field" placeholder="CVV" type="number">
+                                <div class="card-input">
+                                    <input class="input-field" placeholder="Número do Cartão" type="text" id="card-number">
+                                    <img src="">
+                                </div>
+                                <input class="input-field" placeholder="Validade" type="text" id="card-validity">
+                                <input class="input-field" placeholder="CVV" type="text" id="card-cvv">
                                 <input class="input-field" placeholder="Nome" type="text">
                             </div>
                         </div>
@@ -476,6 +479,7 @@
 
     <script src="../../JS/burguer.js"></script>
     <script src="../../JS/client/shipper-carousel.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.6.0/cleave.min.js"></script>
     <script src="../../JS/client/pay-popup.js"></script>
 </body>
 </html>

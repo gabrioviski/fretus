@@ -84,6 +84,18 @@
     gap: 10px;
 }
 
+.pay-field > .card-input {
+    position: relative;
+    overflow: hidden;
+}
+
+.card-input img {
+    height: 100%;
+    position: absolute;
+    right: 0;
+    opacity: .5;
+}
+
 .field > input ~ .pay-field {
     max-height: 0px;
     overflow: hidden;
@@ -95,7 +107,6 @@
     max-height: 100px;
     overflow: hidden;
 }
-
 
 .popup.show textarea {
     resize: none;
@@ -111,4 +122,14 @@
 .price > span {
     font-family: var(--font-2);
     font-weight: 400;
+}
+
+@media (max-width: 650px) {
+    .card-field .pay-field {
+        grid-template-columns: 1fr;
+        
+    }
+    .field > input:checked ~ .pay-field {
+        max-height: 400px;
+    }
 }
