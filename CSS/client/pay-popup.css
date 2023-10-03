@@ -87,13 +87,31 @@
 .pay-field > .card-input {
     position: relative;
     overflow: hidden;
+    display: grid;
+    grid-template-columns: auto 15%;
+}
+
+.popup.show .card-input > input.input-field {
+    border-right: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.card-input input:focus + img {
+    border-color: #3333336c;
 }
 
 .card-input img {
+    width: 15%;
     height: 100%;
     position: absolute;
     right: 0;
-    opacity: .5;
+    padding-right: 8px;
+    border: solid 1px rgba(51, 51, 51, 0.18);
+    border-left: none;
+    border-radius: 5px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
 }
 
 .field > input ~ .pay-field {

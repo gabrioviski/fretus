@@ -17,13 +17,7 @@ close.addEventListener('click', () => {
 
 new Cleave('#card-number', {
     creditCard: true,
-    onCreditCardTypeChanged: (type) => {
-        if (type != 'unknown') {
-            img.setAttribute('src', `../../imgs/client/card-icons/${type}.svg`)
-        } else {
-            img.setAttribute('src', '')
-        }
-    }  
+    onCreditCardTypeChanged: (type) => img.setAttribute('src', `../../imgs/client/card-icons/${type}.svg`)
 })
 
 new Cleave('#card-validity', {
