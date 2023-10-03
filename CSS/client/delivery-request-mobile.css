@@ -1,6 +1,6 @@
  /* POP-UP */
 
-@media (max-width: 975px), (max-height: 768px) {
+@media (max-width: 975px), (max-height: 700px) {
     .popup .close {
         display: none;
     }
