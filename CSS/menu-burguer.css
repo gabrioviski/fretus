@@ -3,6 +3,7 @@ header > nav > .burguer {
 }
 
 .menu-burguer {
+    overflow-y: scroll;
     background-image: var(--gray-gradient);
     position: fixed;
     z-index: 10000;
