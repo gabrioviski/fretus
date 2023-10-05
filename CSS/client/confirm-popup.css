@@ -15,7 +15,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    position: fixed;
     top: 0;
     z-index: 100000;
 }
@@ -24,11 +24,11 @@ body {
     background-color: white;
     color: #333;
     width: min(90%, 705px);
+    max-height: 90%;
     padding: 25px;
     border-radius: 7px;
     display: flex;
     flex-direction: column;
-    row-gap: 15px;
     position: relative;
 }
 
@@ -49,6 +49,15 @@ body {
 
 .popup .close img {
     filter: invert();
+}
+
+.popup .popup-wrapper {
+    min-height: fit-content;
+    max-height: 90%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
 }
 
 .popup h1 {
