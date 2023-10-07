@@ -1,18 +1,44 @@
-const pay = document.querySelectorAll('.pay')
-const popup = document.querySelector('.popup')
+const payCall = document.querySelectorAll('.pay-call')
+const payPopup = document.querySelector('.popup')
 const close = document.querySelector('.popup .close')
 const inputField = document.querySelectorAll('.input-field:not([readonly])')
 const img = document.querySelector('.card-input img')
+const payRadio = document.querySelectorAll('.field input[name="pay-method"]')
+const cardInput = document.querySelectorAll('.card-info')
+let min = [14, 5, 3]
 
-pay.forEach(item => {
+payCall.forEach(item => {
     item.addEventListener('click', () => {
-        popup.classList.add('show')
+        payPopup.classList.add('show')
     })
 })
 
 close.addEventListener('click', () => {
     inputField.forEach(input => input.value = '')
-    popup.classList.remove('show')
+    payPopup.classList.remove('show')
+})
+
+payRadio.forEach(item => {
+    item.addEventListener('change', () => {
+        if (item.id == 'card') {
+            cardInput.forEach(item => item.setAttribute('required', 'true'))
+        } else {
+            cardInput.forEach(item => item.removeAttribute('required'))
+        }
+    })
+})
+
+cardInput.forEach((item, i) => {
+    item.addEventListener('input', () => {
+        let len = item.value.length
+        console.log(item.id)
+        if (item.id != 'card-name') {
+            item.setCustomValidity('Valor inválido!')
+        }
+        if (len >= min[i]) {
+            item.setCustomValidity('')
+        }
+    })
 })
 
 new Cleave('#card-number', {

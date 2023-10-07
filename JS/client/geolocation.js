@@ -63,7 +63,7 @@ const dataResult = async (query) => {
 
 inputs.forEach((input, i) => {
     input.addEventListener('input', async () => {
-        input.setCustomValidity('Endereço não está valido!')
+        input.setCustomValidity('Endereço não válido!')
         input.classList.add('border')
         const dataRes = await dataResult(input.value)
         results[i].innerHTML = ''

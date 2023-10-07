@@ -9,6 +9,10 @@ pay.addEventListener('click', () => {
 })
 
 yes.addEventListener('click', () => {
+    const f = new Intl.NumberFormat('pt-br', {
+        currency: 'BRL',
+        style: 'currency'
+    })
     let price = input.value
     if (price != '') {
         payModal.close()
@@ -18,7 +22,7 @@ yes.addEventListener('click', () => {
                                         </div>
                                         <div class="msg payment">
                                             <h1>Você enviou uma proposta!</h1>
-                                            <span>R$${price}</span>
+                                            <span>${f.format(price)}</span>
                                             <div class="btn-container">
                                                 <button class="no" onclick="console.log(this.parentElement.parentElement.parentElement.remove())">Cancelar proposta</button>
                                             </div>

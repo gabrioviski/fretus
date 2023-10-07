@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fretus - Chat</title>
     <link rel="stylesheet" href="../../CSS/index.css">
+    <link rel="stylesheet" href="../../CSS/cta.css">
     <link rel="stylesheet" href="../../CSS/menu-burguer.css">
     <link rel="stylesheet" href="../../CSS/header-client-shipper.css">
     <link rel="stylesheet" href="../../CSS/shipper/sidebar-config.css">
@@ -16,6 +17,8 @@
     <link rel="stylesheet" href="../../CSS/client/chat-inputs.css">
     <link rel="stylesheet" href="../../CSS/client/clip-popup.css">
     <link rel="stylesheet" href="../../CSS/client/pay-modal.css">
+    <link rel="stylesheet" href="../../CSS/client/confirm-popup.css">
+    <link rel="stylesheet" href="../../CSS/client/pay-popup.css">
 </head>
 <body>
 
@@ -269,7 +272,7 @@
                                     <h1>Entregador enviou uma proposta para você</h1>
                                     <span>R$50,00</span>
                                     <div class="btn-container">
-                                        <button class="yes">Aceitar</button>
+                                        <button class="yes pay-call">Aceitar</button>
                                         <button class="no">Negar</button>
                                     </div>
                                 </div>
@@ -339,6 +342,43 @@
             </div>
         </div>
     </dialog>
+    <div class="popup ">
+        <div class="popup-content">
+            <div class="close">
+                <img src="../../imgs/client/close-icon.svg" alt="">
+            </div>
+            <form class="popup-wrapper" action="">
+                <h1>Pagamento</h1>
+                <div class="payment-method">
+                    <div class="pix-field field">
+                        <input type="radio" name="pay-method" id="pix">
+                        <label for="pix">Pix</label>
+                        <div class="pay-field">
+                            <input class="input-field" type="text" readonly value="123e4567-e12b-12d1">
+                            <button type="button">Copiar</button>
+                        </div>
+                    </div>
+                    <div class="card-field field">
+                        <input type="radio" name="pay-method" id="card">
+                        <label for="card">Cartão</label>
+                        <div class="pay-field">
+                            <div class="card-input">
+                                <input class="input-field card-info" minlength="16" placeholder="Número do Cartão" type="text" id="card-number">
+                                <img src="../../imgs/client/card-icons/unknown.svg">
+                            </div>
+                            <input class="input-field card-info" minlength="5" placeholder="Validade" type="text" id="card-validity">
+                            <input class="input-field card-info" placeholder="CVV" type="text" id="card-cvv">
+                            <input class="input-field card-info" placeholder="Nome" type="text" id="card-name">
+                        </div>
+                    </div>
+                </div>
+                <input type="text" class="input-field" placeholder="Aplique aqui algum cupom de desconto">
+                <textarea class="input-field" placeholder="Deixe uma observação ao motorista (opcional)"></textarea>
+                <p class="price">Valor Total: <span>R$50,00</span></p>
+                <button type="submit" class="cta">Pagar</button>
+            </form>
+        </div>
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.3.4/purify.min.js" integrity="sha512-jGh38w63cHRzfBHtyKgEMMkJswUFXDA3YXrDjaE8ptzxV5DDkLDUDjtGUy5tmDkOXHWsItKfFjocaEtj1WuVnQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="../../JS/burguer.js"></script>
@@ -348,5 +388,7 @@
     <script src="../../JS/shipper/clip-popup.js"></script>
     <script src="../../JS/shipper/payment.js"></script>
     <script src="../../JS/shipper/allow-payment.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.6.0/cleave.min.js"></script>
+    <script src="../../JS/client/pay-popup.js"></script>
 </body>
 </html>
