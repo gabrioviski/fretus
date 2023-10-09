@@ -166,7 +166,7 @@ function removeSuggestions(input, i) {
 }
 
 
-var distance = (route.distance/1000)
+var distancia = (route.distance/1000)
 const tipoVeiculo = document.querySelector('input[name="vehicles"]:checked').id
 
 function calcularPreco(distancia, tipoVeiculo) {
@@ -188,11 +188,11 @@ function calcularPreco(distancia, tipoVeiculo) {
     
     return precoTotal;
   }
-  if(route){
- calcularPreco()
-  }
+ 
   
-  const precoDaRota = calcularPreco(distanciaDaRotaEmKm, tipoDeVeiculo);
+  var precoDaRota = calcularPreco(distancia, tipoVeiculo);
+
+
   //console.log(`O preço da rota é de R$${precoDaRota.toFixed(2)}`);
 
   function valorMinimo(){
