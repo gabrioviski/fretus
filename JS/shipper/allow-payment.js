@@ -4,7 +4,7 @@ const deny = document.querySelectorAll('.msg.payment .no')
 accept.forEach((item, i) => {
     item.addEventListener('click', () => {
         deny[i].remove()
-        item.innerText = 'Proposta Aceita!'
+        item.innerText = 'Clique aqui para pagar'
     })
 })
 

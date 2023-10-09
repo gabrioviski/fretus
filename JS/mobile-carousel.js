@@ -1,14 +1,28 @@
-const step = Array.from(document.querySelectorAll('.mobile-controls > label'))
+const step = document.querySelectorAll('.mobile-controls > input[type="radio"]')
 const imgs = document.querySelectorAll('.mobile-content > .content-item')
-let mobileIndex
+let mobileIndex = 0
 
-step.forEach(item => {
+const changeCarouselState = (i) => {
+    removeClass()
+    step[i].checked = true
+    imgs[i].classList.add('show')
+}
+
+step.forEach((item, i) => {
     item.addEventListener('click', () => {
-        mobileIndex = step.indexOf(item)
-        removeClass()
-        imgs[mobileIndex].classList.add('show')
+        mobileIndex = i
+        changeCarouselState(mobileIndex)
     })
 })
+
+setInterval(() => {
+    if (mobileIndex >= 2) {
+        mobileIndex = 0
+    } else {
+        mobileIndex++
+    }
+    changeCarouselState(mobileIndex)
+}, 3500)
 
 function removeClass() {
     imgs.forEach(item => {

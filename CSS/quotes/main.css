@@ -9,7 +9,7 @@ body {
 
 main {
     width: min(970px, 90%);
-    margin: 45px auto 15px;
+    margin: 75px auto 15px;
     font-size: 20px;
     color: #333;
     line-height: 30.5px;
@@ -46,9 +46,9 @@ main li a {
 }
 
 .contact {
-    background-color: white;
+    /* background-color: rgba(255, 255, 255, 0.686); */
     color: #333;
-    height: 450px;
+    height: 300px;
     padding: 0 10px;
     display: flex;
     flex-direction: column;
