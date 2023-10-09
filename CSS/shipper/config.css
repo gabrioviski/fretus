@@ -147,7 +147,7 @@
 }
 
 p a {
-    color: var(--blue-2);
+    color: var(--orange);
     font-weight: bold;
     text-decoration: none;
     transition: all .3s ease-out;
@@ -155,7 +155,7 @@ p a {
 }
 
 p a:hover {
-    color: var(--blue)
+    color: chocolate;
 }
 
 .Seu-Perfil{
