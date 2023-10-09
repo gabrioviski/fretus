@@ -166,21 +166,23 @@ function removeSuggestions(input, i) {
 }
 
 
-var distancia = (route.distance/1000)
-const tipoVeiculo = document.querySelector('input[name="vehicles"]:checked').id
+//PREÇOS
 
-function calcularPreco(distancia, tipoVeiculo) {
+var distancia = (route.distance/1000)
+var tipoVeiculo = document.querySelector('input[name="vehicles"]:checked').id
+var typeVehicle = document.querySelector('input[name="vehicles"]:checked').id
+function calcularPreco(distancia, typeVelhicle) {
     let precoPorKm;
   
-    // Determinar o preço por km com base no tipo de veículo
-    if (tipoVeiculo === 'bike') {
+  
+    if (typeVelhicle=== 'bike') {
       precoPorKm = 2;
-    } else if (tipoVeiculo === 'car' || tipoVeiculo === 'van') {
+    } else if (typeVelhicle=== 'car' || typeVelhicle === 'van') {
       precoPorKm = 2.5;
-    } else if (tipoVeiculo === 'truck') {
+    } else if (typeVelhicle === 'truck') {
       precoPorKm = 3;
     } else {
-      precoPorKm = 2; // Preço padrão para outros veículos
+      precoPorKm = 2; 
     }
   
     // Calcular o preço total
@@ -190,9 +192,7 @@ function calcularPreco(distancia, tipoVeiculo) {
   }
  
   
-  var precoDaRota = calcularPreco(distancia, tipoVeiculo);
-
-
+  //var precoDaRota = calcularPreco(distancia, typeVelhicle);
   //console.log(`O preço da rota é de R$${precoDaRota.toFixed(2)}`);
 
   function valorMinimo(){
