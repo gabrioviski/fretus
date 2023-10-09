@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../../imgs/login-cadastro/bg-login.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.form-contain {
+    max-width: 600px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+input,
+textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+textarea {
+    height: 180px;
+    display: block;
+    padding-top: 10px;
+    padding-left: 15px;
+  }
+
+button {
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    background: #f28c00;
+    color: white;
+    cursor: pointer;
+    height: 40px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button:active {
+    opacity: 0.6;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+@media (max-width: 320px) {
+    .form-contain {
+        padding: 10px;
+    }
+}
