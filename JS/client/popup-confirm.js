@@ -31,7 +31,7 @@ const setPrice = distance => {
 
     /* fazer os calculos aqui */
 
-    let price = f.format(25) // linha que transforma qualquer valor em reais
+    let price = f.format(precoTotal) // linha que transforma qualquer valor em reais
     priceContainer.textContent = price // coloca o preco no popup
 }
     

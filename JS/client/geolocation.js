@@ -164,3 +164,37 @@ function removeSuggestions(input, i) {
     results[i].innerHTML = ''
     input.classList.remove('border')
 }
+
+
+
+function calcularPreco(distancia, tipoVeiculo) {
+    let precoPorKm;
+  
+    // Determinar o preço por km com base no tipo de veículo
+    if (tipoVeiculo === 'moto') {
+      precoPorKm = 2;
+    } else if (tipoVeiculo === 'carro' || tipoVeiculo === 'van') {
+      precoPorKm = 2.5;
+    } else if (tipoVeiculo === 'caminhao') {
+      precoPorKm = 3;
+    } else {
+      precoPorKm = 2; // Preço padrão para outros veículos
+    }
+  
+    // Calcular o preço total
+    const precoTotal = distancia * precoPorKm;
+    
+    return precoTotal;
+  }
+  if(route){
+ calcularPreco()
+  }
+  
+  const precoDaRota = calcularPreco(distanciaDaRotaEmKm, tipoDeVeiculo);
+  //console.log(`O preço da rota é de R$${precoDaRota.toFixed(2)}`);
+
+  function valorMinimo(){
+    var porcentagem = ( precoDaRota*15)/100
+    var precoMinimo= precoDaRota - porcentagem
+  }
+  
