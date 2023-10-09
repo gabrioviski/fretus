@@ -13,7 +13,9 @@ cpfInput.addEventListener('input', function () {
     }
     cpfInput.value = value;
 });
+
 // Com repetição fica mais facil sobre a mascara, mas para frente mudamos! 
+
 cpfInput2.addEventListener('input', function () {
     let value = cpfInput2.value.replace(/\D/g, '');
     if (value.length > 9) {
