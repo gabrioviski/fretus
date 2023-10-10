@@ -30,9 +30,11 @@ const setPrice = distance => {
     }) // classe que transforma qualquer valor em reais
 
     /* fazer os calculos aqui */
-
-    let price = f.format(precoTotal) // linha que transforma qualquer valor em reais
-    priceContainer.textContent = price // coloca o preco no popup
+    const price = calcularPreco(distance, typeVehicle);
+    const formattedPrice = f.format(price)
+    priceContainer.textContent = formattedPrice;
+    //let price = f.format(25) // linha que transforma qualquer valor em reais
+    //priceContainer.textContent = price // coloca o preco no popup
 }
     
 backForm.addEventListener('click', () => {
@@ -42,3 +44,37 @@ backForm.addEventListener('click', () => {
 close.addEventListener('click', () => {
     popup.classList.remove('show')
 })
+
+
+//PREÇOS
+
+var distancia = (route.distance/1000)
+typeVehicle = document.querySelector('input[name="vehicles"]:checked').id
+function calcularPreco() {
+    let precoPorKm;
+
+    if (typeVehicle=== 'bike') {
+      precoPorKm = 2;
+    } else if (typeVehicle=== 'car' || typeVehicle === 'van') {
+      precoPorKm = 2.5;
+    } else if (typeVehicle === 'truck') {
+      precoPorKm = 3;
+    } else {
+      precoPorKm = 2; 
+    }
+  
+    var precoTotal = distancia * precoPorKm;
+    
+    return precoTotal;
+  }
+ 
+  
+
+  function valorMinimo(){
+    var porcentagem = ( precoDaRota*15)/100
+    var precoMinimo= precoDaRota - porcentagem
+
+    return precoMinimo
+  }
+ 
+  
