@@ -48,8 +48,8 @@ close.addEventListener('click', () => {
 
 //PREÇOS
 
-var distancia = (route.distance/1000)
-typeVehicle = document.querySelector('input[name="vehicles"]:checked').id
+//var distancia = (route.distance/1000)
+//typeVehicle = document.querySelector('input[name="vehicles"]:checked').id
 function calcularPreco(distancia,veiculo) {
     let precoPorKm;
 
