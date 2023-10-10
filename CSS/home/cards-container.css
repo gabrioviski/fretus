@@ -5,11 +5,12 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 15px;
+    font-size: 15px;
 }
 
 .gray-gradient > .cards-container > .card {
     background-color: white;
-    padding: 15px;
+    padding: 23px;
     flex-basis: 250px;
     height: 350px;
     border-radius: 15px;
@@ -26,8 +27,8 @@
 
 .cards-container > .card .img {
     background-color: var(--gray);
-    width: 72px;
-    height: 72px;
+    width: 63px;
+    height: 63px;
     border-radius: 100%;
     display: flex;
     justify-content: center;
@@ -58,7 +59,7 @@
         align-items: center;
     }
     .cards-container > .card h1 {
-        font-size: 20px;
+        font-size: 10px;
     }
     .cards-container > .card p {
         display: none;
