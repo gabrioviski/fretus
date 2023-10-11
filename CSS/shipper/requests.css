@@ -67,10 +67,6 @@ main > h1 {
     text-decoration: underline;
 }
 
-.bottom > .rate-done {
-    display: none;
-}
-
 .bottom > .btns {
     display: flex;
     column-gap: 7px;

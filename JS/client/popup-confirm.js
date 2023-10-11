@@ -71,10 +71,18 @@ function calcularPreco(distancia,veiculo) {
   
 
   function valorMinimo(){
+    const precoDaRota = calcularPreco(distance, typeVehicle);
     var porcentagem = ( precoDaRota*15)/100
     var precoMinimo= precoDaRota - porcentagem
 
     return precoMinimo
   }
  
+  function valorMaximo(){
+    const precoDaRota = calcularPreco(distance, typeVehicle);
+    var porcentagem = ( precoDaRota*15)/100
+    var precoMaximo= precoDaRota + porcentagem
+
+    return precoMaximo
+  }
   

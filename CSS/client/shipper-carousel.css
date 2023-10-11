@@ -1,9 +1,11 @@
 main {
     padding-bottom: 45px;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .product-wrapper {
-    width: 90%;
+    /* width: 90%; */
     margin: 45px auto 0;
 }
 

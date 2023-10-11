@@ -66,8 +66,8 @@ function addClass(el, i) {
 }
 
 function showModal() {
-    if (main.children.length > 2) {
-        main.children[2].remove()
+    if (main.children.length > 3) {
+        main.children[3].remove()
     }
     let modal = document.createElement('div')
     modal.innerHTML = `<p>Avaliação enviada com sucesso!</p>
