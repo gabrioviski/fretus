@@ -1,8 +1,9 @@
-const form = document.getElementById('form');
+    const form = document.getElementById('form');
     const campos = document.querySelectorAll('.required');
     const spans = document.querySelectorAll('.span-required');
     const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
 
+    
     form.addEventListener('submit', (event) => {
         // Impede o envio padrão do formulário
         event.preventDefault();
@@ -11,11 +12,22 @@ const form = document.getElementById('form');
         emailValidate();
         mainPasswordValidate();
         
-        if (campos[0].value && campos[1].value.length >= 8) {
+
+
+           if (campos[0].value && campos[1].value.length >= 8) {
+
             // Se ambos os campos estão preenchidos corretamente, redirecione o usuário
-            window.location.form = "../../cliente/solicitar-entrega.html";
-        }
+
+            form.action = "../../cliente/solicitar-entrega.html"; 
+
+            
+
+
+
+        } 
     });
+
+
 
     function setError(index) {
         campos[index].style.border = '2px solid #e63636';
