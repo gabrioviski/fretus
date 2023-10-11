@@ -10,7 +10,6 @@ const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
     mainPasswordValidate();
 }); 
 
-
 function setError(index){
     campos[index].style.border = '2px solid #e63636';
     spans[index].style.display = 'block';
