@@ -17,48 +17,47 @@
   </div>
   <div class="container">
     <h1>Bem-vindo de volta!</h1>
-
-    <form id=""> 
-    <form action="../cliente/solicitar-entrega.html">
-      <div>
-        <input type="email" placeholder="Email" class="inputs required" oninput="emailValidate()" required>
-        <span class="span-required">Digite um email válido</span>
-      </div>
-
-      <div class="box-icon">
-        <div class="input__wrapper">
-          <input id="password" type="password" class="input__field inputs required" placeholder="Senha" oninput="mainPasswordValidate()" required>
-          <span class="span-required">Digite uma senha com no mínimo 8 caracteres</span>
-          <label for="password" class="input__label"></label>
-          <img alt="Eye Icon" title="Eye Icon" src="../../imgs/login-cadastro/eye-off.svg" class="input__icon">
+      <form action="../cliente/solicitar-entrega.html" id="form">
+        <div>
+          <input type="email" placeholder="Email" class="inputs required" oninput="emailValidate()" required>
+          <span class="span-required">Digite um email válido</span>
         </div>
-      </div>
+        <div class="box-icon">
+          <div class="input__wrapper">
+            <input id="password" type="password" class="input__field inputs required" placeholder="Senha"
+              oninput="mainPasswordValidate()" required>
+            <span class="span-required">Digite uma senha com no mínimo 8 caracteres</span>
+
+            <label for="password" class="input__label"></label>
+            <img alt="Eye Icon" title="Eye Icon" src="../../imgs/login-cadastro/eye-off.svg" class="input__icon">
+          </div>
+        </div>
     </form>
-
-      <p>
-        Ainda não tem uma conta?
-        <a href="../cadastro/cadastro.html">Acesse aqui.</a>
-      </p>
-      <input type="submit" value="Entrar">
-      <main>
-        <div class="alternative">
-          <span>ou</span>
-        </div>
-      </main>
-      <div class="social-media">
-        <a href="#" class="social-icon">
-          <img src="../../imgs/login-cadastro/icons8-google-logo.svg" width="45" height="45">
-        </a>
-        <a href="#" class="social-icon">
-          <img src="../../imgs/login-cadastro/icons8-facebook-novo.svg" width="45" height="45">
-        </a>
-        <a href="#" class="social-icon">
-          <img src="../../imgs/login-cadastro/icons8-linkedin.svg" width="45" height="45">
-        </a>
+    <p>
+      Ainda não tem uma conta?
+      <a href="../cadastro/cadastro.html">Acesse aqui.</a>
+    </p>
+    <input type="submit" value="Entrar">
+    <main>
+      <div class="alternative">
+        <span>ou</span>
       </div>
+    </main>
+    <div class="social-media">
+      <a href="#" class="social-icon">
+        <img src="../../imgs/login-cadastro/icons8-google-logo.svg" width="45" height="45">
+      </a>
+      <a href="#" class="social-icon">
+        <img src="../../imgs/login-cadastro/icons8-facebook-novo.svg" width="45" height="45">
+      </a>
+      <a href="#" class="social-icon">
+        <img src="../../imgs/login-cadastro/icons8-linkedin.svg" width="45" height="45">
+      </a>
+    </div>
     </form>
   </div>
   <script src="../../JS/Login/index.js"></script>
+  <script src="../../JS/Login/Valida.js"></script>
 
 </body>
 
