@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fretus - Cadrasto</title>
     <link rel="stylesheet" href="../../CSS/index.css">
-    <link rel="stylesheet" href="../../CSS/cadastro/cadastro.css">
+    <link rel="stylesheet" href="../../CSS/cadastro/cadastro.css"><!-- CSS para usar a VAlidação  -->
 </head>
 <body>
     <div class="fretus">
@@ -23,10 +23,16 @@
             <button id="btnEntregador">Entregador</button>
         </div>
         <!-- fim  button entre entregador e cliente -->
+
         <!--  começo da parte do cliente -->
+
+
         <div class="signup-container">
             <div class="signup-content">
                 <form id="cliente" action="../cliente/solicitar-entrega.html">
+
+            <!-- inicio Cliente VAlidação  -->
+
                     <input type="text" id="nome" placeholder="Nome completo" required>
                     <input type="text" autocomplete="off" maxlength="14" placeholder="CPF/CNPJ" id="cpf" required>
                     <input type="email" placeholder="Email" required>
@@ -36,6 +42,10 @@
                         <img alt="Eye Icon" title="Eye Icon" src="../../imgs/login-cadastro/eye-off.svg"
                             class="input__icon">
                     </div>
+
+            <!-- Fim cliente validação  -->
+
+
                     <p>Já tem uma conta? <a href="../login/login.html">Acesse aqui.</a></p>
                     <button type="submit">Criar como cliente</button>
                     <main>
@@ -58,7 +68,11 @@
                 <!--  fim da parte do cliente -->
                 
                 <!--  começo da parte do entregador -->
+
                 <form id="entregador" action="../entregador/entregas-solicitadas.html">
+
+                    <!-- Inicio Entrergador validação  -->
+
                     <input type="text" id="nome" placeholder="Nome completo" required>
                     <input type="text" autocomplete="off" maxlength="14" placeholder="CPF/CNPJ" id="cpf2" required>
                     <input type="Email" placeholder="Email" required>
@@ -68,6 +82,10 @@
                         <img alt="Eye Icon" title="Eye Icon" src="../../imgs/login-cadastro/eye-off.svg"
                             class="input__icon">
                     </div>
+
+                    <!--  Fim Entregador Validação  -->
+
+
                     <p>Já tem uma conta? <a href="../login/login.html">Acesse aqui.</a></p>
                     <button type="submit">Criar como entregador</button>
                     <main>
@@ -95,6 +113,8 @@
     <script src="../../JS/cadastro/cadastro.js"></script>
     <script src="../../JS/Login/index.js"></script>
     <script src="../../JS/cadastro/mascara.js"></script>
+    <script src="../../JS/cadastro/valida.js"></script> <!--  JS para usa validação  -->
+
 </body>
 
 </html>
