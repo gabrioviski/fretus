@@ -113,6 +113,7 @@ form p {
 
 form p a {
     color: var(--orange);
+    font-weight: 700;
 }
 
 .alternative {

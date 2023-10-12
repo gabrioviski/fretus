@@ -44,14 +44,6 @@ main > h1 {
     max-width: 700px;
 }
 
-/* .requests-container:not(:empty) + .empty-alert {
-    display: none;
-}
-
-.requests-container:empty + .empty-alert {
-    display: block;
-} */
-
 .requests-container > .card {
     background-color: #fffbff;
     height: 250px;
