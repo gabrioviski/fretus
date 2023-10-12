@@ -1,45 +1,45 @@
-const main = document.querySelector('main')
 const container = document.querySelector('.requests-container')
-let cards = Array.from(document.querySelectorAll('.card'))
-let denied = Array.from(document.querySelectorAll('.denied'))
-let modal
-let removed
+const cards = document.querySelectorAll('.card')
+const btns = document.querySelectorAll('.card .denied')
+const notificationContainer = document.querySelector('.notification-container')
 
-denied.forEach(item => {
-    item.addEventListener('click', () => {
-        let index = denied.indexOf(item)
-        removed = cards[index]
-        removed.style = `opacity: 0; order: 1;`
-        showModal()
+btns.forEach((btn, idx) => {
+    btn.addEventListener('click', () => {
+        const removed = cards[idx]
+        removed.remove()
+        showNotification(removed, idx)
     })
 })
 
-function showModal() {
-    if (main.children.length > 2) {
-        main.children[2].remove()
+function showNotification(r, i) {
+    if (notificationContainer.innerHTML != '') {
+        document.querySelector('.notification').remove()
     }
-    modal = document.createElement('div')
-    modal.innerHTML = `<p>Entrega cancelada! <span>Desfazer</span></p>
-    <div class="loading"></div>`
-    modal.classList.add('modal', 'active')
-    main.appendChild(modal)
-    updateUndo()
-    setTimeout(() => {
-        if (main.children.length > 2) {
-            removed.remove()
-        }
-    }, 7000)
-}
+    
+    notificationContainer.classList.add('show')
+    
+    const notification = document.createElement('div')
+    notification.classList.add('notification')
 
-function updateUndo() {
-    const undo = document.querySelectorAll('.modal p > span')
-    undo.forEach(item => {
-        item.addEventListener('click', () => {
-            removed.style = `display: block`
-            modal.classList.remove('active')
-            setTimeout(() => {
-                modal.remove()
-            }, 300)
-        })
+    const msg = document.createElement('p')
+    msg.textContent = 'Entrega Cancelada! '
+    const undo = document.createElement('span')
+    undo.textContent = 'Desfazer'
+    msg.appendChild(undo)
+    notification.appendChild(msg)
+    const loading = document.createElement('div')
+    loading.classList.add('loading')
+    notification.appendChild(loading)
+
+    undo.addEventListener('click', () => {
+        const position = container.children[i]
+        container.insertBefore(r, position)
+        notificationContainer.classList.remove('show')
     })
+
+    notificationContainer.addEventListener('animationend', () => {
+        notificationContainer.classList.remove('show')
+    })
+
+    notificationContainer.appendChild(notification)
 }

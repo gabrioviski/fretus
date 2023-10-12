@@ -20,6 +20,14 @@ main > h1 {
     gap: 15px;
 }
 
+/* .requests-container:not(:empty) + .empty-alert {
+    display: none;
+}
+
+.requests-container:empty + .empty-alert {
+    display: block;
+} */
+
 .requests-container > .card {
     background-color: #fffbff;
     height: 250px;
@@ -88,6 +96,8 @@ main > h1 {
 
 .btn.denied {
     background-color: var(--gray);
+    outline: none;
+    border: none;
 }
 
 @media (max-width: 795px) {
