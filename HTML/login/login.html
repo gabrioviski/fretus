@@ -8,7 +8,7 @@
   <title>Fretus - Login</title>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="../../CSS/index.css">
-  <link rel="stylesheet" href="../../CSS/login/login.css">
+  <link rel="stylesheet" href="../../CSS/login/login.css"> <!-- Aqui e onde deve se alterar  -->
 </head>
 
 <body>
@@ -17,48 +17,52 @@
   </div>
   <div class="container">
     <h1>Bem-vindo de volta! </h1>
-      <form action="../cliente/solicitar-entrega.html" id="form">
-        <div>
-          <input type="email" placeholder="Email" class="inputs required" oninput="emailValidate()" required>
-          <span class="span-required">Digite um email válido</span>
-        </div>
-        <div class="box-icon">
-          <div class="input__wrapper">
-            <input id="password" type="password" class="input__field inputs required" placeholder="Senha"
-              oninput="mainPasswordValidate()" required>
-            <span class="span-required">Digite uma senha com no mínimo 8 caracteres</span>
+    <form action="../cliente/solicitar-entrega.html" id="form">
 
-            <label for="password" class="input__label"></label>
-            <img alt="Eye Icon" title="Eye Icon" src="../../imgs/login-cadastro/eye-off.svg" class="input__icon">
-          </div>
-        </div>
-    </form>
-    <p>
-      Ainda não tem uma conta?
-      <a href="../cadastro/cadastro.html">Acesse aqui.</a>
-    </p>
-    <input type="submit" value="Entrar">
-    <main>
-      <div class="alternative">
-        <span>ou</span>
+        <!-- Email validação -->      
+      <div>
+        <input type="email" placeholder="Email" class="inputs"  required>
       </div>
-    </main>
-    <div class="social-media">
-      <a href="#" class="social-icon">
-        <img src="../../imgs/login-cadastro/icons8-google-logo.svg" width="45" height="45">
-      </a>
-      <a href="#" class="social-icon">
-        <img src="../../imgs/login-cadastro/icons8-facebook-novo.svg" width="45" height="45">
-      </a>
-      <a href="#" class="social-icon">
-        <img src="../../imgs/login-cadastro/icons8-linkedin.svg" width="45" height="45">
-      </a>
-    </div>
+
+      <!-- Email Fim  -->
+
+      <!--  Password validação  -->
+      <div class="box-icon">
+        <div class="input__wrapper">
+          <input id="password" type="password" class="input__field" placeholder="Senha"
+             required>
+          <label for="password" class="input__label"></label>
+          <img alt="Eye Icon" title="Eye Icon" src="../../imgs/login-cadastro/eye-off.svg" class="input__icon">
+        </div>     
+      </div>
+
+      <!-- Fim  Password -->
+
+      <p>
+        Ainda não tem uma conta?
+        <a href="../cadastro/cadastro.html">Acesse aqui.</a>
+      </p>
+      <input type="submit" value="Entrar">
+      <main>
+        <div class="alternative">
+          <span>ou</span>
+        </div>
+      </main>
+      <div class="social-media">
+        <a href="#" class="social-icon">
+          <img src="../../imgs/login-cadastro/icons8-google-logo.svg" width="45" height="45">
+        </a>
+        <a href="#" class="social-icon">
+          <img src="../../imgs/login-cadastro/icons8-facebook-novo.svg" width="45" height="45">
+        </a>
+        <a href="#" class="social-icon">
+          <img src="../../imgs/login-cadastro/icons8-linkedin.svg" width="45" height="45">
+        </a>
+      </div>
     </form>
   </div>
   <script src="../../JS/Login/index.js"></script>
-  <script src="../../JS/Login/Valida.js"></script>
-
+  <script src="../../JS/Login/Valida.js"></script> <!--  Js onde vc pode fazer a vaalidação  -->
 </body>
 
 </html>
