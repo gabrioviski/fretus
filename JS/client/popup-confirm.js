@@ -28,7 +28,7 @@ const setPrice = distance => {
         currency: 'BRL',
         style: 'currency'
     }) // classe que transforma qualquer valor em reais
-
+    
     /* fazer os calculos aqui */
     const preco = calcularPreco(distance, typeVehicle);
 

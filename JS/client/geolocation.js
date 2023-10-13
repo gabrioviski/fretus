@@ -39,6 +39,8 @@ start.on('dragend', async () => {
     const newAddress = await dataResult(newCoords)
     inputs[0].value = `${newAddress.features[0].place_name}`
     inputs[0].setCustomValidity('')
+    // console.log(route.distance / 1000)
+    // setPrice(route.distance / 1000)
 })
 
 end.on('dragend', async () => {
@@ -48,6 +50,8 @@ end.on('dragend', async () => {
     const newAddress = await dataResult(newCoords)
     inputs[1].value = `${newAddress.features[0].place_name}`
     inputs[1].setCustomValidity('')
+    // console.log(route.distance / 1000)
+    // setPrice(route.distance / 1000)
 })
 
 const dataResult = async (query) => {
@@ -101,7 +105,8 @@ async function getRoute(start, end) {
         const res = await fetch(url)
         const data = await res.json()
         route = data.routes[0]
-        const minutes = Math.floor(route.duration / 60)
+        
+        // const minutes = Math.floor(route.duration / 60)
         // const meters = route.distance
         const geojson = {
             type: 'Feature',
@@ -111,7 +116,7 @@ async function getRoute(start, end) {
                 coordinates: route.geometry.coordinates
             }
         }
-
+        
         if (map.getSource('route')) {
             map.getSource('route').setData(geojson);
         }
@@ -134,8 +139,9 @@ async function getRoute(start, end) {
                 }
             });
         }
-
+        
         setZoomRoute(route)
+        setPrice(route.distance / 1000)
     }
 }
 
