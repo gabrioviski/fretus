@@ -36,14 +36,14 @@
     text-decoration: underline;
 }
 
-.loading {
+.modal > .loading {
     width: 0;
     height: 10px;
     background-color: var(--orange);
 }
 
 .modal.active > .loading {
-    animation: load 5s linear forwards;
+    animation: loading 5s linear forwards;
 }
 
 @keyframes hide {
@@ -53,7 +53,7 @@
     }
 }
 
-@keyframes load {
+@keyframes loading {
     100% {
         width: 100%;
     }

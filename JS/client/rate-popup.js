@@ -35,9 +35,6 @@ submit.addEventListener('click', () => {
     if (hasChecked) {
         error.classList.remove('error')
         rate[popup.dataset.shipper].remove()
-        let msg = document.createElement('span')
-        msg.innerText = 'Avaliação Feita'
-        cardBottom[popup.dataset.shipper].appendChild(msg)
         closePopup()
         showModal()
     } else {

@@ -83,12 +83,15 @@ main > h1 {
     font-weight: 700;
 }
 
-.bottom > .rate {
-    color: var(--orange);
+.bottom > .actions {
+    opacity: .6;
+    display: flex;
+    gap: 7px;
 }
 
-.bottom > .rate:hover {
-    text-decoration: underline;
+.bottom > .actions img {
+    width: 30px;
+    cursor: pointer;
 }
 
 .bottom > .btns {

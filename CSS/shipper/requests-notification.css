@@ -15,7 +15,7 @@
     bottom: 25px;
 }
 
-.notification-container .loading {
+.notification-container .notification .loading {
     transform: scaleX(0);
     transform-origin: left;
     margin-top: 7px;
