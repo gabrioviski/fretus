@@ -25,6 +25,7 @@
 
       <div>
         <input type="email" placeholder="Email" class="inputs" oninput="emailValido()" required>
+        <p id="messageEmail"></p>
       </div>
 
       <!-- Email Fim  -->
@@ -35,6 +36,7 @@
         <div class="input__wrapper">
           <input id="password" type="password" class="input__field" placeholder="Senha"
              required>
+             <p id="messageSenha"></p>
           <label for="password" class="input__label"></label>
           <img alt="Eye Icon" title="Eye Icon" src="../../imgs/login-cadastro/eye-off.svg" class="input__icon">
         </div>     
@@ -46,7 +48,7 @@
         Ainda não tem uma conta?
         <a href="../cadastro/cadastro.html">Acesse aqui.</a>
       </p>
-      <input type="submit" value="Entrar">
+      <input type="submit" value="Entrar" id="entrar">
       <main>
         <div class="alternative">
           <span>ou</span>
