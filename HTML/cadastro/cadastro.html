@@ -40,7 +40,8 @@
                     <input type="email" placeholder="Email" id="inputEmail" oninput="emailValido()" required>
                     <p id="messageEmail"></p>
                     <div class="input__wrapper">
-                        <input required id="password" type="password" class="input__field" placeholder="Senha">
+                        <input required id="password" type="password" class="input__field"  oninput="senhaValidada()" placeholder="Senha">
+                        <p id="messageSenha"></p>
                         <label for="password" class="input__label"></label>
                         <img alt="Eye Icon" title="Eye Icon" src="../../imgs/login-cadastro/eye-off.svg"
                             class="input__icon">
@@ -50,7 +51,7 @@
 
 
                     <p>Já tem uma conta? <a href="../login/login.html">Acesse aqui.</a></p>
-                    <button type="submit">Criar como cliente</button>
+                    <button type="submit" id="criar1">Criar como cliente</button>
                     <main>
                         <div class="alternative">
                             <span>ou</span>

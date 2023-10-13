@@ -4,6 +4,9 @@ var messageEmail = document.getElementById("messageEmail");
 var messageCpf = document.getElementById("messageCpf");
 var cpf =document.getElementById("cpf");
 
+var password = document.getElementById("password");
+var messageSenha = document.getElementById("messageSenha");
+var criar1 = document.getElementById("criar1");
 
 function emailValido() {
     var email = inputEmail.value;
@@ -39,4 +42,41 @@ function cpfValido(){
         cpf.style.border = "solid 1px green";
 
     }
+}
+
+criar1.addEventListener("click", function senhaValida() {
+
+    if (password.value.length < 1) {
+
+        messageSenha.textContent = "Senha inválida";
+        messageSenha.style.color = "red";
+        messageSenha.style.fontSize = "12px";
+        password.style.border = "1px solid red";
+
+        messageEmail.textContent = "E-mail inválido";
+        messageEmail.style.color = "red";
+        messageEmail.style.fontSize = "12px";
+        inputEmail.style.border = "1px solid red";
+    }else{
+        messageSenha.textContent = "";
+        messageSenha.style.color = "";
+        messageSenha.style.fontSize = "";
+        password.style.border = "solid 1px green";
+
+    }
+});
+
+
+
+function senhaValidada(){
+
+    if(password.value.length > 0){
+
+        messageSenha.textContent = "";
+        messageSenha.style.color = "";
+        messageSenha.style.fontSize = "";
+        password.style.border = "solid 1px green";
+        }else{
+            password.style.border = "solid 1px red";
+        }
 }
