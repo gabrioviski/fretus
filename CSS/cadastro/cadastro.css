@@ -15,8 +15,12 @@ body {
     left: 25px;
 }
 
-.fretus h2 a {
-    color: #333;
+.fretus h1 {
+    width: 40px;
+}
+
+.fretus .logo {
+    width: 100%;
 }
 
 .container {

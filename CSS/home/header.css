@@ -10,10 +10,6 @@ header {
     background-color: rgba(0, 0, 0, 0.3);
     transition: all .5s;
 }
-.logo{
-    width: 13%;
-    height: 13%;
-}
 
 header.resized {
     position: fixed;
@@ -33,6 +29,14 @@ header > nav > ul {
     align-items: center;
     list-style-type: none;
     font-size: 20px;
+}
+
+header h1 {
+    width: 40px;
+}
+
+h1 .logo {
+    width: 100%;
 }
 
 .hero .nav-menu li:nth-child(3) {

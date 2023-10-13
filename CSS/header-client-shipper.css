@@ -24,12 +24,15 @@ header nav > ul {
     align-items: center;
     gap: 30px;
 }
-.logo{
-    width: 13%;
-    height: 13%;
+
+header h1 {
+    width: 40px;
 }
 
-  
+h1 .logo {
+    width: 100%;
+}
+
 .nav-menu > ul {
     font-size: 18px;
     /* font-weight: bold; */
