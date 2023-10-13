@@ -13,7 +13,10 @@ main {
 main > h1 {
     margin-bottom: 12px;
 }
-
+.logo{
+    width: 13%;
+    height: 13%;
+}
 .requests-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, auto));

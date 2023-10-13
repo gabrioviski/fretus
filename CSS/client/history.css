@@ -3,6 +3,10 @@ body {
     min-height: 100vh;
     color: #333;
 }
+.logo{
+    width: 13%;
+    height: 13%;
+}
 
 header {
     margin-bottom: 85px;

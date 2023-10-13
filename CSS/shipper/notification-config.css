@@ -5,7 +5,10 @@
 .config-container > p {
     margin-bottom: 50px;
 }
-
+.logo{
+    width: 13%;
+    height: 13%;
+}
 .config-container > .row {
     display: flex;
     justify-content: space-between;

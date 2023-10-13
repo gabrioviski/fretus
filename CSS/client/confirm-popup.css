@@ -7,7 +7,10 @@ body {
 .popup {
     display: none;
 }
-
+.logo{
+    width: 13%;
+    height: 13%;
+}
 .popup.show {
     width: 100%;
     height: 100%;

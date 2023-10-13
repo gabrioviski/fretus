@@ -24,6 +24,11 @@ header nav > ul {
     align-items: center;
     gap: 30px;
 }
+.logo{
+    width: 13%;
+    height: 13%;
+}
+
   
 .nav-menu > ul {
     font-size: 18px;

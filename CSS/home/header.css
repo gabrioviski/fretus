@@ -10,6 +10,10 @@ header {
     background-color: rgba(0, 0, 0, 0.3);
     transition: all .5s;
 }
+.logo{
+    width: 13%;
+    height: 13%;
+}
 
 header.resized {
     position: fixed;

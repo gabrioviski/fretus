@@ -12,6 +12,10 @@ body {
     min-height: 100vh;
     padding: 20px;
 }
+.logo{
+    width: 13%;
+    height: 13%;
+}
 
 .container h1 {
     text-align: center;
