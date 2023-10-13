@@ -23,29 +23,35 @@ function emailValido() {
     }
 }
 
-
-var password = document.getElementById("password");
-var messageSenha = document.getElementById("messageSenha");
-var entrar = document.getElementById("entrar");
-
 entrar.addEventListener("click", function senhaValida() {
+
     if (password.value.length < 1) {
+
         messageSenha.textContent = "Senha inválida";
         messageSenha.style.color = "red";
         messageSenha.style.fontSize = "12px";
         password.style.border = "1px solid red";
 
-
         messageEmail.textContent = "E-mail inválido";
         messageEmail.style.color = "red";
         messageEmail.style.fontSize = "12px";
         inputEmail.style.border = "1px solid red";
-
     }else{
-        messageSenha.textContent = "Senha valida";
-        messageSenha.style.color = "green";
-        messageSenha.style.fontSize = "12px";
-        password.style.border = "1px solid green";
+        messageSenha.textContent = "";
+        messageSenha.style.color = "";
+        messageSenha.style.fontSize = "";
+        password.style.border = "1px solid black";
+
     }
 });
 
+function senhaValidada(){
+
+    if(password.value.length > 0){
+
+    messageSenha.textContent = "";
+    messageSenha.style.color = "";
+    messageSenha.style.fontSize = "";
+    password.style.border = "1px solid black";
+    }
+}
