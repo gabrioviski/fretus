@@ -3,10 +3,12 @@ var emailRegex = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+(\.[a-z]+)?$/i;
 var messageEmail = document.getElementById("messageEmail");
 var messageCpf = document.getElementById("messageCpf");
 var cpf =document.getElementById("cpf");
-
 var password = document.getElementById("password");
 var messageSenha = document.getElementById("messageSenha");
 var criar1 = document.getElementById("criar1");
+
+var nome = document.getElementById("nome");
+var messageNome = document.getElementById("messageNome");
 
 function emailValido() {
     var email = inputEmail.value;
@@ -94,4 +96,25 @@ function senhaValidada(){
         }else{
             password.style.border = "solid 1px red";
         }
+}
+
+function nomeValido(){
+
+    var name = nome.value;
+
+    if (!/^[a-zA-Z0-9]+$/.test(name)){
+        messageNome.textContent = "nome inválido";
+        messageNome.style.color = "red";
+        messageNome.style.fontSize = "12px";
+        nome.style.border = "1px solid red";
+
+    }else{
+        messageNome.textContent = "";
+        messageNome.style.color = "";
+        messageNome.style.fontSize = "";
+        nome.style.border = "solid 1px green";
+
+    }
+
+
 }

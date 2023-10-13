@@ -34,7 +34,8 @@
 
             <!-- inicio Cliente VAlidação  -->
 
-                    <input type="text" id="nome" placeholder="Nome completo" required>
+                    <input type="text" id="nome" placeholder="Nome completo"  oninput="nomeValido()" required>
+                    <p id="messageNome"></p>
                     <input type="text" autocomplete="off" maxlength="14" placeholder="CPF/CNPJ" id="cpf" oninput="cpfValido()" required>
                     <p id="messageCpf"></p>
                     <input type="email" placeholder="Email" id="inputEmail" oninput="emailValido()" required>
