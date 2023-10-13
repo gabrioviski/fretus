@@ -16,7 +16,10 @@
     column-gap: 7px;
     font-weight: 700;
 }
-
+.logo{
+    width: 13%;
+    height: 13%;
+}
 .rating-controls > *{
     cursor: pointer;
 }

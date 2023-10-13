@@ -16,7 +16,10 @@
 .places.first-place {
     order: 2;
 }
-
+.logo{
+    width: 13%;
+    height: 13%;
+}
 .places.second-place {
     order: 1;
 }

@@ -17,6 +17,10 @@ main {
     justify-content: center;
     background-image: var(--gray-gradient);
 }
+.logo{
+    width: 13%;
+    height: 13%;
+}
 
 .form > form {
     width: 75%;

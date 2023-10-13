@@ -13,6 +13,10 @@
     aspect-ratio: 1 / 1;
     cursor: pointer;
 }
+.logo{
+    width: 13%;
+    height: 13%;
+}
 
 .star > .star-form {
     height: 100%;

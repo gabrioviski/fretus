@@ -7,7 +7,10 @@ body {
     align-items: center;
     justify-content: center;
 }
-
+.logo{
+    width: 13%;
+    height: 13%;
+}
 :root {
     --secondary: #6F7E8C;
     --hover: #F5F5F5;

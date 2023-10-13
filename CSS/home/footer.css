@@ -14,7 +14,10 @@ footer > .footer-content {
 .footer-content > .logo-container {
     /* background-color: rgba(255, 255, 0, 0.339); */
 }
-
+.footer-content> .logo-container> .logo > img{
+    width: 45px;
+    height: 45px;
+}
 .footer-content > .links-container {
 /*     background-color: rgba(0, 128, 0, 0.177); */
     display: flex;

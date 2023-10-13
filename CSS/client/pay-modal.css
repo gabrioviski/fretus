@@ -16,6 +16,10 @@
     justify-content: center;
     align-items: center;
 }
+.logo{
+    width: 13%;
+    height: 13%;
+}
 
 .pay-modal::backdrop {
     background-color: rgba(0, 0, 0, 0.45);

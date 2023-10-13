@@ -18,6 +18,10 @@
     font-family: var(--font-2);
     font-size: 16px;
 }
+.logo{
+    width: 13%;
+    height: 13%;
+}
 
 .popup.show .input-field:focus {
     border-color: #3333336c;

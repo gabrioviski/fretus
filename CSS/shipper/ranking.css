@@ -15,7 +15,10 @@
 .ranking > * {
     display: none;
 }
-
+.logo{
+    width: 13%;
+    height: 13%;
+}
 .ranking > *.show {
     display: block;
 }
