@@ -36,12 +36,14 @@ function cpfValido(){
         messageCpf.style.color = "red";
         messageCpf.style.fontSize = "12px";
         cpf.style.border = "1px solid red";
+        return "invalido"
 
     }else{
         messageCpf.textContent = "";
         messageCpf.style.color = "";
         messageCpf.style.fontSize = "";
         cpf.style.border = "solid 1px green";
+        return "valido"
 
     }
 }
@@ -69,6 +71,13 @@ criar1.addEventListener("click", function senhaValida() {
         messageEmail.style.color = "red";
         messageEmail.style.fontSize = "12px";
         inputEmail.style.border = "1px solid red";
+        }
+
+        if(cpfValido() === "invalido"){
+            messageCpf.textContent = "cpf inválido";
+            messageCpf.style.color = "red";
+            messageCpf.style.fontSize = "12px";
+            cpf.style.border = "1px solid red";
         }
 });
 
