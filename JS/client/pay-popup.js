@@ -23,7 +23,10 @@ payRadio.forEach(item => {
         if (item.id == 'card') {
             cardInput.forEach(item => item.setAttribute('required', 'true'))
         } else {
-            cardInput.forEach(item => item.removeAttribute('required'))
+            cardInput.forEach(item => {
+                item.removeAttribute('required')
+                item.setCustomValidity('')
+            })
         }
     })
 })
@@ -31,7 +34,6 @@ payRadio.forEach(item => {
 cardInput.forEach((item, i) => {
     item.addEventListener('input', () => {
         let len = item.value.length
-        console.log(item.id)
         if (item.id != 'card-name') {
             item.setCustomValidity('Valor inválido!')
         }
