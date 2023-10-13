@@ -11,10 +11,6 @@
     opacity: 1;
     z-index: 900;
 }
-.logo{
-    width: 13%;
-    height: 13%;
-}
 
 .clip-popup > ul {
     list-style: none;

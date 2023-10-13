@@ -10,10 +10,7 @@
     overflow: hidden;
     scroll-behavior: smooth;
 }
-.logo{
-    width: 13%;
-    height: 13%;
-}
+
 .vehicles-carousel > .content {
     width: calc(400% + (15px * 3));
     height: 100%;

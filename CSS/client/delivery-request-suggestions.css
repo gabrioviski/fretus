@@ -13,10 +13,7 @@
     font-size: 16px;
     -webkit-min-logical-width: 100%;
 }
-.logo{
-    width: 13%;
-    height: 13%;
-}
+
 .form input.address.border {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;

@@ -14,10 +14,7 @@ main {
     min-height: calc(100vh - 85px - (50px * 2));
     margin: 0 auto;
 }
-.logo{
-    width: 13%;
-    height: 13%;
-}
+
 .results-container > .results-header {
     width: 100%;
     display: flex;

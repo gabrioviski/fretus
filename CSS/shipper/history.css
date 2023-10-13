@@ -6,10 +6,7 @@ body {
 main {
     padding: 50px 0;
 }
-.logo{
-    width: 13%;
-    height: 13%;
-}
+
 main > .history-container {
     width: 90%;
     margin: 0 auto;

@@ -14,10 +14,7 @@
 .notification-container.show {
     bottom: 25px;
 }
-.logo{
-    width: 13%;
-    height: 13%;
-}
+
 .notification-container .loading {
     transform: scaleX(0);
     transform-origin: left;

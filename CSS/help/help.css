@@ -6,10 +6,7 @@ body {
 .heading {
     font-size: clamp(36px, 3.5vw, 48px);
 }
-.logo{
-    width: 13%;
-    height: 13%;
-}
+
 .hero {
     height: 50vh;
     background-image: url('../../imgs/help/bg-help.jpg');

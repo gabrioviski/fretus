@@ -10,10 +10,7 @@
     display: flex;
     align-items: center;
 }
-.logo{
-    width: 13%;
-    height: 13%;
-}
+
 .row > label > span {
     display: inline-block;
     margin-left: 10px;
