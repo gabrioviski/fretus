@@ -1,24 +1,18 @@
-const carousel = document.querySelector('.vehicles-carousel')
-const next = document.querySelector('.next')
-const back = document.querySelector('.back')
-let index = 0
 
-next.addEventListener('click', () => {
-    index++
-    moveCarousel(index)
-})
-
-back.addEventListener('click', () => {
-    index--
-    moveCarousel(index)
-})
-
-function moveCarousel(i) {
-    if (index < 0) {
-        index = 3
-    } else if (index > 3) {
-        index = 0
+function selectCard(card) {
+    const cards = document.querySelectorAll('.card');
+    for (const c of cards) {
+        c.classList.remove('selected');
     }
-    let width = carousel.clientWidth
-    carousel.scrollLeft = (width + 15) * index
+    card.classList.add('selected');
+}
+
+function validateForm() {
+    const selectedCards = document.querySelectorAll('.selected');
+    if (selectedCards.length === 0) {
+        const errorMessage = document.getElementById('error-message');
+        errorMessage.textContent = 'Selecione pelo menos um tipo de veículo.';
+        return false;
+    }
+    return true;
 }

@@ -63,7 +63,7 @@
 
     <main>
         <div class="form">
-            <form>
+            <form id="cardForm" onsubmit="return validateForm()">
                 <h1>Solicitar Entrega</h1>
                 <input type="text" required class="address start" placeholder="Local de partida">
                 <div class="suggestions">
@@ -73,7 +73,6 @@
                 <div class="suggestions">
                     <ul class="suggestions-options"></ul>
                 </div>
-                
                 <div class="schedules-container">
                     <input type="checkbox" name="schedule" id="schedule">
                     <label for="schedule"> Clique aqui para agendar <span>></span></label>
@@ -82,71 +81,29 @@
                         <input type="time" class="date-time">
                     </div>
                 </div>
-
-                <div class="vehicles-container">
-                    <h1>Veículos</h1>
-                    <div class="vehicles-carousel">
-                        <div class="content">
-                            <input type="radio" name="vehicles" id="bike" required>
-                            <label for="bike">
-                                <div class="card">
-                                    <div class="icon">
-                                        <img src="https://files.axshare.com/gsc/NW3CCE/d7/2e/63/d72e6396c33043df9eca85714bda96d5/images/area_do_cliente__desktop_/p0.svg?pageId=a1cd8bfa-51f9-4251-8edd-b9adceed65b6" alt="">
-                                    </div>
-                                    <div class="text-content">
-                                        <h1>Moto</h1>
-                                        <p>Peso máximo: 20 Kg</p>
-                                    </div>
-                                </div>
-                            </label>
-                            <input type="radio" name="vehicles" id="car">
-                            <label for="car">
-                                <div class="card">
-                                    <div class="icon">
-                                        <img src="https://files.axshare.com/gsc/NW3CCE/d7/2e/63/d72e6396c33043df9eca85714bda96d5/images/area_do_cliente__desktop_/p1.svg?pageId=a1cd8bfa-51f9-4251-8edd-b9adceed65b6" alt="">
-                                    </div>
-                                    <div class="text-content">
-                                        <h1>Carro</h1>
-                                        <p>Peso máximo: 250 Kg</p>
-                                    </div>
-                                </div>
-                            </label>
-                            <input type="radio" name="vehicles" id="van">
-                            <label for="van">
-                                <div class="card">
-                                    <div class="icon">
-                                        <img src="https://files.axshare.com/gsc/NW3CCE/d7/2e/63/d72e6396c33043df9eca85714bda96d5/images/area_do_cliente__desktop_/p2.svg?pageId=a1cd8bfa-51f9-4251-8edd-b9adceed65b6" alt="">
-                                    </div>
-                                    <div class="text-content">
-                                        <h1>Van</h1>
-                                        <p>Peso máximo: 1000 Kg</p>
-                                    </div>
-                                </div>
-                            </label>
-                            <input type="radio" name="vehicles" id="truck">
-                            <label for="truck">
-                                <div class="card">
-                                    <div class="icon">
-                                        <img src="https://files.axshare.com/gsc/NW3CCE/d7/2e/63/d72e6396c33043df9eca85714bda96d5/images/area_do_cliente__desktop_/p3.svg?pageId=a1cd8bfa-51f9-4251-8edd-b9adceed65b6" alt="">
-                                    </div>
-                                    <div class="text-content">
-                                        <h1>Caminhão</h1>
-                                        <p>Peso máximo: 2500 Kg</p>
-                                    </div>
-                                </div>
-                            </label>
-                        </div>
-                    </div>
-                    <div class="carousel-controls">
-                        <div class="back">
-                            <
-                        </div>
-                        <div class="next">
-                            >
-                        </div>
-                    </div>
+                <h1>Tipo de veículo </h1>
+                <div class="container-item">
+                <div class="Flex-item">
+                <div class="card" onclick="selectCard(this)" >
+                    <img src="../../imgs/client/Solicitar/icons8-motocicleta-50.png" alt="img">
+                    <p>Moto</p>
+                </div>
+                <div class="card" onclick="selectCard(this)" >
+                    <img src="../../imgs/client/Solicitar/icons8-carro-50.png"alt="img">
+                    <p>Carro</p>
+                </div>
+                <div class="card" onclick="selectCard(this)">
+                    <img src="../../imgs/client/Solicitar/icons8-van-64.png" alt="img">
+                    <p>Van</p>
                 </div>
 
+                <div class="card" onclick="selectCard(this)">
+                    <img src="../../imgs/client/Solicitar/icons8-caminhão-48.png" alt="img">
+                    <p>caminhão</p>
+                </div>
+                <div id="error-message"></div>
+                </div>
+                </div>
                 <input type="submit" value="Continuar" class="cta">
             </form>
         </div>
