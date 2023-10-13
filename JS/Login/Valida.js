@@ -40,7 +40,7 @@ entrar.addEventListener("click", function senhaValida() {
         messageSenha.textContent = "";
         messageSenha.style.color = "";
         messageSenha.style.fontSize = "";
-        password.style.border = "1px solid green";
+        password.style.border = "solid 1px green";
 
     }
 });
@@ -52,6 +52,6 @@ function senhaValidada(){
     messageSenha.textContent = "";
     messageSenha.style.color = "";
     messageSenha.style.fontSize = "";
-    password.style.border = "1px solid green";
+    password.style.border = "solid 1px green";
     }
 }
