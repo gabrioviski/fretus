@@ -5,7 +5,7 @@ body {
 .heading {
     font-size: clamp(36px, 3.5vw, 72px);
     text-align: center;
-    margin: 0 auto 23px;
+    margin: 0 auto 26px;
     max-width: 975px;
 }
 
