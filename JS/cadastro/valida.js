@@ -138,7 +138,6 @@ function nomeValido(){
 //ENTRAGADORES
 
 var inputEmail2 = document.getElementById("inputEmail2");
-//var emailRegex2 = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+(\.[a-z]+)?$/i;
 var messageEmail2 = document.getElementById("messageEmail2");
 var messageCpf2 = document.getElementById("messageCpf2");
 var cpf2 =document.getElementById("cpf2");
@@ -151,19 +150,19 @@ var messageNome2 = document.getElementById("messageNome2");
 function emailValido2() {
     var email2 = inputEmail2.value;
 
-    if (emailRegex.test(email2) && email2.value.length > 0) {
+    if (emailRegex.test(email2)) {
 
         messageEmail2.textContent = "E-mail válido";
         messageEmail2.style.color = "green";
         messageEmail2.style.fontSize = "";  
-        email2.style.border = "solid 1px green ";
+        inputEmail2.style.border = "solid 1px green ";
         return "valido2"
     } else {
 
         messageEmail2.textContent = "E-mail inválido";
         messageEmail2.style.color = "red";
         messageEmail2.style.fontSize = "12px";
-        email2.style.border = "1px solid red";
+        inputEmail2.style.border = "solid 1px red";
         return "invalido2"
     }
 }
@@ -210,7 +209,7 @@ function Letras2(nome2) {
 
 function nomeValido2(){
     var name = nome2.value;
-    if (Letras2(name)) {
+    if (Letras2(name) && nome2.value.length >= 3) {
        
         nome2.style.border = "1px solid green";
         messageNome2.textContent = "";
@@ -249,7 +248,7 @@ criar2.addEventListener("click", function senhaValida2() {
         }
 
 var name = nome2.value;
-if (Letras2(name)) {
+if (Letras2(name) && nome2.value.length >= 3) {
    
     nome2.style.border = "1px solid green";
     messageNome2.textContent = "";
@@ -284,7 +283,6 @@ if (Letras2(name)) {
     messageCpf2.style.fontSize = "";
     cpf2.style.border = "solid 1px green";
   
-
 }
 
 
@@ -295,14 +293,14 @@ if (emailRegex.test(email2) && email2.value.length > 0) {
     messageEmail2.textContent = "E-mail válido";
     messageEmail2.style.color = "green";
     messageEmail2.style.fontSize = "";  
-    email2.style.border = "solid 1px green ";
+    inputEmail2.style.border = "solid 1px green ";
    
 } else {
 
     messageEmail2.textContent = "E-mail inválido";
     messageEmail2.style.color = "red";
     messageEmail2.style.fontSize = "12px";
-    email2.style.border = "1px solid red";
+    inputEmail2.style.border = "1px solid red";
     
 }
 
