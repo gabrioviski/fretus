@@ -13,13 +13,16 @@ function emailValido() {
         messageEmail.textContent = "E-mail válido";
         messageEmail.style.color = "green";
         messageEmail.style.fontSize = "";  
-        inputEmail.style.border = "solid 1px green ";  
+        inputEmail.style.border = "solid 1px green "; 
+        return "valido"
+
     } else {
 
         messageEmail.textContent = "E-mail inválido";
         messageEmail.style.color = "red";
         messageEmail.style.fontSize = "12px";
         inputEmail.style.border = "1px solid red";
+        return "invalido"
     }
 }
 
@@ -32,10 +35,6 @@ entrar.addEventListener("click", function senhaValida() {
         messageSenha.style.fontSize = "12px";
         password.style.border = "1px solid red";
 
-        messageEmail.textContent = "E-mail inválido";
-        messageEmail.style.color = "red";
-        messageEmail.style.fontSize = "12px";
-        inputEmail.style.border = "1px solid red";
     }else{
         messageSenha.textContent = "";
         messageSenha.style.color = "";
@@ -43,6 +42,14 @@ entrar.addEventListener("click", function senhaValida() {
         password.style.border = "solid 1px green";
 
     }
+
+if(emailValido() === "invalido"){
+    messageEmail.textContent = "E-mail inválido";
+    messageEmail.style.color = "red";
+    messageEmail.style.fontSize = "12px";
+    inputEmail.style.border = "1px solid red";
+}
+
 });
 
 function senhaValidada(){
