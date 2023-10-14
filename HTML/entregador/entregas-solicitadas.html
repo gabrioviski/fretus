@@ -8,8 +8,11 @@
     <link rel="stylesheet" href="../../CSS/index.css">
     <link rel="stylesheet" href="../../CSS/header-client-shipper.css">
     <link rel="stylesheet" href="../../CSS/menu-burguer.css">
+    <link rel="stylesheet" href="../../CSS/client/price-indicator.css">
     <link rel="stylesheet" href="../../CSS/shipper/requests.css">
     <link rel="stylesheet" href="../../CSS/shipper/requests-notification.css">
+    <link rel="stylesheet" href="../../CSS/client/confirm-popup.css">
+    <link rel="stylesheet" href="../../CSS/client/popup-info.css">
 </head>
 <body>
     <div class="menu-burguer">
@@ -82,6 +85,9 @@
                         </button>
                     </div>
                 </div>
+                <div class="details">
+                    <span class="indicator">i</span>
+                </div>
             </div>
             <div class="card">
                 <div class="top">
@@ -109,6 +115,9 @@
                             <img src="../../imgs/shipper/close.svg" alt="">
                         </button>
                     </div>
+                </div>
+                <div class="details">
+                    <span class="indicator">i</span>
                 </div>
             </div>
             <div class="card">
@@ -138,6 +147,9 @@
                         </button>
                     </div>
                 </div>
+                <div class="details">
+                    <span class="indicator">i</span>
+                </div>
             </div>
             <div class="card">
                 <div class="top">
@@ -165,6 +177,9 @@
                             <img src="../../imgs/shipper/close.svg" alt="">
                         </button>
                     </div>
+                </div>
+                <div class="details">
+                    <span class="indicator">i</span>
                 </div>
             </div>
             <div class="card">
@@ -194,6 +209,9 @@
                         </button>
                     </div>
                 </div>
+                <div class="details">
+                    <span class="indicator">i</span>
+                </div>
             </div>
             <div class="card">
                 <div class="top">
@@ -221,6 +239,9 @@
                             <img src="../../imgs/shipper/close.svg" alt="">
                         </button>
                     </div>
+                </div>
+                <div class="details">
+                    <span class="indicator">i</span>
                 </div>
             </div>
             <div class="card">
@@ -250,6 +271,9 @@
                         </button>
                     </div>
                 </div>
+                <div class="details">
+                    <span class="indicator">i</span>
+                </div>
             </div>
             <div class="card">
                 <div class="top">
@@ -277,6 +301,9 @@
                             <img src="../../imgs/shipper/close.svg" alt="">
                         </button>
                     </div>
+                </div>
+                <div class="details">
+                    <span class="indicator">i</span>
                 </div>
             </div>
             <div class="card">
@@ -306,6 +333,9 @@
                         </button>
                     </div>
                 </div>
+                <div class="details">
+                    <span class="indicator">i</span>
+                </div>
             </div>
         </div>
         <div class="empty-alert">
@@ -314,8 +344,24 @@
         </div>
     </main>
     <div class="notification-container"></div>
+    <div class="popup info">
+        <div class="popup-content">
+            <div class="close">
+                <img src="../../imgs/client/close-icon.svg" alt="">
+            </div>
+            <div class="popup-wrapper">
+                <h1>Informações da Entrega</h1>
+                <p><span class="title-type">Local de partida:</span> Rua José de Castilho</p>
+                <p><span class="title-type">Local de retirada:</span> Rua Carneiro Leão</p>
+                <p><span class="title-type">Peso:</span> 1.5 Kg</p>
+                <p><span class="title-type">Dimensões:</span> 200x200 cm</p>
+                <p><span class="title-type">Preço:</span> R$ 51,00</p>
+            </div>
+        </div>
+    </div>
 
     <script src="../../JS/burguer.js"></script>
     <script src="../../JS/shipper/request.js"></script>
+    <script src="../../JS/shipper/popup-info.js"></script>
 </body>
 </html>

@@ -7,11 +7,13 @@
     <link rel="shortcut icon" href="../../imgs/logotca.png" type="image/x-icon">
     <link rel="stylesheet" href="../../CSS/index.css">
     <link rel="stylesheet" href="../../CSS/header-client-shipper.css">
+    <link rel="stylesheet" href="../../CSS/client/price-indicator.css">
     <link rel="stylesheet" href="../../CSS/menu-burguer.css">
     <link rel="stylesheet" href="../../CSS/shipper/history.css">
     <link rel="stylesheet" href="../../CSS/shipper/requests.css">
-    <link rel="stylesheet" href="../../CSS/client/confirm-modal.css">
-    <link rel="stylesheet" href="../../CSS/client/rate-modal.css">
+    <link rel="stylesheet" href="../../CSS/client/confirm-popup.css">
+    <link rel="stylesheet" href="../../CSS/client/rate-popup.css">
+    <link rel="stylesheet" href="../../CSS/client/popup-info.css">
 </head>
 <body>
     <div class="menu-burguer">
@@ -57,11 +59,6 @@
     <main>
         <div class="history-header">
             <h1>Histórico</h1>
-            <nav class="history-nav">
-                <select>
-                    <option>Ordenar Por</option>
-                </select>
-            </nav>
         </div>
 
         <div class="requests-container">
@@ -82,23 +79,8 @@
                 <div class="bottom">
                     <span class="price">R$51,00</span>
                 </div>
-            </div>
-            <div class="card">
-                <div class="top">
-                    <div class="row">
-                        <img src="https://files.axshare.com/gsc/NW3CCE/d7/2e/63/d72e6396c33043df9eca85714bda96d5/images/area_do_entregador__desktop_/u12.svg?pageId=162fbb92-5d69-4bc4-b5d2-9ac969f79156" alt="">
-                        <span>Rua Carlos José de Castilho</span>
-                    </div>
-                    <div class="row track">
-                        <img src="../../imgs/shipper/track.png" alt="">
-                    </div>
-                    <div class="row">
-                        <img src="https://files.axshare.com/gsc/NW3CCE/d7/2e/63/d72e6396c33043df9eca85714bda96d5/images/area_do_entregador__desktop_/u13.svg?pageId=162fbb92-5d69-4bc4-b5d2-9ac969f79156" alt="">
-                        <span>Rua Carneiro Leão</span>
-                    </div>
-                </div>
-                <div class="bottom">
-                    <span class="price">R$51,00</span>
+                <div class="details">
+                    <span class="indicator">i</span>
                 </div>
             </div>
             <div class="card">
@@ -117,11 +99,51 @@
                 </div>
                 <div class="bottom">
                     <span class="price">R$51,00</span>
+                </div>
+                <div class="details">
+                    <span class="indicator">i</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="top">
+                    <div class="row">
+                        <img src="https://files.axshare.com/gsc/NW3CCE/d7/2e/63/d72e6396c33043df9eca85714bda96d5/images/area_do_entregador__desktop_/u12.svg?pageId=162fbb92-5d69-4bc4-b5d2-9ac969f79156" alt="">
+                        <span>Rua Carlos José de Castilho</span>
+                    </div>
+                    <div class="row track">
+                        <img src="../../imgs/shipper/track.png" alt="">
+                    </div>
+                    <div class="row">
+                        <img src="https://files.axshare.com/gsc/NW3CCE/d7/2e/63/d72e6396c33043df9eca85714bda96d5/images/area_do_entregador__desktop_/u13.svg?pageId=162fbb92-5d69-4bc4-b5d2-9ac969f79156" alt="">
+                        <span>Rua Carneiro Leão</span>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <span class="price">R$51,00</span>
+                </div>
+                <div class="details">
+                    <span class="indicator">i</span>
                 </div>
             </div>       
         </div>
     </main>
+    <div class="popup info">
+        <div class="popup-content">
+            <div class="close">
+                <img src="../../imgs/client/close-icon.svg" alt="">
+            </div>
+            <div class="popup-wrapper">
+                <h1>Informações da Entrega</h1>
+                <p><span class="title-type">Local de partida:</span> Rua José de Castilho</p>
+                <p><span class="title-type">Local de retirada:</span> Rua Carneiro Leão</p>
+                <p><span class="title-type">Peso:</span> 1.5 Kg</p>
+                <p><span class="title-type">Dimensões:</span> 200x200 cm</p>
+                <p><span class="title-type">Preço:</span> R$ 51,00</p>
+            </div>
+        </div>
+    </div>
     
     <script src="../../JS/burguer.js"></script>
+    <script src="../../JS/shipper/popup-info.js"></script>
 </body>
 </html>
