@@ -6,7 +6,6 @@ var cpf =document.getElementById("cpf");
 var password = document.getElementById("password");
 var messageSenha = document.getElementById("messageSenha");
 var criar1 = document.getElementById("criar1");
-
 var nome = document.getElementById("nome");
 var messageNome = document.getElementById("messageNome");
 
@@ -134,15 +133,5 @@ function nomeValido(){
         return "invalido"
       }
 
-  
-
 }
 
-/*
-if (nome.value.length < 3) {
-        
-    messageNome.textContent = "Nome deve ter pelo menos 3 caracteres e conter apenas letras";
-    messageNome.style.color = "red";
-    messageNome.style.fontSize = "12px";
-    nome.style.border = "1px solid red";
-}*/
