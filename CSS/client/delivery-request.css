@@ -1,6 +1,6 @@
 main {
     background-color: #ebe7e5;
-    min-height: calc(100vh - 85px);
+    height: calc(100vh - 85px);
     display: grid;
     grid-template-columns: 40% 60%;
     position: relative;
@@ -11,16 +11,29 @@ main {
 }
 
 .form {
-    padding: 40px 0;
+    /* min-height: fit-content;
+    min-height: 90%;
+    max-height: 90%; */
+    /* padding: 15px 0; */
+    /* min-height: fit-content; */
+    max-height: 90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-image: var(--gray-gradient);
+    overflow: auto;
 }
 
-.form > form {
-    width: 75%;
+.form > .form-wrapper {
+    min-height: 90%;
+    /* max-height: 90%; */
+    width: max(75%, 350px);
     margin: 0 auto;
+}
+
+.form-wrapper form {
+    padding: 45px 0;
+    height: fit-content;
 }
 
 .form h1 {
@@ -29,8 +42,9 @@ main {
 }
 
 .form .schedules-container {
-    min-height: 177px;
-    margin-bottom: 50px;
+    min-height: 158px;
+    max-height: 158px;
+    margin-bottom: 25px;
 }
 
 .schedules-container > label {
@@ -109,10 +123,14 @@ main .return-form {
         left: 0;
         z-index: 100;
     }
+    .form form {
+        padding: 0;
+        padding-bottom: 45px;
+    }
     .map {
         z-index: 99;
     }
-    .form > form {
+    .form > .form-wrapper {
         width: 90%;
     }
     .return-form.show {

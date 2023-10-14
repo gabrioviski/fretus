@@ -63,62 +63,89 @@
 
     <main>
         <div class="form">
-            <form>
-                <h1>Solicitar Entrega</h1>
-                <input type="text" required="" class="address start" placeholder="Local de partida">
-                <div class="suggestions">
-                    <ul class="suggestions-options"></ul>
-                </div>
-                <input type="text" required="" class="address end" placeholder="Local de destino">
-                <div class="suggestions">
-                    <ul class="suggestions-options"></ul>
-                </div>
+            <div class="form-wrapper">
+                <form>
+                    <h1>Solicitar Entrega</h1>
+                    <input type="text" required="" class="address start" placeholder="Local de partida">
+                    <div class="suggestions">
+                        <ul class="suggestions-options"></ul>
+                    </div>
+                    <input type="text" required="" class="address end" placeholder="Local de destino">
+                    <div class="suggestions">
+                        <ul class="suggestions-options"></ul>
+                    </div>
+                    <div class="schedules-container">
+                        <input type="checkbox" name="schedule" id="schedule">
+                        <label for="schedule"> Clique aqui para agendar <span>></span></label>
+                        <div class="schedule-content">
+                            <input type="date" class="date-time">
+                            <input type="time" class="date-time">
+                        </div>
+                    </div>
                 
-                <div class="schedules-container">
-                    <input type="checkbox" name="schedule" id="schedule">
-                    <label for="schedule"> Clique aqui para agendar <span>></span></label>
-                    <div class="schedule-content">
-                        <input type="date" class="date-time">
-                        <input type="time" class="date-time">
+                    <div class="weight-container">
+                        <h1>Carga</h1>
+                        <div class="content">
+                            <input required type="radio" name="weight" id="s">
+                            <label for="s">
+                                <div class="card">
+                                    <img src="../../imgs/client/small-icon.svg" alt="">
+                                    <h2>Pequena</h2>
+                                </div>
+                            </label>
+                            <input type="radio" name="weight" id="m">
+                            <label for="m">
+                                <div class="card">
+                                    <img src="../../imgs/client/medium-icon.svg" alt="">
+                                    <h2>Média</h2>
+                                </div>
+                            </label>
+                            <input type="radio" name="weight" id="l">
+                            <label for="l">
+                                <div class="card">
+                                    <img src="../../imgs/client/large-icon.svg" alt="">
+                                    <h2>Grande</h2>
+                                </div>
+                            </label>
+                        </div>
                     </div>
-                </div>
 
-                <div class="vehicles-container">
-                    <h1>Veículos</h1>
-                    <div class="content">
-                        <input required type="radio" name="vehicles" id="bike">
-                        <label for="bike">
-                            <div class="card">
-                                <img src="../../imgs/client/Solicitar/icons8-motocicleta-50.png" alt="">
-                                <h2>Moto</h2>
-                            </div>
-                        </label>
-                        <input type="radio" name="vehicles" id="car">
-                        <label for="car">
-                            <div class="card">
-                                <img src="../../imgs/client/Solicitar/icons8-carro-50.png" alt="">
-                                <h2>Carro</h2>
-                            </div>
-                        </label>
-                        <input type="radio" name="vehicles" id="van">
-                        <label for="van">
-                            <div class="card">
-                                <img src="../../imgs/client/Solicitar/icons8-van-64.png" alt="">
-                                <h2>Van</h2>
-                            </div>
-                        </label>
-                        <input type="radio" name="vehicles" id="truck">
-                        <label for="truck">
-                            <div class="card">
-                                <img src="../../imgs/client/Solicitar/icons8-caminhão-48.png" alt="">
-                                <h2>Caminhão</h2>
-                            </div>
-                        </label>
+                    <div class="vehicles-container">
+                        <h1>Veículos</h1>
+                        <div class="content">
+                            <input required type="radio" name="vehicles" id="bike">
+                            <label for="bike">
+                                <div class="card">
+                                    <img src="../../imgs/client/Solicitar/icons8-motocicleta-50.png" alt="">
+                                    <h2>Moto</h2>
+                                </div>
+                            </label>
+                            <input type="radio" name="vehicles" id="car">
+                            <label for="car">
+                                <div class="card">
+                                    <img src="../../imgs/client/Solicitar/icons8-carro-50.png" alt="">
+                                    <h2>Carro</h2>
+                                </div>
+                            </label>
+                            <input type="radio" name="vehicles" id="van">
+                            <label for="van">
+                                <div class="card">
+                                    <img src="../../imgs/client/Solicitar/icons8-van-64.png" alt="">
+                                    <h2>Van</h2>
+                                </div>
+                            </label>
+                            <input type="radio" name="vehicles" id="truck">
+                            <label for="truck">
+                                <div class="card">
+                                    <img src="../../imgs/client/Solicitar/icons8-caminhão-48.png" alt="">
+                                    <h2>Caminhão</h2>
+                                </div>
+                            </label>
+                        </div>
                     </div>
-                </div>
-
-                <input type="submit" value="Continuar" class="cta">
-            </form>
+                    <input type="submit" value="Continuar" class="cta">
+                </form>
+            </div>
         </div>
         <div class="map access" id="map"></div>
         <div class="return-form">
