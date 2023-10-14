@@ -74,6 +74,7 @@
 
 .vehicle-description > .card-description p {
     margin: 2px 0 11px;
+    margin-top: 15px;
 }
 
 .vehicle-description > .card-description:not(.show) {
@@ -89,6 +90,10 @@
 .container-f {
     display: flex;
     flex-wrap: wrap; 
+  }
+  #preco{
+    margin-top: 15px;
+    font-size: 35px;
   }
 
   .cell {
