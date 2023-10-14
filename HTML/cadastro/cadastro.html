@@ -78,11 +78,15 @@
 
                     <!-- Inicio Entrergador validação  -->
 
-                    <input type="text" id="nome" placeholder="Nome completo" required>
-                    <input type="text" autocomplete="off" maxlength="14" placeholder="CPF/CNPJ" id="cpf2" required>
-                    <input type="Email" placeholder="Email" required>
+                    <input type="text" id="nome2" placeholder="Nome completo" oninput="nomeValido2()" required>
+                    <p id="messageNome2"></p>
+                    <input type="text" autocomplete="off" maxlength="14" placeholder="CPF/CNPJ" id="cpf2" oninput="cpfValido2()" required>
+                    <p id="messageCpf2"></p>
+                    <input type="Email" placeholder="Email" id="email2" oninput="emailValido2()" required>
+                    <p id="messageEmail2"></p>
                     <div class="input__wrapper">
-                        <input required id="password" type="password" class="input__field" placeholder="Senha">
+                        <input required id="password2" type="password" class="input__field" oninput="senhaValidada2()" placeholder="Senha">
+                        <p messageSenha2></p>
                         <label for="password" class="input__label"></label>
                         <img alt="Eye Icon" title="Eye Icon" src="../../imgs/login-cadastro/eye-off.svg"
                             class="input__icon">
@@ -92,7 +96,7 @@
 
 
                     <p>Já tem uma conta? <a href="../login/login.html">Acesse aqui.</a></p>
-                    <button type="submit">Criar como entregador</button>
+                    <button type="submit" id="criar2">Criar como entregador</button>
                     <main>
                         <div class="alternative">
                             <span>ou</span>

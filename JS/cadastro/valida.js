@@ -135,3 +135,55 @@ function nomeValido(){
 
 }
 
+//ENTRAGADORES
+
+var email2 = document.getElementById("email2");
+var emailRegex2 = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+(\.[a-z]+)?$/i;
+var messageEmail2 = document.getElementById("messageEmail2");
+var messageCpf2 = document.getElementById("messageCpf2");
+var cpf2 =document.getElementById("cpf2");
+var password2 = document.getElementById("password2");
+var messageSenha2 = document.getElementById("messageSenha2");
+var criar2 = document.getElementById("criar2");
+var nome2 = document.getElementById("nome2");
+var messageNome2 = document.getElementById("messageNome2");
+
+function emailValido2() {
+    var email2 = email2.value;
+
+    if (emailRegex2.test(email2)) {
+
+        messageEmail2.textContent = "E-mail válido";
+        messageEmail2.style.color = "green";
+        messageEmail2.style.fontSize = "";  
+        email2.style.border = "solid 1px green ";
+        return "valido"
+    } else {
+
+        messageEmail2.textContent = "E-mail inválido";
+        messageEmail2.style.color = "red";
+        messageEmail2.style.fontSize = "12px";
+        email2.style.border = "1px solid red";
+        return "invalido"
+    }
+}
+
+function cpfValido2(){
+
+    if (cpf2.value.length < 11) {
+
+        messageCpf2.textContent = "cpf inválido";
+        messageCpf2.style.color = "red";
+        messageCpf2.style.fontSize = "12px";
+        cpf2.style.border = "1px solid red";
+        return "invalido"
+
+    }else{
+        messageCpf2.textContent = "";
+        messageCpf2.style.color = "";
+        messageCpf2.style.fontSize = "";
+        cpf2.style.border = "solid 1px green";
+        return "valido"
+
+    }
+}
