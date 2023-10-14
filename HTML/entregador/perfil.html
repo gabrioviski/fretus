@@ -94,11 +94,13 @@
                 <label for="vehicles">Tipo do Veículo </label>
                 <div class="edit-row">
                     <div class="input-container">
-                        <textarea readonly id="description" placeholder="Digite aqui os modelos de seus veículos">Mercedes-Benz</textarea>
-                        <input type="button" class="btn" value="Cancelar">
-                        <input type="button" class="btn confirm" value="Confirmar">
+                        <select id="veiculo">
+                            <option value="moto">Moto</option>
+                            <option value="carro">Carro</option>
+                            <option value="van">Van</option>
+                            <option value="caminhao">Caminhão</option>
+                        </select>
                     </div>
-                    <span>Alterar</span>
                 </div>
             </div>
             <div class="row">

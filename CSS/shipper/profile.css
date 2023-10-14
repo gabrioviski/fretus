@@ -59,19 +59,16 @@ main {
 }
 select{
     margin: 10px;
-    width: 140px;
-    height: 30px;
+    width: 100%;
+    height: 35px;
     padding: 5px;
-    border-radius: 20px;
+    border-radius: 10px;
     text-align: center;
-    position: relative;
-    left: 25px;
-    font-size: 15px;
-    color:white;
-    background: darkgrey;
-    appearance: none;
+    font-size: 20px;
+    /* appearance: none;     para sumir a setinha do lado do select  */ 
     cursor: pointer;
-    border:none;
+    outline: none;
+    border-color: orange;
 }
 footer{
     padding: 25px; 
