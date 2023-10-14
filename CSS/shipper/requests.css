@@ -51,6 +51,7 @@ main > h1 {
     padding: 15px;
     opacity: 1;
     transition: all .7s;
+    position: relative;
 }
 
 .card > .top {
@@ -64,6 +65,7 @@ main > h1 {
     display: flex;
     align-items: center;
     column-gap: 10px;
+    padding-right: 25px;
 }
 
 .top > .row.track {
@@ -114,9 +116,18 @@ main > h1 {
 }
 
 .btn.denied {
-    background-color: var(--gray);
+    background-color: #DBDEE3;
     outline: none;
     border: none;
+}
+
+.card .indicator {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 20px;
+    height: 20px;
+    font-weight: 700;
 }
 
 @media (max-width: 795px) {

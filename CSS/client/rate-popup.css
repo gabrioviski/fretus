@@ -43,11 +43,11 @@
     font-size: 16px;
 }
 
-.popup span {
+.popup span.error-container {
     display: none;
 }
 
-.popup .error {
+.popup .error-container.error {
     display: block;
     color: red;
     font-weight: 700;

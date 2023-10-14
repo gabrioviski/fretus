@@ -151,20 +151,20 @@ var messageNome2 = document.getElementById("messageNome2");
 function emailValido2() {
     var email2 = inputEmail2.value;
 
-    if (emailRegex.test(email2)) {
+    if (emailRegex.test(email2) && email2.value.length > 0) {
 
         messageEmail2.textContent = "E-mail válido";
         messageEmail2.style.color = "green";
         messageEmail2.style.fontSize = "";  
         email2.style.border = "solid 1px green ";
-        return "valido"
+        return "valido2"
     } else {
 
         messageEmail2.textContent = "E-mail inválido";
         messageEmail2.style.color = "red";
         messageEmail2.style.fontSize = "12px";
         email2.style.border = "1px solid red";
-        return "invalido"
+        return "invalido2"
     }
 }
 
@@ -176,14 +176,14 @@ function cpfValido2(){
         messageCpf2.style.color = "red";
         messageCpf2.style.fontSize = "12px";
         cpf2.style.border = "1px solid red";
-        return "invalido"
+        return "invalido2"
 
     }else{
         messageCpf2.textContent = "";
         messageCpf2.style.color = "";
         messageCpf2.style.fontSize = "";
         cpf2.style.border = "solid 1px green";
-        return "valido"
+        return "valido2"
 
     }
 }
@@ -210,11 +210,11 @@ function Letras2(nome2) {
 
 function nomeValido2(){
     var name = nome2.value;
-    if (Letras2(name) && nome2.value.length >= 3) {
+    if (Letras2(name)) {
        
         nome2.style.border = "1px solid green";
         messageNome2.textContent = "";
-        return "valido"
+        return "valido2"
 
       } else if(nome2.value.length <= 3){
 
@@ -222,52 +222,86 @@ function nomeValido2(){
         messageNome2.style.color = "red";
         messageNome2.style.fontSize = "12px";
         nome2.style.border = "1px solid red";
-        return "invalido"
+        return "invalido2"
 
       }else {
         messageNome2.textContent = "nome inválido";
         messageNome2.style.color = "red";
         nome2.style.border = "1px solid red";
-        return "invalido"
+        return "invalido2"
       }
 
 }
 
 criar2.addEventListener("click", function senhaValida2() {
+ 
+    if(password2.value.length > 0){
 
-    if (password2.value.length < 1) {
-
-        messageSenha2.textContent = "Senha inválida";
-        messageSenha2.style.color = "red";
-        messageSenha2.style.fontSize = "12px";
-        password2.style.border = "solid 1px red";
-
-      
-    }else{
         messageSenha2.textContent = "";
         messageSenha2.style.color = "";
         messageSenha2.style.fontSize = "";
         password2.style.border = "solid 1px green";
-
-    }
-
-    if(emailValido2() === "invalido"){
-        messageEmail2.textContent = "E-mail inválido";
-        messageEmail2.style.color = "red";
-        messageEmail2.style.fontSize = "12px";
-        inputEmail2.style.border = "solid 1px red";
+        }else{
+            password2.style.border = "solid 1px red";
+          
         }
 
-        if(cpfValido2() === "invalido"){
-            messageCpf2.textContent = "cpf inválido";
-            messageCpf2.style.color = "red";
-            messageCpf2.style.fontSize = "12px";
-            cpf2.style.border = "1px solid red";
-        }
+var name = nome2.value;
+if (Letras2(name)) {
+   
+    nome2.style.border = "1px solid green";
+    messageNome2.textContent = "";
+   
 
-        if(nomeValido2() === "invalido"){
-            messageNome2.textContent = "nome inválido";
-            messageNome2.style.color = "red";
-            nome2.style.border = "1px solid red";
-        }
+  } else if(nome2.value.length <= 3){
+
+    messageNome2.textContent = "Nome deve ter pelo menos 3 caracteres ";
+    messageNome2.style.color = "red";
+    messageNome2.style.fontSize = "12px";
+    nome2.style.border = "1px solid red";
+    
+
+  }else {
+    messageNome2.textContent = "nome inválido";
+    messageNome2.style.color = "red";
+    nome2.style.border = "1px solid red";
+    
+  }
+
+  if (cpf2.value.length < 11) {
+
+    messageCpf2.textContent = "cpf inválido";
+    messageCpf2.style.color = "red";
+    messageCpf2.style.fontSize = "12px";
+    cpf2.style.border = "1px solid red";
+   
+
+}else{
+    messageCpf2.textContent = "";
+    messageCpf2.style.color = "";
+    messageCpf2.style.fontSize = "";
+    cpf2.style.border = "solid 1px green";
+  
+
+}
+
+
+var email2 = inputEmail2.value;
+
+if (emailRegex.test(email2) && email2.value.length > 0) {
+
+    messageEmail2.textContent = "E-mail válido";
+    messageEmail2.style.color = "green";
+    messageEmail2.style.fontSize = "";  
+    email2.style.border = "solid 1px green ";
+   
+} else {
+
+    messageEmail2.textContent = "E-mail inválido";
+    messageEmail2.style.color = "red";
+    messageEmail2.style.fontSize = "12px";
+    email2.style.border = "1px solid red";
+    
+}
+
 });
