@@ -138,7 +138,7 @@ function nomeValido(){
 //ENTRAGADORES
 
 var email2 = document.getElementById("email2");
-var emailRegex2 = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+(\.[a-z]+)?$/i;
+//var emailRegex2 = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+(\.[a-z]+)?$/i;
 var messageEmail2 = document.getElementById("messageEmail2");
 var messageCpf2 = document.getElementById("messageCpf2");
 var cpf2 =document.getElementById("cpf2");
@@ -151,7 +151,7 @@ var messageNome2 = document.getElementById("messageNome2");
 function emailValido2() {
     var email2 = email2.value;
 
-    if (emailRegex2.test(email2)) {
+    if (emailRegex.test(email2)) {
 
         messageEmail2.textContent = "E-mail válido";
         messageEmail2.style.color = "green";
@@ -186,4 +186,49 @@ function cpfValido2(){
         return "valido"
 
     }
+}
+
+function senhaValidada2(){
+
+    if(password2.value.length > 0){
+
+        messageSenha2.textContent = "";
+        messageSenha2.style.color = "";
+        messageSenha2.style.fontSize = "";
+        password2.style.border = "solid 1px green";
+        }else{
+            password2.style.border = "solid 1px red";
+        }
+}
+
+
+function Letras2(nome2) {
+    const regex = /^[a-zA-Z]+$/; // Expressão regular que corresponde apenas a letras
+    return regex.test(nome2);
+  }
+
+
+function nomeValido2(){
+    var name = nome2.value;
+    if (Letras2(name) && nome2.value.length >= 3) {
+       
+        nome2.style.border = "1px solid green";
+        messageNome2.textContent = "";
+        return "valido"
+
+      } else if(nome2.value.length <= 3){
+
+        messageNome2.textContent = "Nome deve ter pelo menos 3 caracteres ";
+        messageNome2.style.color = "red";
+        messageNome2.style.fontSize = "12px";
+        nome2.style.border = "1px solid red";
+        return "invalido"
+
+      }else {
+        messageNome2.textContent = "nome inválido";
+        messageNome2.style.color = "red";
+        nome2.style.border = "1px solid red";
+        return "invalido"
+      }
+
 }
