@@ -52,7 +52,6 @@
     border-bottom-right-radius: 15px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
 .vehicle-description > .card-description::before {
@@ -84,6 +83,23 @@
 }
 
 .vehicle-description > .card-description.show {
-    height: 330px;
+    height: 250px;
     padding: 25px;
 }
+.container-f {
+    display: flex;
+    flex-wrap: wrap; 
+  }
+
+  .cell {
+    flex: 1;
+
+    padding: 20px;
+    
+    width: calc(100% / 4); 
+  }
+
+  @media (max-width: 768px) {
+    .cell {
+      width: 100%; 
+    }}
