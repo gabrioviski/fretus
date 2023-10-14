@@ -69,7 +69,7 @@
 }
 
 .vehicle-description > .card-description h1:last-of-type {
-    margin-top: 33px;
+    margin-top: 20px;
 }
 
 .vehicle-description > .card-description p {
@@ -84,27 +84,63 @@
 }
 
 .vehicle-description > .card-description.show {
-    height: 250px;
-    padding: 25px;
+    height: 270px;
+    padding: 2%;
 }
 .container-f {
     display: flex;
-    flex-wrap: wrap; 
-  }
-  #preco{
-    margin-top: 15px;
-    font-size: 35px;
-  }
+    flex-wrap: wrap;
+}
 
-  .cell {
+.cell {
     flex: 1;
-
-    padding: 20px;
-    
+    padding: 1.5%;
     width: calc(100% / 4); 
-  }
+}
+.card-description h1, .card-description p {
+    font-size: 1.2rem; 
+}
 
-  @media (max-width: 768px) {
+
+#preco {
+    margin-top: 15px;
+    font-size: 2rem; 
+}
+
+.card-description h1, .card-description p {
+    font-size: 1.4rem;
+}
+
+@media (max-width: 800px) {
     .cell {
-      width: 100%; 
-    }}
+        width: 100%;
+    }
+
+    .card-description h1, .card-description p {
+        font-size: 1.2rem;
+    }
+
+    #preco {
+        font-size: 1.3rem; 
+    }
+
+    .vehicle-description > .card-description {
+        height: auto; 
+    }
+
+    .vehicle-description > .card-description.show {
+        height: auto; 
+    }
+
+    @media(max-width:520px) {
+
+        .container-f {
+           flex-direction: column;
+           padding: 1%;
+       }
+       .card-description h1, .card-description p {
+        font-size: 1rem;
+    }
+       
+       }
+}
