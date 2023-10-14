@@ -1,3 +1,4 @@
+
 body {
     background-image: var(--gray-gradient);
     min-height: 100vh;
@@ -63,12 +64,11 @@ select{
     height: 35px;
     padding: 5px;
     border-radius: 10px;
-    text-align: center;
-    font-size: 20px;
-    /* appearance: none;     para sumir a setinha do lado do select  */ 
+    padding-left: 20px;
+    border-color:darkgray; 
     cursor: pointer;
-    outline: none;
-    border-color: orange;
+    outline: none; 
+    font-size: 20px;
 }
 footer{
     padding: 25px; 
