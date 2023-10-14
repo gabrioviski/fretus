@@ -105,7 +105,7 @@ function senhaValidada(){
 
 
 function Letras(nome) {
-    const regex = /^[a-zA-Z]+$/; // Expressão regular que corresponde apenas a letras
+    const regex = /^[a-zA-Z]+$/; 
     return regex.test(nome);
   }
 
@@ -137,7 +137,7 @@ function nomeValido(){
 
 //ENTRAGADORES
 
-var email2 = document.getElementById("email2");
+var inputEmail2 = document.getElementById("inputEmail2");
 //var emailRegex2 = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+(\.[a-z]+)?$/i;
 var messageEmail2 = document.getElementById("messageEmail2");
 var messageCpf2 = document.getElementById("messageCpf2");
@@ -149,7 +149,7 @@ var nome2 = document.getElementById("nome2");
 var messageNome2 = document.getElementById("messageNome2");
 
 function emailValido2() {
-    var email2 = email2.value;
+    var email2 = inputEmail2.value;
 
     if (emailRegex.test(email2)) {
 
@@ -203,7 +203,7 @@ function senhaValidada2(){
 
 
 function Letras2(nome2) {
-    const regex = /^[a-zA-Z]+$/; // Expressão regular que corresponde apenas a letras
+    const regex = /^[a-zA-Z]+$/; 
     return regex.test(nome2);
   }
 
