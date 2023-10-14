@@ -81,6 +81,12 @@ criar1.addEventListener("click", function senhaValida() {
             messageCpf.style.fontSize = "12px";
             cpf.style.border = "1px solid red";
         }
+
+        if(nomeValido() === "invalido"){
+            messageNome.textContent = "nome inválido";
+            messageNome.style.color = "red";
+            nome.style.border = "1px solid red";
+        }
 });
 
 
@@ -98,23 +104,45 @@ function senhaValidada(){
         }
 }
 
+
+function Letras(nome) {
+    const regex = /^[a-zA-Z]+$/; // Expressão regular que corresponde apenas a letras
+    return regex.test(nome);
+  }
+
+
 function nomeValido(){
-
     var name = nome.value;
+    if (Letras(name) && nome.value.length >= 3) {
+       
+        nome.style.border = "1px solid green";
+        messageNome.textContent = "";
+        return "valido"
 
-    if (!/^[a-zA-Z0-9]+$/.test(name)){
-        messageNome.textContent = "nome inválido";
+      } else if(nome.value.length <= 3){
+
+        messageNome.textContent = "Nome deve ter pelo menos 3 caracteres ";
         messageNome.style.color = "red";
         messageNome.style.fontSize = "12px";
         nome.style.border = "1px solid red";
+        return "invalido"
 
-    }else{
-        messageNome.textContent = "";
-        messageNome.style.color = "";
-        messageNome.style.fontSize = "";
-        nome.style.border = "solid 1px green";
+      }else {
+        messageNome.textContent = "nome inválido";
+        messageNome.style.color = "red";
+        nome.style.border = "1px solid red";
+        return "invalido"
+      }
 
-    }
-
+  
 
 }
+
+/*
+if (nome.value.length < 3) {
+        
+    messageNome.textContent = "Nome deve ter pelo menos 3 caracteres e conter apenas letras";
+    messageNome.style.color = "red";
+    messageNome.style.fontSize = "12px";
+    nome.style.border = "1px solid red";
+}*/
