@@ -243,7 +243,9 @@ criar2.addEventListener("click", function senhaValida2() {
         password2.style.border = "solid 1px green";
         }else{
             password2.style.border = "solid 1px red";
-          
+            messageSenha2.textContent = "senha inválida";
+            messageSenha2.style.color = "red";
+            messageSenha2.style.fontSize = "12px"
         }
 
 var name = nome2.value;
