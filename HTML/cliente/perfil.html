@@ -58,7 +58,6 @@
             <div class="Seu-Perfil">
                 <h2>Seu Perfil</h2>
             </div>
-
             <div class="action-perfil">
                 <label class="action__upload-btn" for="img-selector">Alterar sua foto de perfil</label>
                 <input type="file" name="" id="img-selector" class="action__hiddenField js__profile-upload-btn">
@@ -68,6 +67,7 @@
                 style="background-image:url(https://via.placeholder.com/300x300/cccccc/666666/?text=Fretus)">
                 </div>
             </div>
+
 
             
             <div class="row">
@@ -92,17 +92,23 @@
                     <span>Alterar</span>          
                 </div>
             </div>
+
+            <!--  !        Em andamento Mascara - PErfil          -->
+
             <div class="row">
                 <label for="name">Número para contato: </label>
                 <div class="edit-row">
                     <div class="input-container">
-                        <input type="text" readonly id="number" value="(11) 99999-9999">
+                        <input type="text" id="number" value="(11) 99999-9999">
                         <input type="button" class="btn" value="Cancelar">
                         <input type="button" class="btn confirm" value="Confirmar">
                     </div>
-                    <span>Alterar</span>          
+                    <span id="alterar">Alterar</span>
                 </div>
             </div>
+            
+            <!-- !                                                        -->
+
             <div class="row">
                 <label for="description">Descrição</label>
                 <div class="edit-row">
@@ -118,7 +124,7 @@
             <div class="containerm-p">
                 <p>
                     Precisa de ajuda? Entre em contato com a
-                    <a href="../central-ajuda/central-de-ajuda.html">Central de Ajuda.</a> <!-- Colocar o link da página do Fale conosco aqui -->
+                    <a href="../central-ajuda/central-de-ajuda.html">Central de Ajuda.</a>
                   </p>
             </div>
     </main>
@@ -129,6 +135,7 @@
     <script src="../../JS/shipper/change.js"></script>
     <script src="../../JS/shipper/profile.js"></script>
     <script src="../../JS/perfil.js"></script>
+        
     
 </body>
 </html>
