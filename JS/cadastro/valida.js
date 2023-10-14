@@ -232,3 +232,42 @@ function nomeValido2(){
       }
 
 }
+
+criar2.addEventListener("click", function senhaValida2() {
+
+    if (password2.value.length < 1) {
+
+        messageSenha2.textContent = "Senha inválida";
+        messageSenha2.style.color = "red";
+        messageSenha2.style.fontSize = "12px";
+        password2.style.border = "solid 1px red";
+
+      
+    }else{
+        messageSenha2.textContent = "";
+        messageSenha2.style.color = "";
+        messageSenha2.style.fontSize = "";
+        password2.style.border = "solid 1px green";
+
+    }
+
+    if(emailValido2() === "invalido"){
+        messageEmail2.textContent = "E-mail inválido";
+        messageEmail2.style.color = "red";
+        messageEmail2.style.fontSize = "12px";
+        inputEmail2.style.border = "solid 1px red";
+        }
+
+        if(cpfValido2() === "invalido"){
+            messageCpf2.textContent = "cpf inválido";
+            messageCpf2.style.color = "red";
+            messageCpf2.style.fontSize = "12px";
+            cpf2.style.border = "1px solid red";
+        }
+
+        if(nomeValido2() === "invalido"){
+            messageNome2.textContent = "nome inválido";
+            messageNome2.style.color = "red";
+            nome2.style.border = "1px solid red";
+        }
+});
