@@ -1,4 +1,4 @@
-
+/* 
 function selectCard(card) {
     const cards = document.querySelectorAll('.card');
     for (const c of cards) {
@@ -15,4 +15,4 @@ function validateForm() {
         return false;
     }
     return true;
-}
+} */

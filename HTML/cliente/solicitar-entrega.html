@@ -63,16 +63,17 @@
 
     <main>
         <div class="form">
-            <form id="cardForm" onsubmit="return validateForm()">
+            <form>
                 <h1>Solicitar Entrega</h1>
-                <input type="text" required class="address start" placeholder="Local de partida">
+                <input type="text" required="" class="address start" placeholder="Local de partida">
                 <div class="suggestions">
                     <ul class="suggestions-options"></ul>
                 </div>
-                <input type="text" required class="address end" placeholder="Local de destino">
+                <input type="text" required="" class="address end" placeholder="Local de destino">
                 <div class="suggestions">
                     <ul class="suggestions-options"></ul>
                 </div>
+                
                 <div class="schedules-container">
                     <input type="checkbox" name="schedule" id="schedule">
                     <label for="schedule"> Clique aqui para agendar <span>></span></label>
@@ -81,29 +82,41 @@
                         <input type="time" class="date-time">
                     </div>
                 </div>
-                <h1>Tipo de veículo </h1>
-                <div class="container-item">
-                <div class="Flex-item">
-                <div class="card" onclick="selectCard(this)" >
-                    <img src="../../imgs/client/Solicitar/icons8-motocicleta-50.png" alt="img">
-                    <p>Moto</p>
-                </div>
-                <div class="card" onclick="selectCard(this)" >
-                    <img src="../../imgs/client/Solicitar/icons8-carro-50.png"alt="img">
-                    <p>Carro</p>
-                </div>
-                <div class="card" onclick="selectCard(this)">
-                    <img src="../../imgs/client/Solicitar/icons8-van-64.png" alt="img">
-                    <p>Van</p>
+
+                <div class="vehicles-container">
+                    <h1>Veículos</h1>
+                    <div class="content">
+                        <input required type="radio" name="vehicles" id="bike">
+                        <label for="bike">
+                            <div class="card">
+                                <img src="../../imgs/client/Solicitar/icons8-motocicleta-50.png" alt="">
+                                <h2>Moto</h2>
+                            </div>
+                        </label>
+                        <input type="radio" name="vehicles" id="car">
+                        <label for="car">
+                            <div class="card">
+                                <img src="../../imgs/client/Solicitar/icons8-carro-50.png" alt="">
+                                <h2>Carro</h2>
+                            </div>
+                        </label>
+                        <input type="radio" name="vehicles" id="van">
+                        <label for="van">
+                            <div class="card">
+                                <img src="../../imgs/client/Solicitar/icons8-van-64.png" alt="">
+                                <h2>Van</h2>
+                            </div>
+                        </label>
+                        <input type="radio" name="vehicles" id="truck">
+                        <label for="truck">
+                            <div class="card">
+                                <img src="../../imgs/client/Solicitar/icons8-caminhão-48.png" alt="">
+                                <h2>Caminhão</h2>
+                            </div>
+                        </label>
+                    </div>
                 </div>
 
-                <div class="card" onclick="selectCard(this)">
-                    <img src="../../imgs/client/Solicitar/icons8-caminhão-48.png" alt="img">
-                    <p>caminhão</p>
-                </div>
-                <div id="error-message"></div>
-                </div>
-                </div>
                 <input type="submit" value="Continuar" class="cta">
             </form>
         </div>
@@ -131,7 +144,7 @@
     
 
     <script src="../../JS/burguer.js"></script>
-    <script src="../../JS/client/vehicles-carousel.js"></script>
+    <!-- <script src="../../JS/client/vehicles-carousel.js"></script> -->
     <script src="../../JS/client/geolocation.js"></script>
     <script src="../../JS/client/popup-confirm.js"></script>
 </body>

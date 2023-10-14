@@ -32,7 +32,7 @@ const setPrice = distance => {
     /* fazer os calculos aqui */
     const preco = calcularPreco(distance, typeVehicle);
 
- 
+    
     let price = f.format(preco) // linha que transforma qualquer valor em reais
     priceContainer.textContent = price // coloca o preco no popup
 }
