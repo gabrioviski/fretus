@@ -60,11 +60,11 @@
                                 <input required placeholder="Data de Nascimento" class="input-field" type="text">
                                 <input required placeholder="Número de Telefone" class="input-field" type="text">
                                 <select required  placeholder="Tipo de Veículo" class="input-field">
-                                    <option>Tipo de Veículo</option>
-                                    <option>Moto</option>
-                                    <option>Carro</option>
-                                    <option>Van</option>
-                                    <option>Caminhão</option>
+                                    <option value="">Tipo de Veículo</option>
+                                    <option value="moto">Moto</option>
+                                    <option value="carro">Carro</option>
+                                    <option value="van">Van</option>
+                                    <option value="caminhao">Caminhão</option>
                                 </select>
                                 <input required placeholder="Modelo do Veículo" class="input-field" type="text">
                                 <input required placeholder="Placa do Veículo" class="input-field" type="text">
@@ -83,8 +83,20 @@
                                 <h1>Enviando seus documentos</h1>
                             </div>
                             <div class="form-fields">
-                                <input required placeholder="Data de Nascimento" class="input-field" type="text">
-                                <input required placeholder="Número de Telefone" class="input-field" type="text">
+                                <label class="file-field" for="cnh">
+                                <input required type="file" name="files" id="cnh">
+                                <div class="icon">
+                                        <img src="../../imgs/cadastro-entregador/upload-icon.svg" alt="">
+                                    </div>
+                                    <span class="msg">PDF ou Foto da CNH</span>
+                                </label>
+                                <label class="file-field" for="vehicle-photo">
+                                    <input required type="file" name="files" id="vehicle-photo">
+                                    <div class="icon">
+                                        <img src="../../imgs/cadastro-entregador/upload-icon.svg" alt="">
+                                    </div>
+                                    <span class="msg">Foto do Veículo</span>
+                                </label>
                             </div>
                             <div class="btns">
                                 <button class="cta no" type="submit">Etapa Anterior</button>
@@ -93,12 +105,19 @@
                         </form>
                         <form class="form">
                             <div class="title">
-                                <h2>Etapa 2 de 3</h2>
-                                <h1>Enviando seus documentos</h1>
+                                <h2>Etapa 3 de 3</h2>
+                                <h1>Criando seu Perfil</h1>
                             </div>
                             <div class="form-fields">
-                                <input required placeholder="Data de Nascimento" class="input-field" type="text">
-                                <input required placeholder="Número de Telefone" class="input-field" type="text">
+                                <input type="file" id="profile">
+                                <label class="file-field" for="profile">
+                                    <div class="icon">
+                                        <img src="../../imgs/cadastro-entregador/upload-icon.svg" alt="">
+                                    </div>
+                                    <span class="msg">Foto de Perfil (opcional)</span>
+                                </label>
+                                <input required placeholder="Raio de atuação (em km)" class="input-field" type="text">
+                                <textarea required class="input-field" placeholder="Descrição"></textarea>
                             </div>
                             <div class="btns">
                                 <button class="cta no" type="submit">Etapa Anterior</button>

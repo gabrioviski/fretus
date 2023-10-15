@@ -2,28 +2,47 @@ const yes = document.querySelectorAll('.yes')
 const no = document.querySelectorAll('.no')
 const form = document.querySelectorAll('.form')
 const container = document.querySelector('.popup-wrapper')
+const inputFile = document.querySelectorAll('input[type="file"]')
+const labelFile = document.querySelectorAll('.file-field .msg')
+let index = 0
 
 yes.forEach((item, i) => {
     item.addEventListener('click', (e) => {
-        /* if (isChecked(i)) { */
+        if (isChecked(i)) {
             e.preventDefault()
             removeClass()
-            console.log(i);
-            form[i + 1].classList.add('active')
-            container.scrollLeft = (form[i].clientWidth * (i + 1)) + 7
-        /* } */
+            index++
+            form[index].classList.add('active')
+            container.classList.add('scrolling')
+            container.addEventListener('scrollend', scrolling)
+            container.scrollLeft = (form[index].clientWidth + 7) * index
+        }
     })
 })
     
-no.forEach((item, i) => {
+no.forEach(item => {
     item.addEventListener('click', (e) => {
         e.preventDefault()
         removeClass()
-        form[i].classList.add('active')
-        container.scrollLeft = -(form[i].clientWidth + 7)
+        index--
+        form[index].classList.add('active')
+        container.classList.add('scrolling')
+        container.addEventListener('scrollend', scrolling)
+        container.scrollLeft = (form[index].clientWidth + 7) * index
     })
 })
-    
+
+const scrolling = () => {
+    container.classList.remove('scrolling')
+    container.removeEventListener('scrollend', scrolling)
+}
+
+window.addEventListener('resize', () => {
+    container.classList.add('scrolling')
+    container.addEventListener('scrollend', scrolling)
+    container.scrollLeft = (form[index].clientWidth + 7) * index
+})
+
 const removeClass = () => {
     form.forEach(item => {
         item.classList.remove('active')
@@ -39,3 +58,14 @@ const isChecked = (i) => {
     })
     return valid
 }
+
+inputFile.forEach((input, i) => {
+    input.addEventListener('change', () => {
+        console.log(input.files[0]);
+        if (input.files[0]) {
+            labelFile[i].textContent = `${input.files[0].name}`
+        } else {
+            labelFile[i].textContent = `Nenhum arquivo enviado!`
+        }
+    })
+})
