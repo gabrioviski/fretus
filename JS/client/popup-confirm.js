@@ -1,5 +1,6 @@
 const inputStart = document.querySelector('.start')
 const inputEnd = document.querySelector('.end')
+const weight = document.querySelector('input[name="weight"]')
 const vehicle = document.querySelector('input[name="vehicles"]')
 const submit = document.querySelector('[type="submit"].cta')
 const popup = document.querySelector('.popup')
@@ -10,7 +11,8 @@ const close = document.querySelector('.close')
 const priceContainer = document.querySelector('.price')
 
 submit.addEventListener('click', e => {
-    if (inputStart.validity.valid == true && inputEnd.validity.valid == true && vehicle.validity.valid) {
+  checkValidation()  
+  if (inputStart.validity.valid == true && inputEnd.validity.valid == true && vehicle.validity.valid && weight.validity.valid && checkValidation()) {
         e.preventDefault()
         popup.classList.add('show')
         formContainer.classList.add('mobile')
