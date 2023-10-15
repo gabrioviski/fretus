@@ -10,10 +10,10 @@ function emailValido() {
 
     if (emailRegex.test(email)) {
 
-        messageEmail.textContent = "E-mail válido";
-        messageEmail.style.color = "green";
+        messageEmail.textContent = "";
+        messageEmail.style.color = "";
         messageEmail.style.fontSize = "";  
-        inputEmail.style.border = "solid 1px green "; 
+        inputEmail.style.border = "solid 1px black "; 
         return "valido"
 
     } else {
@@ -39,7 +39,7 @@ entrar.addEventListener("click", function senhaValida() {
         messageSenha.textContent = "";
         messageSenha.style.color = "";
         messageSenha.style.fontSize = "";
-        password.style.border = "solid 1px green";
+        password.style.border = "solid 1px black";
 
     }
 
@@ -59,6 +59,6 @@ function senhaValidada(){
     messageSenha.textContent = "";
     messageSenha.style.color = "";
     messageSenha.style.fontSize = "";
-    password.style.border = "solid 1px green";
+    password.style.border = "solid 1px black";
     }
 }
