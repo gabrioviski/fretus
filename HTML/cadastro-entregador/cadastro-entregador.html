@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fretus - Cadastro de Entregador</title>
+    <link rel="shortcut icon" href="../../imgs/logotca.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../CSS/index.css">
+    <link rel="stylesheet" href="../../CSS/home/home.css">
+    <link rel="stylesheet" href="../../CSS/menu-burguer.css">
+    <link rel="stylesheet" href="../../CSS/home/header.css">
+    <link rel="stylesheet" href="../../CSS/home/hero-section.css">
+    <link rel="stylesheet" href="../../CSS/cta.css">
+    <link rel="stylesheet" href="../../CSS/client/confirm-popup.css">
+    <link rel="stylesheet" href="../../CSS/client/pay-popup.css">
+    <link rel="stylesheet" href="../../CSS/cadastro-entregador/shipper-signin.css">
+</head>
+<body>
+    <div class="menu-burguer">
+        <div class="burguer">
+            <img src="https://files.axshare.com/gsc/NW3CCE/d7/2e/63/d72e6396c33043df9eca85714bda96d5/images/homepage__mobile_/u14.svg?pageId=474e0aac-b4ee-403d-9bc0-5e2c0892e3b4" alt="">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../../HTML/cliente/solicitar-entrega.html">Sou Cliente</a></li>
+                <li><a href="../../HTML/entregador/entregas-solicitadas.html">Sou Entregador</a></li>
+                <li><a href="../../HTML/login/login.html">Entrar</a></li>
+                <li><a href="../../HTML/cadastro/cadastro.html">Cadastrar</a></li>
+            </ul>  
+        </nav>
+    </div>
+    
+    <div class="hero">
+        <header>
+            <h1><a href="../../index.html"><img class="logo" src="../../imgs/logotca.png"></a></h1>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="../../HTML/cliente/solicitar-entrega.html">Solicite uma entrega</a></li>
+                    <li><a href="../../HTML/entregador/entregas-solicitadas.html">Trabalhe Conosco</a></li>
+                    <li><a href="../../HTML/login/login.html">Entrar</a></li>
+                    <a class="cta" href="../../HTML/cadastro/cadastro.html">
+                        <li>Cadastre-se</li>
+                    </a>
+                </ul>
+                <div class="burguer">
+                    <img src="https://files.axshare.com/gsc/NW3CCE/d7/2e/63/d72e6396c33043df9eca85714bda96d5/images/homepage__mobile_/u14.svg?pageId=474e0aac-b4ee-403d-9bc0-5e2c0892e3b4" alt="">
+                </div>
+            </nav>
+        </header>
+        <section>
+            <div class="popup show">
+                <div class="popup-content">
+                    <div class="popup-wrapper">
+                        <form class="form active">
+                            <div class="title">
+                                <h2>Etapa 1 de 3</h2>
+                                <h1>Verificando seus dados</h1>
+                            </div>
+                            <div class="form-fields">
+                                <input required placeholder="Data de Nascimento" class="input-field" type="text">
+                                <input required placeholder="Número de Telefone" class="input-field" type="text">
+                                <select required  placeholder="Tipo de Veículo" class="input-field">
+                                    <option>Tipo de Veículo</option>
+                                    <option>Moto</option>
+                                    <option>Carro</option>
+                                    <option>Van</option>
+                                    <option>Caminhão</option>
+                                </select>
+                                <input required placeholder="Modelo do Veículo" class="input-field" type="text">
+                                <input required placeholder="Placa do Veículo" class="input-field" type="text">
+                            </div>
+                            <div class="terms">
+                                <input required type="checkbox" name="terms" id="terms">
+                                <label for="terms">Eu concordo com os <a href="">Termos e Condições</a> e com a Política de Privacidade da Fretus</label>
+                            </div>
+                            <div class="btns">
+                                <button class="cta yes" type="submit">Próxima Etapa</button>
+                            </div>
+                        </form>
+                        <form class="form">
+                            <div class="title">
+                                <h2>Etapa 2 de 3</h2>
+                                <h1>Enviando seus documentos</h1>
+                            </div>
+                            <div class="form-fields">
+                                <input required placeholder="Data de Nascimento" class="input-field" type="text">
+                                <input required placeholder="Número de Telefone" class="input-field" type="text">
+                            </div>
+                            <div class="btns">
+                                <button class="cta no" type="submit">Etapa Anterior</button>
+                                <button class="cta yes" type="submit">Próxima Etapa</button>
+                            </div>
+                        </form>
+                        <form class="form">
+                            <div class="title">
+                                <h2>Etapa 2 de 3</h2>
+                                <h1>Enviando seus documentos</h1>
+                            </div>
+                            <div class="form-fields">
+                                <input required placeholder="Data de Nascimento" class="input-field" type="text">
+                                <input required placeholder="Número de Telefone" class="input-field" type="text">
+                            </div>
+                            <div class="btns">
+                                <button class="cta no" type="submit">Etapa Anterior</button>
+                                <button class="cta yes" type="submit">Próxima Etapa</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="../../JS/burguer.js"></script>
+    <script src="../../JS/cadastro-entregador/form.js"></script>
+</body>
+</html>
