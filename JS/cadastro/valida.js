@@ -17,7 +17,7 @@ function emailValido() {
         messageEmail.textContent = "";
         messageEmail.style.color = "";
         messageEmail.style.fontSize = "";  
-        inputEmail.style.border = "solid 2px black ";
+        inputEmail.style.border = "solid 1px black ";
         return "valido"
     } else {
 
@@ -43,7 +43,7 @@ function cpfValido(){
         messageCpf.textContent = "";
         messageCpf.style.color = "";
         messageCpf.style.fontSize = "";
-        cpf.style.border = "solid 2px black";
+        cpf.style.border = "solid 1px black";
         return "valido"
 
     }
@@ -63,7 +63,7 @@ criar1.addEventListener("click", function senhaValida() {
         messageSenha.textContent = "";
         messageSenha.style.color = "";
         messageSenha.style.fontSize = "";
-        password.style.border = "solid 2px black";
+        password.style.border = "solid 1px black";
 
     }
 
@@ -97,7 +97,7 @@ function senhaValidada(){
         messageSenha.textContent = "";
         messageSenha.style.color = "";
         messageSenha.style.fontSize = "";
-        password.style.border = "solid 2px black";
+        password.style.border = "solid 1px black";
         }else{
             password.style.border = "solid 1px red";
         }
@@ -114,7 +114,7 @@ function nomeValido(){
     var name = nome.value;
     if (Letras(name) && nome.value.length >= 3) {
        
-        nome.style.border = "2px solid black";
+        nome.style.border = "1px solid black";
         messageNome.textContent = "";
         return "valido"
 
@@ -155,7 +155,7 @@ function emailValido2() {
         messageEmail2.textContent = "";
         messageEmail2.style.color = "";
         messageEmail2.style.fontSize = "";  
-        inputEmail2.style.border = "solid 2px black";
+        inputEmail2.style.border = "solid 1px black";
         return "valido2"
     } else {
 
@@ -181,7 +181,7 @@ function cpfValido2(){
         messageCpf2.textContent = "";
         messageCpf2.style.color = "";
         messageCpf2.style.fontSize = "";
-        cpf2.style.border = "solid 2px black";
+        cpf2.style.border = "solid 1px black";
         return "valido2"
 
     }
@@ -194,7 +194,7 @@ function senhaValidada2(){
         messageSenha2.textContent = "";
         messageSenha2.style.color = "";
         messageSenha2.style.fontSize = "";
-        password2.style.border = "solid 1.5px #2C6493";
+        password2.style.border = "solid 1px black";
         }else{
             password2.style.border = "solid 1px red";
         }
@@ -211,7 +211,7 @@ function nomeValido2(){
     var name = nome2.value;
     if (Letras2(name) && nome2.value.length >= 3) {
        
-        nome2.style.border = "2px solid black";
+        nome2.style.border = "1px solid black";
         messageNome2.textContent = "";
         return "valido2"
 
@@ -239,7 +239,7 @@ criar2.addEventListener("click", function senhaValida2() {
         messageSenha2.textContent = "";
         messageSenha2.style.color = "";
         messageSenha2.style.fontSize = "";
-        password2.style.border = "solid 2px black";
+        password2.style.border = "solid 1px black";
         }else{
             password2.style.border = "solid 1px red";
             messageSenha2.textContent = "senha inválida";
@@ -250,7 +250,7 @@ criar2.addEventListener("click", function senhaValida2() {
 var name = nome2.value;
 if (Letras2(name) && nome2.value.length >= 3) {
    
-    nome2.style.border = "1.5px solid #2C6493";
+    nome2.style.border = "1px solid black";
     messageNome2.textContent = "";
    
 
@@ -281,7 +281,7 @@ if (Letras2(name) && nome2.value.length >= 3) {
     messageCpf2.textContent = "";
     messageCpf2.style.color = "";
     messageCpf2.style.fontSize = "";
-    cpf2.style.border = "solid 2px black";
+    cpf2.style.border = "solid 1px black";
   
 }
 
@@ -293,7 +293,7 @@ if (emailRegex.test(email2) && email2.value.length > 0) {
     messageEmail2.textContent = "";
     messageEmail2.style.color = "";
     messageEmail2.style.fontSize = "";  
-    inputEmail2.style.border = "solid 2px black";
+    inputEmail2.style.border = "solid 1px black";
    
 } else {
 
