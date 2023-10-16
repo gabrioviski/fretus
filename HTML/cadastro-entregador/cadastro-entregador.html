@@ -57,9 +57,9 @@
                                 <h1>Verificando seus dados</h1>
                             </div>
                             <div class="form-fields">
-                                <input required placeholder="Data de Nascimento" class="input-field" type="text">
-                                <input required placeholder="Número de Telefone" class="input-field" type="text">
-                                <select required  placeholder="Tipo de Veículo" class="input-field">
+                                <input required placeholder="Data de Nascimento" class="input-field" type="date">
+                                <input required id="tel" placeholder="Número de Telefone" class="input-field" type="text">
+                                <select required placeholder="Tipo de Veículo" class="input-field">
                                     <option value="">Tipo de Veículo</option>
                                     <option value="moto">Moto</option>
                                     <option value="carro">Carro</option>
@@ -67,7 +67,7 @@
                                     <option value="caminhao">Caminhão</option>
                                 </select>
                                 <input required placeholder="Modelo do Veículo" class="input-field" type="text">
-                                <input required placeholder="Placa do Veículo" class="input-field" type="text">
+                                <input required id="placa" placeholder="Placa do Veículo" class="input-field" type="text">
                             </div>
                             <div class="terms">
                                 <input required type="checkbox" name="terms" id="terms">
@@ -132,5 +132,8 @@
 
     <script src="../../JS/burguer.js"></script>
     <script src="../../JS/cadastro-entregador/form.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script src="../../JS/cadastro-entregador/mask.js"></script>
 </body>
 </html>

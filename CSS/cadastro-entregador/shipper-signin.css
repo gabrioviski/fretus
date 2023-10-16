@@ -88,7 +88,7 @@
     transition: all .3s;
 }
 
-.form .file-field:hover {
+.form .file-field:hover, .form .file-field:focus {
     color: #bb440c;
 }
 
