@@ -70,7 +70,7 @@ function calcularPreco(distancia,veiculo) {
     return precoTotal;
   }
  
-  
+  // DIMENSÃO DO ENTREGA MAIS KILOMETRAGEM
 
   function valorMinimo(){
     const precoDaRota = calcularPreco(distance, typeVehicle);
