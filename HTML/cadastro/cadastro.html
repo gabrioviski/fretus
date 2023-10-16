@@ -36,7 +36,7 @@
 
                     <input type="text" id="nome" placeholder="Nome completo"  oninput="nomeValido()" required>
                     <p id="messageNome"></p>
-                    <input type="text" autocomplete="off" maxlength="14" placeholder="CPF/CNPJ" id="cpf" oninput="cpfValido()" required>
+                    <input type="text" autocomplete="off" maxlength="14" placeholder="CPF/CNPJ" id="cpf" pattern=".{14,}" oninput="cpfValido()" required>
                     <p id="messageCpf"></p>
                     <input type="email" placeholder="Email" id="inputEmail" oninput="emailValido()" required>
                     <p id="messageEmail"></p>
@@ -80,7 +80,7 @@
 
                     <input type="text" id="nome2" placeholder="Nome completo" oninput="nomeValido2()" required>
                     <p id="messageNome2"></p>
-                    <input type="text" autocomplete="off" maxlength="14" placeholder="CPF/CNPJ" id="cpf2" oninput="cpfValido2()" required>
+                    <input type="text" autocomplete="off" maxlength="14" placeholder="CPF/CNPJ" id="cpf2" pattern=".{14,}" oninput="cpfValido2()" required>
                     <p id="messageCpf2"></p>
                     <input type="Email" placeholder="Email" id="inputEmail2" oninput="emailValido2()" required>
                     <p id="messageEmail2"></p>
