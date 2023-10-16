@@ -13,7 +13,7 @@ function emailValido() {
         messageEmail.textContent = "";
         messageEmail.style.color = "";
         messageEmail.style.fontSize = "";  
-        inputEmail.style.border = "solid 1px black "; 
+        inputEmail.style.border = "solid 1.5px #2C6493"; 
         return "valido"
 
     } else {
@@ -39,7 +39,7 @@ entrar.addEventListener("click", function senhaValida() {
         messageSenha.textContent = "";
         messageSenha.style.color = "";
         messageSenha.style.fontSize = "";
-        password.style.border = "solid 1px black";
+        password.style.border = "solid 1.5px #2C6493";
 
     }
 
@@ -59,6 +59,6 @@ function senhaValidada(){
     messageSenha.textContent = "";
     messageSenha.style.color = "";
     messageSenha.style.fontSize = "";
-    password.style.border = "solid 1px black";
+    password.style.border = "solid 1.5px #2C6493";
     }
 }
