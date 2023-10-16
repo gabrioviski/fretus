@@ -6,20 +6,21 @@
     gap: 10px;
 }
 
-.vehicles-container > .vehicle-row {
+.vehicles-container>.vehicle-row {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 15px;
 }
 
-.vehicles-container .card, .vehicles-container .card-description {
+.vehicles-container .card,
+.vehicles-container .card-description {
     background-color: white;
     color: #333;
     transition: all .3s;
 }
 
-.vehicle-row > .card {
+.vehicle-row>.card {
     border-radius: 15px;
     padding: 25px;
     display: flex;
@@ -29,15 +30,15 @@
     cursor: pointer;
 }
 
-.vehicle-row > .card:not(.show) {
+.vehicle-row>.card:not(.show) {
     opacity: 0.75;
 }
 
-.vehicle-row > .card > .img {
+.vehicle-row>.card>.img {
     width: 50%;
 }
 
-.vehicle-row > .card img {
+.vehicle-row>.card img {
     width: 100%;
 }
 
@@ -45,7 +46,7 @@
     flex-basis: 100%;
 }
 
-.vehicle-description > .card-description {
+.vehicle-description>.card-description {
     position: relative;
     z-index: 100;
     border-bottom-left-radius: 15px;
@@ -54,7 +55,7 @@
     flex-direction: column;
 }
 
-.vehicle-description > .card-description::before {
+.vehicle-description>.card-description::before {
     content: "";
     display: block;
     border: solid white 15px;
@@ -64,29 +65,30 @@
     transform: rotate(40deg);
 }
 
-.vehicle-description > .card-description:nth-child(2):before {
+.vehicle-description>.card-description:nth-child(2):before {
     right: 25px;
 }
 
-.vehicle-description > .card-description h1:last-of-type {
-    margin-top: 20px;
+.vehicle-description>.card-description h1:last-of-type {
+    margin-top: 4px;
 }
 
-.vehicle-description > .card-description p {
-    margin: 2px 0 11px;
-    margin-top: 15px;
+.vehicle-description>.card-description p {
+    margin: 2px 0 10px;
+    margin-top: 10px;
 }
 
-.vehicle-description > .card-description:not(.show) {
+.vehicle-description>.card-description:not(.show) {
     opacity: 0;
     height: 0;
     overflow: hidden;
 }
 
-.vehicle-description > .card-description.show {
-    height: 270px;
-    padding: 2%;
+.vehicle-description>.card-description.show {
+    height: 100%;
+    padding: 5%;
 }
+
 .container-f {
     display: flex;
     flex-wrap: wrap;
@@ -95,20 +97,23 @@
 .cell {
     flex: 1;
     padding: 1.5%;
-    width: calc(100% / 4); 
+    width: calc(100% / 4);
 }
-.card-description h1, .card-description p {
-    font-size: 1.2rem; 
+
+.card-description h1,
+.card-description p {
+    font-size: 1.2rem;
 }
 
 
 #preco {
-    margin-top: 15px;
-    font-size: 2rem; 
+    font-size: 2rem;
+    font-weight: bold;
 }
 
-.card-description h1, .card-description p {
-    font-size: 1.4rem;
+.card-description h1,
+.card-description p {
+    font-size: 1.6rem;
 }
 
 @media (max-width: 800px) {
@@ -116,31 +121,34 @@
         width: 100%;
     }
 
-    .card-description h1, .card-description p {
+    .card-description h1,
+    .card-description p {
         font-size: 1.2rem;
     }
 
     #preco {
-        font-size: 1.3rem; 
+        font-size: 1.3rem;
     }
 
-    .vehicle-description > .card-description {
-        height: auto; 
+    .vehicle-description>.card-description {
+        height: auto;
     }
 
-    .vehicle-description > .card-description.show {
-        height: auto; 
+    .vehicle-description>.card-description.show {
+        height: auto;
     }
 
     @media(max-width:520px) {
 
         .container-f {
-           flex-direction: column;
-           padding: 1%;
-       }
-       .card-description h1, .card-description p {
-        font-size: 1rem;
+            flex-direction: column;
+            padding: 1%;
+        }
+
+        .card-description h1,
+        .card-description p {
+            font-size: 1rem;
+        }
+
     }
-       
-       }
 }
