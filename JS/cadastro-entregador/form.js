@@ -8,10 +8,10 @@ let index = 0
 
 yes.forEach((item, i) => {
     item.addEventListener('click', (e) => {
-        if (isChecked(i)) {
+        if (isChecked(i) && index < 2) {
             e.preventDefault()
             removeClass()
-            index++
+            index >= 2 ? index = 2 : index++
             form[index].classList.add('active')
             container.classList.add('scrolling')
             container.addEventListener('scrollend', scrolling)
@@ -24,7 +24,7 @@ no.forEach(item => {
     item.addEventListener('click', (e) => {
         e.preventDefault()
         removeClass()
-        index--
+        index <= 0 ? index = 0 : index--
         form[index].classList.add('active')
         container.classList.add('scrolling')
         container.addEventListener('scrollend', scrolling)
@@ -61,7 +61,6 @@ const isChecked = (i) => {
 
 inputFile.forEach((input, i) => {
     input.addEventListener('change', () => {
-        console.log(input.files[0]);
         if (input.files[0]) {
             labelFile[i].textContent = `${input.files[0].name}`
         } else {
