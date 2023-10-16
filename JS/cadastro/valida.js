@@ -31,7 +31,7 @@ function emailValido() {
 
 function cpfValido(){
 
-    if (cpf.value.length < 11) {
+    if (cpf.value.length < 14) {
 
         messageCpf.textContent = "cpf inválido";
         messageCpf.style.color = "red";
@@ -169,7 +169,7 @@ function emailValido2() {
 
 function cpfValido2(){
 
-    if (cpf2.value.length < 11) {
+    if (cpf2.value.length < 14) {
 
         messageCpf2.textContent = "cpf inválido";
         messageCpf2.style.color = "red";
@@ -269,7 +269,7 @@ if (Letras2(name) && nome2.value.length >= 3) {
     
   }
 
-  if (cpf2.value.length < 11) {
+  if (cpf2.value.length < 14) {
 
     messageCpf2.textContent = "cpf inválido";
     messageCpf2.style.color = "red";
