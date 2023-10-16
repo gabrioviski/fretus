@@ -189,7 +189,7 @@ function cpfValido2(){
 
 function senhaValidada2(){
 
-    if(password2.value.length > 0){
+    if(password2.value.length >= 1){
 
         messageSenha2.textContent = "";
         messageSenha2.style.color = "";
