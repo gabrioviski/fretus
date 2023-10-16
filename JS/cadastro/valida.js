@@ -100,6 +100,9 @@ function senhaValidada(){
         password.style.border = "";
         }else{
             password.style.border = "solid 1px red";
+            messageSenha.textContent = "senha inválida";
+            messageSenha.style.color = "red";
+            messageSenha.style.fontSize = "12px"
         }
 }
 
