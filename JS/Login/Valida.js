@@ -28,7 +28,7 @@ function emailValido() {
 
 entrar.addEventListener("click", function senhaValida() {
 
-    if (password.value.length < 1) {
+    if (password.value.length < 8) {
 
         messageSenha.textContent = "Senha inválida";
         messageSenha.style.color = "red";
@@ -54,7 +54,7 @@ if(emailValido() === "invalido"){
 
 function senhaValidada(){
 
-    if(password.value.length > 0){
+    if(password.value.length >= 8){
 
     messageSenha.textContent = "";
     messageSenha.style.color = "";
