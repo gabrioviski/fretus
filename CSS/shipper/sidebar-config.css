@@ -138,13 +138,15 @@ button {
     .sidebar-burguer>img {
         width: 100%;
     }
+
     .container-button {
         font-size: 0.8em;
     }
 
 }
+
 @media (max-width: 480px) {
     .container-button {
-        font-size: 0.6em; 
+        font-size: 0.6em;
     }
 }
