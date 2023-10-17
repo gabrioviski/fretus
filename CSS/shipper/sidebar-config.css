@@ -6,12 +6,12 @@ body {
 
 main {
     display: grid;
-    min-height: calc(100dvh - 85px);
     grid-template-columns: 1fr 3fr;
 }
 
 main > .sidebar {
     background-color: var(--light-gray);
+    min-height: calc(100dvh - 85px);
 }
 
 .sidebar > .nav {
@@ -56,7 +56,37 @@ main > .config {
     display: none;
 }
 
-@media (max-width: 700px) {
+.container-button{
+    margin: 2%;
+    margin-top: 100%;
+}
+
+button {
+    width: 100%;
+
+}
+.exit-button {
+    background-color: red;
+    padding: 10px 20px;
+    border: 2px solid red;
+    border-radius: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+
+  .exit-button:hover{
+    background: white;
+  }
+  .exit-button:hover a{
+    color: red;
+  }
+.container-button a{
+    text-decoration: none;
+    color: white;
+  }
+
+@media (max-width: 800px) {
     main {
         grid-template-columns: 1fr;
     }
