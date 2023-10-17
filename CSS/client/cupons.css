@@ -6,11 +6,62 @@ main {
     display: grid;
     grid-template-columns: 35% auto;
     gap: 50px;
-    height: calc(100vh - 85px);
+    /* height: calc(100vh - 85px); */
 }
 
-.cupons, .invite-friends {
-    max-height: 100%;
+/* .cupons, .invite-friends {
+    height: calc(100vh - 85px);
+} */
+
+.cupons {
+    height: fit-content;
+}
+
+.cupons, .cupons-container, .cupons-container > * {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.cupons .cupons-container {
+    width: min(90%, 345px);
+}
+
+.cupons .cupon {
+    background-color: wheat;
+    border-radius: 10px;
+}
+
+.cupon .content {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.cupon .icon {
+    flex-shrink: 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1D9BF0;
+}
+
+.cupon h1 {
+    font-size: 22px;
+    margin-bottom: 7px;
+}
+
+.cupon .expirate {
+    background-color: #1D9BF0;
+    padding: 8px 15px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .invite-friends {
@@ -18,28 +69,33 @@ main {
     background-position: center;
     background-size: cover;
     border-radius: 15px;
-    /* padding: 15px; */
+    height: calc(100vh - 85px);
+    padding: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    position: sticky;
+    top: 20px;
 }
 
 .cupon-input {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto 90px;
     column-gap: 8px;
 }
 
 .cupon-input .cta {
     height: 40px;
+    margin: 0;
     padding: 0 19px;
     border-radius: 5px;
     font-family: var(--font-2);
     font-size: 16px;
 }
 
-.cupon-input .cta:hover {
+.invite-friends .cta:hover {
     color: white;
 }
 
@@ -71,4 +127,18 @@ main {
 
 .social-media .whatsapp {
     background-color: #60D76A;
+}
+
+@media (max-width: 975px) {
+    main {
+        grid-template-columns: 100%;
+    }
+    .invite-friends {
+        order: -1;
+        position: relative;
+        height: 350px;
+    }
+    .cupons .cupons-container {
+        width: 100%;
+    }
 }
