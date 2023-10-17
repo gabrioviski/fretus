@@ -100,7 +100,7 @@ function senhaValidada(){
         password.style.border = "";
         }else{
             password.style.border = "solid 1px red";
-            messageSenha.textContent = "senha deve ter pelo menos caracteres";
+            messageSenha.textContent = "senha deve ter pelo menos 8 caracteres";
             messageSenha.style.color = "red";
             messageSenha.style.fontSize = "12px"
         }
@@ -200,7 +200,7 @@ function senhaValidada2(){
         password2.style.border = "";
         }else{
             password2.style.border = "solid 1px red";
-            messageSenha2.textContent = "senha inválida";
+            messageSenha2.textContent = "senha deve ter pelo menos 8 caracteres";
             messageSenha2.style.color = "red";
             messageSenha2.style.fontSize = "12px"
         }
