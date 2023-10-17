@@ -144,9 +144,3 @@ button {
     }
 
 }
-
-@media (max-width: 480px) {
-    .container-button {
-        font-size: 0.6em;
-    }
-}
