@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fretus - Configurações</title>
+    <title>Fretus - Cupons</title>
     <link rel="shortcut icon" href="../../imgs/logotca.png" type="image/x-icon">
     <link rel="stylesheet" href="../../CSS/index.css">
+    <link rel="stylesheet" href="../../CSS/home/home.css">
+    <link rel="stylesheet" href="../../CSS/cta.css">
     <link rel="stylesheet" href="../../CSS/header-client-shipper.css">
     <link rel="stylesheet" href="../../CSS/menu-burguer.css">
-    <link rel="stylesheet" href="../../CSS/shipper/requests-modal.css">
-    <link rel="stylesheet" href="../../CSS/shipper/sidebar-config.css">
-    <link rel="stylesheet" href="../../CSS/shipper/notification-config.css">
+    <link rel="stylesheet" href="../../CSS/client/cupons.css">
 </head>
 <body>
     <div class="menu-burguer">
@@ -54,48 +54,28 @@
     </header>
 
     <main>
-        <div class="sidebar">
-            <div class="nav">
-                <ul>
-                    <a href="./configuracoes.html">
-                        <li>Privacidade</li>
-                    </a>
-                    <a href="./configuracoes-pagamento.html">
-                        <li>Pagamento</li>
-                    </a>
-                    <a href="./configuracoes-notificacoes.html">
-                        <li>Notificações</li>
-                    </a>
-                </ul>
-            </div>
+        <div class="cupons">
+            <h1>Cupons</h1>
         </div>
-        <div class="config">
-            <div class="config-container">
-                <div class="sidebar-burguer">
-                    <img src="../../imgs/burguer-config-icon.png" alt="">
+        <div class="invite-friends">
+            <h1>Convide seus amigos</h1>
+            <p>Convidando um amigo, você e ele ganham R$10,00 de desconto na próxima entrega.</p>
+            <div class="cupon-input">
+                <input readonly type="text" value="hgq4wj7L0LwOi01KYx20">
+                <button class="cta" type="button">Copiar</button>
+            </div>
+            <div class="social-media">
+                <div class="icon twitter">
+                    <img src="../../imgs/client/icon-twitter.svg" alt="">
                 </div>
-                <h1>Notificações</h1>
-                <p>Receber notificações promocionais, descontos, institucionais e etc.</p>
-                <div class="row">
-                    <span>SMS</span>
-                    <input checked type="checkbox" id="sms">
-                    <label for="sms" class="toogle">
-                        <div class="ball"></div>
-                    </label>
+                <div class="icon facebook">
+                    <img src="../../imgs/client/icon-facebook.svg" alt="">
                 </div>
-                <div class="row">
-                    <span>E-mail</span>
-                    <input checked type="checkbox" id="email">
-                    <label for="email" class="toogle">
-                        <div class="ball"></div>
-                    </label>
+                <div class="icon whatsapp">
+                    <img src="../../imgs/client/icon -whatsapp.svg" alt="">
                 </div>
             </div>
         </div>
     </main>
-    
-    <script src="../../JS/burguer.js"></script>
-    <script src="../../JS/shipper/change.js"></script>
-    <script src="../../JS/shipper/burguer-config.js"></script>
 </body>
 </html>
