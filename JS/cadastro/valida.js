@@ -51,9 +51,9 @@ function cpfValido(){
 
 criar1.addEventListener("click", function senhaValida() {
 
-    if (password.value.length < 1) {
+    if (password.value.length < 8) {
 
-        messageSenha.textContent = "Senha inválida";
+        messageSenha.textContent = "Senha deve ter pelo menos 8 caracteres";
         messageSenha.style.color = "red";
         messageSenha.style.fontSize = "12px";
         password.style.border = "1px solid red";
@@ -92,7 +92,7 @@ criar1.addEventListener("click", function senhaValida() {
 
 function senhaValidada(){
 
-    if(password.value.length > 0){
+    if(password.value.length >=8){
 
         messageSenha.textContent = "";
         messageSenha.style.color = "";
@@ -100,7 +100,7 @@ function senhaValidada(){
         password.style.border = "";
         }else{
             password.style.border = "solid 1px red";
-            messageSenha.textContent = "senha inválida";
+            messageSenha.textContent = "senha deve ter pelo menos caracteres";
             messageSenha.style.color = "red";
             messageSenha.style.fontSize = "12px"
         }
@@ -192,7 +192,7 @@ function cpfValido2(){
 
 function senhaValidada2(){
 
-    if(password2.value.length >= 1){
+    if(password2.value.length >= 8){
 
         messageSenha2.textContent = "";
         messageSenha2.style.color = "";
@@ -240,7 +240,7 @@ function nomeValido2(){
 
 criar2.addEventListener("click", function senhaValida2() {
  
-    if(password2.value.length > 0){
+    if(password2.value.length >= 8){
 
         messageSenha2.textContent = "";
         messageSenha2.style.color = "";
@@ -248,7 +248,7 @@ criar2.addEventListener("click", function senhaValida2() {
         password2.style.border = "";
         }else{
             password2.style.border = "solid 1px red";
-            messageSenha2.textContent = "senha inválida";
+            messageSenha2.textContent = "senha deve ter pelo menos 8 caracteres";
             messageSenha2.style.color = "red";
             messageSenha2.style.fontSize = "12px"
         }
