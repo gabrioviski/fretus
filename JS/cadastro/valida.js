@@ -9,6 +9,11 @@ var criar1 = document.getElementById("criar1");
 var nome = document.getElementById("nome");
 var messageNome = document.getElementById("messageNome");
 
+messageEmail.style.marginLeft = "12px";
+messageNome.style.marginLeft = "12px";
+messageSenha.style.marginLeft = "12px";
+messageCpf.style.marginLeft = "12px";
+
 function emailValido() {
     var email = inputEmail.value;
 
@@ -149,6 +154,11 @@ var messageSenha2 = document.getElementById("messageSenha2");
 var criar2 = document.getElementById("criar2");
 var nome2 = document.getElementById("nome2");
 var messageNome2 = document.getElementById("messageNome2");
+
+messageEmail2.style.marginLeft = "12px";
+messageNome2.style.marginLeft = "12px";
+messageSenha2.style.marginLeft = "12px";
+messageCpf2.style.marginLeft = "12px";
 
 function emailValido2() {
     var email2 = inputEmail2.value;
