@@ -5,8 +5,8 @@ var inputEmail = document.getElementById("inputEmail");
 var emailRegex = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+(\.[a-z]+)?$/i;
 var messageEmail = document.getElementById("messageEmail");
 
-messageEmail.style.marginLeft = "40px"; 
-messageSenha.style.marginLeft = "40px"; 
+messageEmail.style.marginLeft = "12px"; 
+messageSenha.style.marginLeft = "12px"; 
 
 function emailValido() {
     var email = inputEmail.value;
