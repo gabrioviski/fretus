@@ -50,14 +50,19 @@ main {
 .content > .products {
     flex-shrink: 0;
     width: 250px;
-    height: 440px;
+    height: 100%;
     padding: 15px;
     background-color: var(--light-gray);
 }
 
+/* !         historico            */
+
 .products > .photo {
-    width: 100%;
-    height: 50%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 220px;   /* obs: em px para facilitar */
+    height: 220px;
     border-radius: 50%;
     margin-bottom: 15px;
     background-color: #e4e4dd;
