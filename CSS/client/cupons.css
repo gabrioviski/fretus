@@ -1,403 +1,192 @@
 main {
-
     max-width: 90%;
-
     margin: 0 auto;
-
     padding: 50px 0;
-
     color: #333;
-
     display: grid;
-
     grid-template-columns: 35% auto;
-
     gap: 50px;
-
     /* height: calc(100vh - 85px); */
-
 }
-
- 
 
 /* .cupons, .invite-friends {
-
     height: calc(100vh - 85px);
-
 } */
 
- 
-
 .cupons {
-
     height: fit-content;
-
 }
-
- 
-
 .cupons, .cupons-container, .cupons-container > * {
-
     display: flex;
-
     flex-direction: column;
-
     row-gap: 20px;
-
 }
-
- 
 
 .cupons .cupons-container {
-
     width: min(90%, 345px);
-
 }
-
- 
 
 .cupons .cupon {
-
     background-color: #E8E8E8;
-
     border-radius: 10px;
-
 }
-
- 
 
 .cupon .content {
-
     padding: 15px;
-
     display: flex;
-
     align-items: center;
-
     column-gap: 15px;
-
     font-size: 16px;
-
     margin-bottom: 12px;
-
 }
-
- 
 
 .cupon .icon {
-
     flex-shrink: 0;
-
     width: 80px;
-
     height: 80px;
-
     border-radius: 100%;
-
     display: flex;
-
     justify-content: center;
-
     align-items: center;
-
 }
-
- 
 
 .cupon h1 {
-
     font-size: 22px;
-
     margin-bottom: 7px;
-
 }
-
- 
 
 .active-cupons .cupon{
-
     background-color: #EDEFF1;
-
 }
-
- 
 
 .disable-cupons .cupon{
-
     background-color: #edeff13f;
-
 }
-
- 
 
 .active-cupons .icon{
-
     background-color: #FFE4D9;
-
 }
 
- 
-
 .active-cupons .cupon .expirate{
-
     background-color: #FFE4D9;
-
 }
 
 .description p{
-
     color:#333333;
-
-   
-
 }
 
 .cupon .expirate {
-
     background-color: #EDEFF1;
-
     padding: 8px 15px;
-
     border-bottom-left-radius: 10px;
-
     border-bottom-right-radius: 10px;
-
 }
-
- 
 
 .disable-cupons .icon{
-
-     filter:grayscale(.9)
-
- 
-
- 
-
- 
-
+    filter:grayscale(.9)
 }
-
- 
 
 .invite-friends {
-
     background-image: url(../../imgs/client/bg-invite-friends.png);
-
     background-position: center;
-
     background-size: cover;
-
     border-radius: 15px;
-
     height: calc(100vh - 85px);
-
     padding: 15px;
-
     display: flex;
-
     flex-direction: column;
-
     justify-content: center;
-
     align-items: center;
-
     text-align: center;
-
     position: sticky;
-
     top: 20px;
-
 }
-
- 
 
 .cupon-input {
-
     display: grid;
-
     grid-template-columns: auto 90px;
-
     column-gap: 8px;
-
 }
-
- 
 
 .cupon-input .cta {
-
     height: 40px;
-
     margin: 0;
-
     padding: 0 19px;
-
     border-radius: 5px;
-
     font-family: var(--font-2);
-
     font-size: 16px;
-
 }
-
- 
 
 .invite-friends .cta:hover {
-
     color: white;
-
 }
-
- 
 
 .social-media {
-
     display: flex;
-
     gap: 10px;
-
 }
-
- 
 
 .social-media .icon {
 
     width: 50px;
-
     aspect-ratio: 1/1;
-
     border-radius: 100%;
-
     display: flex;
-
     justify-content: center;
-
     align-items: center;
-
 }
-
- 
 
 .social-media .twitter {
-
     background-color: #1D9BF0;
-
 }
-
- 
 
 .social-media .facebook {
-
     background-color: #1977F3;
-
 }
-
- 
 
 .facebook img {
-
     transform: translate(0, -3px);
-
 }
-
- 
 
 .social-media .whatsapp {
-
     background-color: #60D76A;
-
 }
-
- 
 
 @media (max-width: 975px) {
-
     main {
-
         grid-template-columns: 100%;
-
     }
-
     .invite-friends {
-
         order: -1;
-
         position: relative;
-
         height: 350px;
-
     }
-
     .cupons .cupons-container {
-
         width: 100%;
-
     }
-
 }
-
- 
 
 p{
-
     color: white;
-
     margin-top: 10px;
-
     margin-bottom: 24px;
-
-   
-
 }
-
- 
 
 .invite-friends h1{
-
     color: white;
-
     font-size: 48px;
-
-   
-
- 
-
 }
-
- 
-
 .cupon-input input{
-
     border: none;
-
    background: #EDEFF1;
 
-   
-
 }
-
- 
 
 .invite-friends input{
-
-     width: 360px;
-
-     padding: 5px;
-
-     
-
+    width: 360px;
+    padding: 5px;
 }
-
- 
 
 .social-media{
-
     margin-top: 30px;
-
-   
-
 }
-
- 
-
-tem menu de contexto
