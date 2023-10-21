@@ -53,6 +53,7 @@ main {
     height: 100%;
     padding: 15px;
     background-color: var(--light-gray);
+    border-radius: 5px;
 }
 
 /* !         historico            */
@@ -61,11 +62,10 @@ main {
     display: flex;
     justify-content: center; 
     align-items: center;
-    width: 220px;   /* obs: em px para facilitar */
-    height: 220px;
+    width: 210px;   /* obs: em px para facilitar */
+    height: 210px;
     border-radius: 50%;
     margin-bottom: 15px;
-    background-color: #e4e4dd;
 }
 
 .products > h1 {
@@ -88,11 +88,11 @@ main {
 }
 
 .products img {
-    width: 30px;
+/*     width: 30px;
     height: 30px;
-    display: block;
-    opacity: .60;
+    display: block;  */
     cursor: pointer;
+    
 }
 
 .products img:hover {
