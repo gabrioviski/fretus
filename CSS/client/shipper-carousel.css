@@ -92,6 +92,7 @@ main {
     height: 30px;
     display: block;  */
     cursor: pointer;
+    object-fit: cover;
     
 }
 
