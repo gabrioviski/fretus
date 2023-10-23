@@ -10,6 +10,6 @@ continueButton.addEventListener('click', () => {
     setTimeout(() => {
 
         window.location.href = './escolher-entregador.html';
-    }, 10000);
+    }, 4000);
 });
 
