@@ -8,6 +8,13 @@
     font-family: var(--font-2);
 }
 
+.form-container .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
 .form-container label {
     display: block;
     margin: 2px 0;
@@ -24,6 +31,19 @@
     background-color: #f9f9f9;
     font-family: var(--font-2);
     font-size: 18px;
+}
+
+.form-container .cta {
+    width: 100%;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 18px;
+}
+
+@media (max-width: 1000px) {
+    .form-container .form-row {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* .form-row input:not([type="checkbox"]), .form-row select {
