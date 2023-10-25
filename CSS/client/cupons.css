@@ -80,7 +80,7 @@ main {
 }
 
 .invite-friends {
-    background-image: url(../../imgs/client/bg-invite-friends.png);
+    background-image: url(../../imgs/client/bg-invite-friends.png), linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
     background-position: center;
     background-size: cover;
     border-radius: 15px;
@@ -95,13 +95,15 @@ main {
     top: 20px;
 }
 
-.invite-friends h1{
+.invite-friends h1 {
     color: white;
-    font-size: 48px;
+    font-size: clamp(48px, 3.5vw, 60px);
 }
 
-.invite-friends p{
+.invite-friends p {
     color: white;
+    font-size: 20px;
+    max-width: 500px;
     margin-top: 7px;
     margin-bottom: 30px;
 }
@@ -134,8 +136,6 @@ main {
     font-family: var(--font-2);
     font-size: 16px;
 }
-
-
 
 .invite-friends .cta:hover {
     color: white;
@@ -186,4 +186,3 @@ main {
         width: 100%;
     }
 }
-
