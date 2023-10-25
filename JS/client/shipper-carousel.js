@@ -1,6 +1,6 @@
 const carousel = Array.from(document.querySelectorAll('.carousel'))
 const content = document.querySelectorAll('.content')
-const items = document.querySelectorAll('.content > .products')
+let items = document.querySelectorAll('.content > .products.show')
 const controls = document.querySelectorAll('.controls > *')
 let index = carousel.map(() => 0)
 
