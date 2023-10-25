@@ -54,6 +54,11 @@ main {
     padding: 15px;
     background-color: var(--light-gray);
     border-radius: 5px;
+    display: none;
+}
+
+.content > .products.show {
+    display: block;
 }
 
 /* !         historico            */
