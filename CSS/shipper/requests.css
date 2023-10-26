@@ -64,7 +64,7 @@ main > h1 {
 }
 
 .bottom > .actions {
-    opacity: .6;
+    /* opacity: .6; */
     display: flex;
     gap: 7px;
 }

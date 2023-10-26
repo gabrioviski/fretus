@@ -7,7 +7,7 @@ unfav.forEach((item, idx) => {
     item.addEventListener('click', () => {
         const removed = shippers[idx]
         removed.remove()
-        items = document.querySelectorAll('.content > .products.show')
+        items = document.querySelectorAll('.content > .products')
         showNotification(removed, idx)
     })
 })
@@ -36,7 +36,7 @@ function showNotification(r, i) {
         const position = container.children[i]
         container.insertBefore(r, position)
         notificationContainer.classList.remove('show')
-        items = document.querySelectorAll('.content > .products.show')
+        items = document.querySelectorAll('.content > .products')
     })
 
     notificationContainer.addEventListener('animationend', () => {

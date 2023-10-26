@@ -54,11 +54,6 @@ main {
     padding: 15px;
     background-color: var(--light-gray);
     border-radius: 5px;
-    display: none;
-}
-
-.content > .products.show {
-    display: block;
 }
 
 /* !         historico            */
@@ -71,6 +66,7 @@ main {
     height: 210px;
     border-radius: 50%;
     margin-bottom: 15px;
+    object-fit: cover;
 }
 
 .products > h1 {
@@ -92,16 +88,15 @@ main {
     margin-left: auto;
 }
 
-.products img {
-/*     width: 30px;
+.actions img {
+    width: 30px;
     height: 30px;
-    display: block;  */
+    display: block;
+    opacity: .6;
     cursor: pointer;
-    object-fit: cover;
-    
 }
 
-.products img:hover {
+.actions img:hover {
     opacity: .85;
 }
 
