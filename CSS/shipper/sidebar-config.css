@@ -70,11 +70,16 @@ button {
     width: 100%;
 
 }
+.exit-button a{
+    width: 100%;
+    display: block;
+    height: 100%;
+    padding: 10px 20px;
+}
 
 .exit-button {
-    background-color: red;
-    padding: 10px 20px;
-    border: 2px solid red;
+    background-color: var(--orange);
+    border: 2px solid var(--orange);
     border-radius: 10px;
     text-transform: uppercase;
     cursor: pointer;
@@ -86,7 +91,7 @@ button {
 }
 
 .exit-button:hover a {
-    color: red;
+    color: var(--orange);
 }
 
 .container-button a {
