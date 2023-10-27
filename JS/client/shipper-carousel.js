@@ -30,5 +30,6 @@ function changeState(idx) {
     } else if (index[idx] < 0) {
         index[idx] = clicks
     }
+    // console.log(index[idx])
     carousel[idx].scrollLeft = (items[0].clientWidth + 10) * index[idx]
 }
