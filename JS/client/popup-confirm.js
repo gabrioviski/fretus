@@ -63,6 +63,7 @@ function calcularPreco(distancia,veiculo) {
       precoPorKm = 15;
     } else if(veiculo === 'van'){
       precoPorKm = 9; 
+      
     }
   
     var precoTotal = distancia * precoPorKm;
