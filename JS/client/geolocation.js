@@ -3,6 +3,7 @@ const results = document.querySelectorAll('.suggestions-options')
 const accessToken = 'pk.eyJ1IjoiZ2FicmllbGNhcnZhbGgwIiwiYSI6ImNsa3JvOW55eDJscXgzcWtlY2F5d21kZW4ifQ.Xp_C-dMh7SEjIBFKd8njCA'
 let route
 
+
 mapboxgl.accessToken = accessToken
 const map = new mapboxgl.Map({
     container: 'map',
