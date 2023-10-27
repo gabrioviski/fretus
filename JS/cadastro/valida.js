@@ -9,7 +9,6 @@ var criar1 = document.getElementById("criar1");
 var nome = document.getElementById("nome");
 var messageNome = document.getElementById("messageNome");
 
-
 messageEmail.style.marginLeft = "12px";
 messageNome.style.marginLeft = "12px";
 messageSenha.style.marginLeft = "12px";

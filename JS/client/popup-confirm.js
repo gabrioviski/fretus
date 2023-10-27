@@ -57,12 +57,12 @@ function calcularPreco(distancia,veiculo) {
 
     if (veiculo=== 'bike') {
       precoPorKm = 2;
-    } else if (veiculo=== 'car' || veiculo === 'van') {
-      precoPorKm = 2.5;
+    } else if (veiculo=== 'car') {
+      precoPorKm = 4;
     } else if (veiculo === 'truck') {
-      precoPorKm = 3;
-    } else {
-      precoPorKm = 2; 
+      precoPorKm = 15;
+    } else if(veiculo === 'van'){
+      precoPorKm = 9; 
     }
   
     var precoTotal = distancia * precoPorKm;
