@@ -2,7 +2,7 @@ const container = document.querySelector('.carousel .content')
 const unfav = document.querySelectorAll('.unfav-call')
 const fav = document.querySelectorAll('.fav-call')
 let shippers = document.querySelectorAll('.carousel .products')
-const notificationContainer = document.querySelector('.notification-container')
+// const notificationContainer = document.querySelector('.notification-container')
 const names = ['Davi', 'Samuel', 'Gabriel', 'Gustavo']
 
 fav.forEach((item, i) => {
@@ -70,7 +70,7 @@ function showNotification(r, i, m) {
     const msg = document.createElement('p')
     msg.textContent = m
 
-    if (m != 'Entregador Favoritado! ') {
+    if (m == 'Entregador Desfavoritado! ') {
         const undo = document.createElement('span')
         undo.textContent = 'Desfazer'
 

@@ -5,22 +5,32 @@ const inputs = document.querySelectorAll('.report .field')
 const inputFile = document.querySelectorAll('input[type="file"]')
 const labelFile = document.querySelectorAll('.file-field .msg')
 const reportSubmit = document.querySelector('.report .cta')
+const notificationContainer = document.querySelector('.notification-container')
+let clicked
 
-reportCall.forEach(item => {
+reportCall.forEach((item, i) => {
     item.addEventListener('click', () => {
         reportPopup.classList.add('show')
+        clicked = i
     })
 })
 
-closeReport.addEventListener('click', () => {
+const closeReportPopup = () => {
     reportPopup.classList.remove('show')
+    inputs.forEach(input => input.value = '')
     labelFile[0].textContent = 'Foto do Ocorrido'
-    // closeReport.remove()
+}
+
+closeReport.addEventListener('click', () => {
+    closeReportPopup()
 })
 
 reportSubmit.addEventListener('click', (e) => {
     if (isValid()) { 
         e.preventDefault()
+        closeReportPopup()
+        showReportNotification('Denúncia Enviada! ')
+        reportCall[clicked].remove()
     }
 })
 
@@ -33,6 +43,31 @@ inputFile.forEach((input, i) => {
         }
     })
 })
+
+function showReportNotification(m) {
+    if (notificationContainer.innerHTML != '') {
+        document.querySelector('.notification').remove()
+    }
+    
+    notificationContainer.classList.add('show')
+    
+    const notification = document.createElement('div')
+    notification.classList.add('notification')
+
+    const msg = document.createElement('p')
+    msg.textContent = m
+    
+    notification.appendChild(msg)
+    const loading = document.createElement('div')
+    loading.classList.add('loading')
+    notification.appendChild(loading)
+
+    notificationContainer.addEventListener('animationend', () => {
+        notificationContainer.classList.remove('show')
+    })
+
+    notificationContainer.appendChild(notification)
+}
 
 const isValid = () => {
     let valid = true
