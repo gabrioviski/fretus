@@ -3,6 +3,7 @@ const unfav = document.querySelectorAll('.unfav-call')
 const fav = document.querySelectorAll('.fav-call')
 let shippers = document.querySelectorAll('.carousel .products')
 const notificationContainer = document.querySelector('.notification-container')
+const names = ['Davi', 'Samuel', 'Gabriel', 'Gustavo']
 
 fav.forEach((item, i) => {
     item.addEventListener('click', () => {
@@ -15,7 +16,7 @@ fav.forEach((item, i) => {
 const addShipper = (add, item, i) => {
     add.classList.add('products')
     add.innerHTML = `<img src="../../imgs/historico/${i + 6}.jpg" alt="" class="photo">
-                            <h1>${1}</h1>
+                            <h1>${names[i]}</h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>`
         
     const act = document.createElement('div')
