@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="../../CSS/shipper/requests-modal.css">
     <link rel="stylesheet" href="../../CSS/shipper/requests-notification.css">
     <link rel="stylesheet" href="../../CSS/client/popup-info.css">
+    <link rel="stylesheet" href="../../CSS/client/pay-popup.css">
+    <link rel="stylesheet" href="../../CSS/client/report-popup.css">
 </head>
 <body>
     <div class="menu-burguer">
@@ -89,6 +91,7 @@
                 <div class="bottom">
                     <span class="price">R$51,00</span>
                     <span class="actions">
+                        <img class="report-call" src="../../imgs/client/report-icon.svg" alt="">
                         <img class="fav-call" src="../../imgs/client/fav-icon.svg" alt="">
                         <img class="rate" src="../../imgs/client/star-icon.svg" alt="">
                     </span>
@@ -117,6 +120,7 @@
                 <div class="bottom">
                     <span class="price">R$51,00</span>
                     <span class="actions">
+                        <img class="report-call" src="../../imgs/client/report-icon.svg" alt="">
                         <img class="fav-call" src="../../imgs/client/fav-icon.svg" alt="">
                         <img class="rate" src="../../imgs/client/star-icon.svg" alt="">
                     </span>
@@ -147,6 +151,7 @@
                 <div class="bottom">
                     <span class="price">R$51,00</span>
                     <span class="actions">
+                        <img class="report-call" src="../../imgs/client/report-icon.svg" alt="">
                         <img class="fav-call" src="../../imgs/client/fav-icon.svg" alt="">
                         <img class="rate" src="../../imgs/client/star-icon.svg" alt="">
                     </span>
@@ -177,6 +182,7 @@
                 <div class="bottom">
                     <span class="price">R$51,00</span>
                     <span class="actions">
+                        <img class="report-call" src="../../imgs/client/report-icon.svg" alt="">
                         <img class="fav-call" src="../../imgs/client/fav-icon.svg" alt="">
                         <img class="rate" src="../../imgs/client/star-icon.svg" alt="">
                     </span>
@@ -306,10 +312,39 @@
             </div>
         </div>
     </div>
+    <div class="popup report">
+        <div class="popup-content">
+            <div class="close">
+                <img src="../../imgs/client/close-icon.svg" alt="">
+            </div>
+            <div class="popup-wrapper">
+                <form class="form">
+                    <h1>Denúncia</h1>
+                    <label class="file-field" for="report-photo">
+                        <input class="field" required type="file" name="files" id="report-photo">
+                        <div class="icon">
+                            <img src="../../imgs/cadastro-entregador/upload-icon.svg" alt="">
+                        </div>
+                        <span class="msg">Foto do Ocorrido</span>
+                    </label>
+                    <select required class="input-field field">
+                        <option value="">Motivo da Denúncia</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                    <input required placeholder="Data do ocorrido" class="input-field field" type="text" onfocus="this.type='date'">
+                    <textarea required class="rate-field field" placeholder="Descrição do ocorrido"></textarea>
+                    <button class="cta">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
     <script src="../../JS/burguer.js"></script>
     <script src="../../JS/client/shipper-carousel.js"></script>
     <script src="../../JS/client/rate-popup.js"></script>
     <script src="../../JS/client/fav-unfav.js"></script>
     <script src="../../JS/shipper/popup-info.js"></script>
+    <script src="../../JS/shipper/report-popup.js"></script>
 </body>
 </html>
