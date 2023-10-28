@@ -20,11 +20,9 @@ main > h1 {
     gap: 15px;
 }
 
-
-
 .requests-container > .card {
     background-color: #fffbff;
-    height: 250px;
+    height: fit-content;
     border-radius: 15px;
     padding: 15px;
     opacity: 1;
@@ -33,10 +31,11 @@ main > h1 {
 }
 
 .card > .top {
-    height: 80%;
+    /* height: 80%; */
     display: flex;
     flex-direction: column;
     gap: 5px;
+    margin-bottom: 14px;
 }
 
 .top > .row {
@@ -49,6 +48,18 @@ main > h1 {
 .top > .row.track {
     width: fit-content;
     margin-left: 9px;
+}
+
+.card > .weight::before {
+    content: 'Carga: ';
+    font-family: var(--font-1);
+    font-weight: 700;
+}
+
+.card > .weight {
+    margin-bottom: 7px;
+    font-size: 14px;
+    font-family: var(--font-2);
 }
 
 .card > .bottom {
