@@ -16,6 +16,21 @@
     align-items: center;
 }
 
+.chat-header > .info {
+    display: flex;
+    column-gap: 7px;
+}
+
+.info img {
+    height: fit-content;
+    opacity: .6;
+    cursor: pointer;
+}
+
+.info img:hover {
+    opacity: .85;
+}
+
 .rounded-icon {
     background-color: var(--orange);
     border: none;

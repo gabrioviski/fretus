@@ -20,6 +20,10 @@
     <link rel="stylesheet" href="../../CSS/client/pay-modal.css">
     <link rel="stylesheet" href="../../CSS/client/confirm-popup.css">
     <link rel="stylesheet" href="../../CSS/client/pay-popup.css">
+    <link rel="stylesheet" href="../../CSS/shipper/requests-notification.css">
+    <link rel="stylesheet" href="../../CSS/client/popup-info.css">
+    <link rel="stylesheet" href="../../CSS/client/pay-popup.css">
+    <link rel="stylesheet" href="../../CSS/client/report-popup.css">
 </head>
 <body>
 
@@ -267,6 +271,7 @@
                 <div class="chat-header">
                     <div class="info">
                         <h1>Nome</h1>
+                        <img class="report-call" src="../../imgs/client/report-icon.svg" alt="">
                     </div>
                     <div class="action">
                         <button class="rounded-icon">
@@ -361,6 +366,7 @@
             </div>
         </div>
     </main>
+    <div class="notification-container"></div>
     <dialog class="pay-modal">
         <div class="modal-content">
             <input class="money" placeholder="Digite aqui o valor desejado. (Apenas números)" type="text">
@@ -407,6 +413,36 @@
             </form>
         </div>
     </div>
+    <div class="popup report">
+        <div class="popup-content">
+            <div class="close">
+                <img src="../../imgs/client/close-icon.svg" alt="">
+            </div>
+            <div class="popup-wrapper">
+                <form class="form">
+                    <h1>Denúncia</h1>
+                    <label class="file-field" for="report-photo">
+                        <input class="field" required type="file" name="files" id="report-photo">
+                        <div class="icon">
+                            <img src="../../imgs/cadastro-entregador/upload-icon.svg" alt="">
+                        </div>
+                        <span class="msg">Foto do Ocorrido</span>
+                    </label>
+                    <select required class="input-field field">
+                        <option value="">Motivo da Denúncia</option>
+                        <option value="1">Assédio ou Comportamento inadequado</option>
+                        <option value="2">Problemas de Qualidade do Serviço</option>
+                        <option value="3">Violar Regras do Site</option>
+                        <option value="4">Suspeita de Fraude</option>
+                        <option value="5">Outros</option>
+                    </select>
+                    <input required placeholder="Data do ocorrido" class="input-field field" type="text" onfocus="this.type='date'">
+                    <textarea required class="rate-field field" placeholder="Descrição do ocorrido"></textarea>
+                    <button class="cta">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.3.4/purify.min.js" integrity="sha512-jGh38w63cHRzfBHtyKgEMMkJswUFXDA3YXrDjaE8ptzxV5DDkLDUDjtGUy5tmDkOXHWsItKfFjocaEtj1WuVnQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.6.0/cleave.min.js"></script>
@@ -418,5 +454,6 @@
     <script src="../../JS/shipper/payment.js"></script>
     <script src="../../JS/shipper/allow-payment.js"></script>
     <script src="../../JS/client/pay-popup.js"></script>
+    <script src="../../JS/shipper/report-popup.js"></script>
 </body>
 </html>

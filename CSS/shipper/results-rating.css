@@ -51,11 +51,26 @@
     justify-content: center;
 }
 
-.content > h1 {
+.content > .header {
+    display: flex;
+    column-gap: 7px;
+}
+
+.content h1 {
     font-family: var(--font-1);
     font-weight: 700;
     font-size: 30px;
     margin-bottom: 8px;
+}
+
+.header img {
+    height: fit-content;
+    opacity: .6;
+    cursor: pointer;
+}
+
+.header img:hover {
+    opacity: .85;
 }
 
 .content > p {

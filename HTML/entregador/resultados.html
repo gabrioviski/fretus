@@ -6,11 +6,18 @@
     <title>Fretus - Resultados</title>
     <link rel="shortcut icon" href="../../imgs/logotca.png" type="image/x-icon">
     <link rel="stylesheet" href="../../CSS/index.css">
+    <link rel="stylesheet" href="../../CSS/cta.css">
     <link rel="stylesheet" href="../../CSS/header-client-shipper.css">
     <link rel="stylesheet" href="../../CSS/menu-burguer.css">
     <link rel="stylesheet" href="../../CSS/shipper/results.css">
     <link rel="stylesheet" href="../../CSS/shipper/results-history.css">
     <link rel="stylesheet" href="../../CSS/shipper/results-rating.css">
+    <link rel="stylesheet" href="../../CSS/client/confirm-popup.css">
+    <!-- <link rel="stylesheet" href="../../CSS/client/rate-popup.css"> -->
+    <link rel="stylesheet" href="../../CSS/shipper/requests-notification.css">
+    <link rel="stylesheet" href="../../CSS/client/popup-info.css">
+    <link rel="stylesheet" href="../../CSS/client/pay-popup.css">
+    <link rel="stylesheet" href="../../CSS/client/report-popup.css">
 </head>
 <body>
 
@@ -192,42 +199,60 @@
                         <div class="rating-carousel">
                             <div class="rating-content">
                                 <div class="content">
-                                    <h1>Lucas</h1>
+                                    <div class="header">
+                                        <h1>Lucas</h1>
+                                        <img class="report-call" src="../../imgs/client/report-icon.svg" alt="">
+                                    </div>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet</p>
                                     <div class="stars">
                                         <img src="../../imgs/shipper/stars.svg" alt="">
                                     </div>
                                 </div>
                                 <div class="content">
-                                    <h1>Pedro</h1>
+                                    <div class="header">
+                                        <h1>Pedro</h1>
+                                        <img class="report-call" src="../../imgs/client/report-icon.svg" alt="">
+                                    </div>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet</p>
                                     <div class="stars">
                                         <img src="../../imgs/shipper/stars.svg" alt="">
                                     </div>
                                 </div>
                                 <div class="content">
-                                    <h1>Miguel</h1>
+                                    <div class="header">
+                                        <h1>Miguel</h1>
+                                        <img class="report-call" src="../../imgs/client/report-icon.svg" alt="">
+                                    </div>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet</p>
                                     <div class="stars">
                                         <img src="../../imgs/shipper/stars.svg" alt="">
                                     </div>
                                 </div>
                                 <div class="content">
-                                    <h1>Renata</h1>
+                                    <div class="header">
+                                        <h1>Renata</h1>
+                                        <img class="report-call" src="../../imgs/client/report-icon.svg" alt="">
+                                    </div>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet</p>
                                     <div class="stars">
                                         <img src="../../imgs/shipper/stars.svg" alt="">
                                     </div>
                                 </div>
                                 <div class="content">
-                                    <h1>Fábio</h1>
+                                    <div class="header">
+                                        <h1>Fábio</h1>
+                                        <img class="report-call" src="../../imgs/client/report-icon.svg" alt="">
+                                    </div>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet</p>
                                     <div class="stars">
                                         <img src="../../imgs/shipper/stars.svg" alt="">
                                     </div>
                                 </div>
                                 <div class="content">
-                                    <h1>Maria</h1>
+                                    <div class="header">
+                                        <h1>Maria</h1>
+                                        <img class="report-call" src="../../imgs/client/report-icon.svg" alt="">
+                                    </div>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet</p>
                                     <div class="stars">
                                         <img src="../../imgs/shipper/stars.svg" alt="">
@@ -244,7 +269,41 @@
         </div>
     </main>
 
+    <div class="notification-container"></div>
+
+    <div class="popup report">
+        <div class="popup-content">
+            <div class="close">
+                <img src="../../imgs/client/close-icon.svg" alt="">
+            </div>
+            <div class="popup-wrapper">
+                <form class="form">
+                    <h1>Denúncia</h1>
+                    <label class="file-field" for="report-photo">
+                        <input class="field" required type="file" name="files" id="report-photo">
+                        <div class="icon">
+                            <img src="../../imgs/cadastro-entregador/upload-icon.svg" alt="">
+                        </div>
+                        <span class="msg">Foto do Ocorrido</span>
+                    </label>
+                    <select required class="input-field field">
+                        <option value="">Motivo da Denúncia</option>
+                        <option value="1">Assédio ou Comportamento inadequado</option>
+                        <option value="2">Problemas de Qualidade do Serviço</option>
+                        <option value="3">Violar Regras do Site</option>
+                        <option value="4">Suspeita de Fraude</option>
+                        <option value="5">Outros</option>
+                    </select>
+                    <input required placeholder="Data do ocorrido" class="input-field field" type="text" onfocus="this.type='date'">
+                    <textarea required class="rate-field field" placeholder="Descrição do ocorrido"></textarea>
+                    <button class="cta">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
     <script src="../../JS/burguer.js"></script>
     <script src="../../JS/shipper/results-carousel.js"></script>
+    <script src="../../JS/shipper/report-popup.js"></script>
 </body>
 </html>
