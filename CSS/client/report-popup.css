@@ -4,6 +4,14 @@
     z-index: -1000000;
 }
 
+.form .report-reason {
+    display: none;
+}
+
+.form .report-reason.show {
+    display: block;
+}
+
 .form .file-field {
     background-color: #FEEFE8;
     color: #FF8750;

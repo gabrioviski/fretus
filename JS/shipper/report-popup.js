@@ -6,6 +6,8 @@ const inputFile = document.querySelectorAll('input[type="file"]')
 const labelFile = document.querySelectorAll('.file-field .msg')
 const reportSubmit = document.querySelector('.report .cta')
 const notificationContainer = document.querySelector('.notification-container')
+const reportSelect = document.querySelector('.report select')
+const reportReason = document.querySelector('.form .report-reason')
 let clicked
 
 reportCall.forEach((item, i) => {
@@ -19,6 +21,8 @@ const closeReportPopup = () => {
     reportPopup.classList.remove('show')
     inputs.forEach(input => input.value = '')
     labelFile[0].textContent = 'Foto do Ocorrido'
+    reportReason.classList.remove('show')
+    reportReason.removeAttribute('required')
 }
 
 closeReport.addEventListener('click', () => {
@@ -43,6 +47,17 @@ inputFile.forEach((input, i) => {
         }
     })
 })
+
+reportSelect.addEventListener('change', () => {
+    if (reportSelect.value == 'Outros') {
+        reportReason.classList.add('show')
+        reportReason.setAttribute('required', 'true')
+    } else {
+        reportReason.classList.remove('show')
+        reportReason.removeAttribute('required')
+    }
+})
+
 
 function showReportNotification(m) {
     if (notificationContainer.innerHTML != '') {
