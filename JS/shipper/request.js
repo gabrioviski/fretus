@@ -1,17 +1,17 @@
 const container = document.querySelector('.requests-container')
 const cards = document.querySelectorAll('.card')
-const btns = document.querySelectorAll('.card .denied')
-const notificationContainer = document.querySelector('.notification-container')
+const btns = document.querySelectorAll('.card .btn')
+// const notificationContainer = document.querySelector('.notification-container')
 
 btns.forEach((btn, idx) => {
     btn.addEventListener('click', () => {
-        const removed = cards[idx]
+        const removed = cards[parseInt(idx / 2)]
         removed.remove()
-        showNotification(removed, idx)
+        showNotification(removed, parseInt(idx / 2), btn.classList.contains('accept') ? 'Entrega Aceita! ' : 'Entrega Negada! ')
     })
 })
 
-function showNotification(r, i) {
+function showNotification(r, i, m) {
     if (notificationContainer.innerHTML != '') {
         document.querySelector('.notification').remove()
     }
@@ -22,7 +22,7 @@ function showNotification(r, i) {
     notification.classList.add('notification')
 
     const msg = document.createElement('p')
-    msg.textContent = 'Entrega Cancelada! '
+    msg.textContent = m
     const undo = document.createElement('span')
     undo.textContent = 'Desfazer'
     msg.appendChild(undo)

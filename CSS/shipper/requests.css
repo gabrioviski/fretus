@@ -98,6 +98,8 @@ main > h1 {
     align-items: center;
     justify-content: center; 
     cursor: pointer;
+    outline: none;
+    border: none;
 }
 
 .btn.accept {
@@ -106,8 +108,6 @@ main > h1 {
 
 .btn.denied {
     background-color: #DBDEE3;
-    outline: none;
-    border: none;
 }
 
 .card .indicator {

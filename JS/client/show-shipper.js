@@ -15,6 +15,7 @@ setInterval(() => {
 
             const favIcon = document.createElement('img')
             favIcon.setAttribute('src', '../../imgs/client/fav-icon.svg')
+            favIcon.addEventListener('click', showAcceptNotification.bind(null, 'Entregador Favoritado! '))
 
             const paymentCall = document.createElement('img')
             paymentCall.classList.add('pay-call')
