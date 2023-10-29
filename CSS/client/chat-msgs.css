@@ -51,6 +51,7 @@
     background-color: white;
     padding: 15px;
     border-radius: 15px;
+    overflow-wrap: anywhere;
 }
 
 .row.my-msg > .msg {
