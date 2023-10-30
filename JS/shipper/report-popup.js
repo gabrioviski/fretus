@@ -5,7 +5,7 @@ const inputs = document.querySelectorAll('.report .field')
 const inputFile = document.querySelectorAll('input[type="file"]')
 const labelFile = document.querySelectorAll('.file-field .msg')
 const reportSubmit = document.querySelector('.report .cta')
-const notificationContainer = document.querySelector('.notification-container')
+// const notificationContainer = document.querySelector('.notification-container')
 const reportSelect = document.querySelector('.report select')
 const reportReason = document.querySelector('.form .report-reason')
 let clicked

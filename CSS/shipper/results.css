@@ -40,7 +40,7 @@ main {
     gap: 15px;
 }
 
-.results-cards > .cards {
+.results-cards .cards {
     height: fit-content;
     padding: 15px;
     border-radius: 15px;
@@ -49,26 +49,33 @@ main {
     flex-direction: column;
 }
 
-.results-cards > .cards.cards-top {
+.results-cards .cards.cards-top {
     row-gap: 80px;
 }
 
-.results-cards > .card-history, .results-cards > .card-rating {
+.results-cards > .card-history, .results-cards > .rating-cupon {
     width: 100%;
-    height: calc(100vh - 85px - (50px * 2) - (218px + 15px) - 50px);
+    /* height: calc(100vh - 85px - (50px * 2) - (218px + 15px) - 50px); */
+    height: 100%;
     overflow: hidden;
+}
+
+.results-cards > .rating-cupon {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .results-cards > .history-link {
     display: none;
 }
 
-.results-cards > .cards > .card-header, .results-cards > .cards > .card-bottom {
+.results-cards .cards > .card-header, .results-cards .cards > .card-bottom {
     display: flex;
     justify-content: space-between;
 }
 
-.results-cards > .cards > .card-bottom {
+.results-cards .cards > .card-bottom {
     align-items: center;
 }
 
@@ -111,6 +118,15 @@ main {
 
 .card-bottom .percentage.down {
     color: #EF5152;
+}
+
+.card-bottom .action {
+    color: var(--orange);
+    cursor: pointer;
+}
+
+.card-bottom .action:hover {
+    text-decoration: underline;
 }
 
 .results-cards > .card-history {

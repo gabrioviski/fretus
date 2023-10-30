@@ -6,6 +6,10 @@
     text-decoration: underline;
 }
 
+.results-cards .card-rating {
+    height: 55%;
+}
+
 .card-rating > .rating-header {
     display: flex;
     justify-content: space-between;
@@ -17,7 +21,7 @@
     font-weight: 700;
 }
 
-.rating-controls > *{
+.rating-controls > * {
     cursor: pointer;
 }
 
@@ -85,7 +89,10 @@
 }
 
 @media (max-width: 975px), (max-height: 750px) {
-    .results-cards > .card-history, .results-cards > .card-rating {
-        height: 300px;
+    .results-cards > .rating-cupon {
+        height: fit-content;
+    }
+    .results-cards .card-rating {
+        height: 218px;
     }
 }
