@@ -7,8 +7,6 @@ body {
     justify-content: center;
     font-family: var(--font-1);
     color: #333;
-    margin: 0;
-    overflow: hidden;
 }
 
 .fretus {
@@ -174,4 +172,4 @@ main .alternative span::after {
     cursor: pointer;
     top: 30px;
 }
-@media (max-width:500px) { body{ height:105vh}}
+@media (max-width:500px) { body{ height:130vh}}
