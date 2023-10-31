@@ -1,12 +1,14 @@
 body {
     background-image: url('../../imgs/login-cadastro/bg-login.svg');
     width: 100vw;
-    height: 100vh;
+    height: 115vh;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: var(--font-1);
     color: #333;
+    margin: 0;
+    overflow: hidden;
 }
 
 .fretus {
@@ -36,6 +38,7 @@ body {
     width: 100%;
     overflow: hidden;
     scroll-behavior: smooth;
+    height: 100%;
 }
 
 .signup-container > .signup-content {
@@ -171,3 +174,4 @@ main .alternative span::after {
     cursor: pointer;
     top: 30px;
 }
+@media (max-width:500px) { body{ height:105vh}}
