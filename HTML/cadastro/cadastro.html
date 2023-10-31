@@ -34,7 +34,7 @@
 
             <!-- inicio Cliente VAlidação  -->
 
-                    <input type="text" id="nome" autocomplete="off" placeholder="Nome completo" pattern=".{3,}" oninput="nomeValido()" required>
+                    <input type="text" id="nome" autocomplete="off" placeholder="Nome completo" pattern=".{3,}[A-Za-z\s]+" oninput="nomeValido()" required>
                     <p id="messageNome"></p>
                     <input type="text" autocomplete="off" maxlength="14" placeholder="CPF/CNPJ" id="cpf" pattern=".{14,}" oninput="cpfValido()" required>
                     <p id="messageCpf"></p>
@@ -78,7 +78,7 @@
 
                     <!-- Inicio Entrergador validação  -->
 
-                    <input type="text" id="nome2" autocomplete="off" placeholder="Nome completo" pattern=".{3,}" oninput="nomeValido2()" required>
+                    <input type="text" id="nome2" autocomplete="off" placeholder="Nome completo" pattern=".{3,}[A-Za-z\s]+" oninput="nomeValido2()" required>
                     <p id="messageNome2"></p>
                     <input type="text" autocomplete="off" maxlength="14" placeholder="CPF/CNPJ" id="cpf2" pattern=".{14,}" oninput="cpfValido2()" required>
                     <p id="messageCpf2"></p>
