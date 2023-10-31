@@ -60,11 +60,11 @@ reportSelect.addEventListener('change', () => {
 
 
 function showReportNotification(m) {
-    if (notificationContainer.innerHTML != '') {
+    if (document.querySelector('.notification-container').innerHTML != '') {
         document.querySelector('.notification').remove()
     }
     
-    notificationContainer.classList.add('show')
+    document.querySelector('.notification-container').classList.add('show')
     
     const notification = document.createElement('div')
     notification.classList.add('notification')
@@ -77,11 +77,11 @@ function showReportNotification(m) {
     loading.classList.add('loading')
     notification.appendChild(loading)
 
-    notificationContainer.addEventListener('animationend', () => {
-        notificationContainer.classList.remove('show')
+    document.querySelector('.notification-container').addEventListener('animationend', () => {
+        document.querySelector('.notification-container').classList.remove('show')
     })
 
-    notificationContainer.appendChild(notification)
+    document.querySelector('.notification-container').appendChild(notification)
 }
 
 const isValid = () => {
