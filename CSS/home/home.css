@@ -14,7 +14,7 @@ body {
 
 .paragraph {
     font-size: clamp(18px, 2.5vw, 28px);
-    max-width: max(400px, 50vw) !important;
+    /* max-width: max(400px, 50vw) !important; */
 }
 
 .client > section, .shipper > section {

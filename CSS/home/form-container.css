@@ -33,6 +33,28 @@
     font-size: 18px;
 }
 
+.form-container .terms {
+    display: flex;
+    align-items: center;
+    column-gap: 7px;
+    margin-bottom: 20px;
+}
+
+.terms input {
+    flex-shrink: 0;
+    width: 20px;
+    margin: 0;
+}
+
+.terms label {
+    width: 100%;
+    font-size: 18px;
+}
+
+.terms a {
+    color: var(--orange);
+}
+
 .form-container .cta {
     width: 100%;
     border-radius: 5px;

@@ -43,7 +43,7 @@
 }
 
 .text > p {
-    font-size: 22px;
+    /* font-size: 22px; */
     font-family: var(--font-2);
     font-style: italic;
     margin-bottom: 8px;

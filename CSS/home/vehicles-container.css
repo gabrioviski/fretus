@@ -85,7 +85,7 @@
 }
 
 .vehicle-description>.card-description.show {
-    height: 100%;
+   /*  height: 100%; */
     padding: 5%;
 }
 
@@ -113,7 +113,7 @@
 
 .card-description h1,
 .card-description p {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 }
 
 @media (max-width: 800px) {
