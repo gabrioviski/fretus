@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,8 +12,9 @@
     <link rel="stylesheet" href="../../CSS/shipper/requests-modal.css">
     <link rel="stylesheet" href="../../CSS/shipper/sidebar-config.css">
     <link rel="stylesheet" href="../../CSS/shipper/config.css">
-    <link rel="stylesheet" href="../../CSS/shipper/payment-config.css">
+    <link rel="stylesheet" href="../../CSS/shipper/Idioma&location.css">
 </head>
+
 <body>
     <div class="menu-burguer">
         <nav>
@@ -26,7 +28,7 @@
             </ul>
         </nav>
     </div>
-    
+
     <header>
         <div class="header-content">
             <h1><a href="../../index.html"><img class="logo" src="../../imgs/logotca.png"></a></h1>
@@ -49,7 +51,8 @@
                 </ul>
             </nav>
             <div class="burguer">
-                <img src="https://files.axshare.com/gsc/NW3CCE/d7/2e/63/d72e6396c33043df9eca85714bda96d5/images/homepage__mobile_/u14.svg?pageId=474e0aac-b4ee-403d-9bc0-5e2c0892e3b4" alt="">
+                <img src="https://files.axshare.com/gsc/NW3CCE/d7/2e/63/d72e6396c33043df9eca85714bda96d5/images/homepage__mobile_/u14.svg?pageId=474e0aac-b4ee-403d-9bc0-5e2c0892e3b4"
+                    alt="">
             </div>
         </div>
     </header>
@@ -67,56 +70,50 @@
                     <a href="./configuracoes-notificacoes.html">
                         <li>Notificações</li>
                     </a>
-                    <a href="./configurações-Localização-&-Idioma.html">
-                        <li>Localização & Idioma</li>
-                    </a>
+                    <a href="./configurações-Localização-&-Idioma.html"></a>
+                    <li>Localização & Idioma</li>
                 </ul>
             </div>
             <div class="container-button">
                 <button class="exit-button"><a href="../../index.html">sair da conta</a></button>
-            </div> 
+            </div>
         </div>
         <div class="config">
             <div class="config-container">
                 <div class="sidebar-burguer">
                     <img src="../../imgs/burguer-config-icon.png" alt="">
                 </div>
-                <h1>Pagamento</h1>
-                <p>Insira aqui seus metódos de pagamento.</p>
-                <div class="row">
-                    <input type="checkbox" id="cartao">
-                    <label for="cartao">Cartão <span>></span></label>
-                    <div class="content">
-                        <div class="edit-row">
-                            <div class="input-container">
-                                <input type="text" readonly value="**** **** **** 5693">
-                                <input type="button" class="btn" value="Cancelar">
-                                <input type="button" class="btn confirm" value="Confirmar">
-                            </div>
-                            <span>Alterar</span>
-                        </div>
-                    </div>
+                <div class="Font-Location">
+                    <h1>Localização & Idioma</h1>
                 </div>
-                <div class="row">
-                    <input type="checkbox" id="pix">
-                    <label for="pix">Pix <span>></span></label>
-                    <div class="content">
-                        <div class="edit-row">
-                            <div class="input-container">
-                                <input type="text" readonly value="123e4567-e12b-12d1">
-                                <input type="button" class="btn" value="Cancelar">
-                                <input type="button" class="btn confirm" value="Confirmar">
-                            </div>
-                            <span>Alterar</span>
-                        </div>
-                    </div>
+                <div class="separation-language-city">                
+                <label for="cidade">Cidade:</label>
+                <select id="cidade" name="cidade">
+                    <option value="sao_paulo">Barueri</option>
+                    <option value="campinas">Campinas</option>
+                    <option value="guarulhos">Guarulhos</option>
+                    <option value="santo_andre">Santo André</option>
+                    <option value="sao_bernardo">São Bernardo do Campo</option>
+
+                    <!-- todo: vendo formas de colocar masi cidades -->
+                </select>
+                </div>
+                <div>
+                <form class="separation-language-city">
+                    <label for="opcao1">English</label>
+                    <input type="radio" id="opcao1" name="opcao" value="opcao1" >
+                    <label for="opcao2" id="opcao2">Portuguese</label>
+                    <input type="radio" name="opcao" value="opcao2" checked>
+
+                </form>
                 </div>
             </div>
         </div>
     </main>
-    
+
     <script src="../../JS/burguer.js"></script>
     <script src="../../JS/shipper/change.js"></script>
     <script src="../../JS/shipper/burguer-config.js"></script>
 </body>
+
 </html>

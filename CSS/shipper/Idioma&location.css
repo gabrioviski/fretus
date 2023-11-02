@@ -1,0 +1,39 @@
+/* Css idioma&location */
+
+.Font-Location h1 {
+    font-size: 2.5rem;
+}
+
+select {
+    width: 50%;
+    border: none;
+    text-decoration: none;
+    padding: 10px;
+    height: 100%;
+    /* font-family: var(--font-2); */
+}
+
+input[type="radio"] {
+    width: 20px;
+    height: 20px;
+}
+
+.separation-language-city {
+    margin-top: 30px;
+    font-size: 1.3rem;
+}
+
+#opcao2 {
+    margin-left: 20px;
+}
+
+@media(max-width:470px) {
+    .Font-Location h1 {
+        font-size: 2.2rem;
+    }
+
+    select {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
