@@ -1,0 +1,37 @@
+.links-itens{
+    margin: 10px;
+    max-width: 550px;
+    height: 100%;
+}
+.Sobre-fretus{
+    max-width: 600px;
+    margin: 20px 10px;
+    padding: 10px;
+    font-size: 1.3rem;
+    text-align: justify;
+}
+.links-Privaci{
+    text-align: center;
+    width: 100%;
+}
+
+.container-termos{
+    max-width: 700px;
+    padding: 10px;
+    border-radius: 10px;
+    max-height: 610px;
+    overflow: auto; 
+    background-color: rgba(255, 255, 255, 0.2); 
+}
+.link-bar{
+    background-color: orange;
+    border: 2px solid orange;
+    padding: 8px;
+    border-radius: 5px;
+    margin: 0 50px;
+    transition: background-color 1s, ;
+}
+.link-bar:hover{
+    color: orange;
+    background: none;
+}
