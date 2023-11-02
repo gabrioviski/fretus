@@ -113,7 +113,7 @@ function senhaValidada(){
 
 
 function Letras(nome) {
-    const regex = /^[a-zA-Z\s]+$/; 
+    const regex = /^[A-Za-zÀ-ÖØ-öø-ÿ\s'-]+$/; 
     return regex.test(nome);
   }
 
@@ -218,7 +218,7 @@ function senhaValidada2(){
 
 
 function Letras2(nome2) {
-    const regex = /^[a-zA-Z\s]+$/; 
+    const regex = /^[A-Za-zÀ-ÖØ-öø-ÿ\s'-]+$/; 
     return regex.test(nome2);
   }
 
