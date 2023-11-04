@@ -1,13 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Rubik:ital@0;1&display=swap');
+
 *{
     padding: 0;
     margin: 0;
 
 }
-header{
-    padding: 20px;
-    background-color: burlywood;
-    margin-bottom: 20px;
+:root{
+    --orange: orange;
+
+
 }
+
 body{
     background-image: url('../../imgs/login-cadastro/bg-login.svg');
     background-repeat: no-repeat;
@@ -21,10 +24,21 @@ h1{
     text-align: center;
     margin: 20px;
 }
+
+p{
+    font-size: 1.3rem;
+}
 .links-Privaci a {
     font-size: 1.2rem;
     text-decoration: none;
     text-align: center;
     display: block;
     color: white; 
+}
+
+/* todo: temporario  */
+
+footer,header{
+    padding: 20px;
+    margin: 20px;
 }

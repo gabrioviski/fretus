@@ -1,37 +1,71 @@
-.links-itens{
+.links-itens {
     margin: 10px;
     max-width: 550px;
     height: 100%;
 }
-.Sobre-fretus{
+
+.Sobre-fretus {
     max-width: 600px;
     margin: 20px 10px;
     padding: 10px;
     font-size: 1.3rem;
     text-align: justify;
 }
-.links-Privaci{
+
+.links-Privaci {
     text-align: center;
     width: 100%;
 }
 
-.container-termos{
+.container-termos  h3 {
+    margin: 15px 0;
+    font-size: 1.5rem;
+}
+
+.container-termos {
     max-width: 700px;
     padding: 10px;
     border-radius: 10px;
     max-height: 610px;
-    overflow: auto; 
-    background-color: rgba(255, 255, 255, 0.2); 
+    overflow: auto;
+    background-color: rgba(255, 255, 255, 0.25);
+    text-align: left;
 }
-.link-bar{
-    background-color: orange;
-    border: 2px solid orange;
+
+.link-bar {
+    background-color: var(--orange);
+    border: 2px solid var(--orange);
     padding: 8px;
     border-radius: 5px;
     margin: 0 50px;
     transition: background-color 1s, ;
 }
-.link-bar:hover{
-    color: orange;
+
+.link-bar:hover {
+    color: var(--orange);
     background: none;
+}
+@media(max-width:1100px){
+    main{
+        flex-direction: column;
+        width: 100%;
+        margin: 5px;
+    }
+    .links-Privaci{
+        display: none;
+    }
+    .Sobre-fretus{
+        margin: 10px;
+        padding: 0;
+        text-align: left;
+        
+    }
+    .container-termos{
+        max-height: 100%;
+        background: none;
+        margin: 20px;
+        max-width: 100%;
+        text-align: justify;
+    }
+
 }
