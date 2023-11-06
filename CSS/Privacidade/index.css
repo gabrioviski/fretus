@@ -7,13 +7,16 @@
 }
 :root{
     --orange: orange;
-
+    --gradiend:linear-gradient(to bottom left, #dbdee3 1.17%, #dee3e9 23.12%, #e5e9ed 40.8%, #eef1f4 68%); 
+    
 
 }
 
 body{
-    background-image: url('../../imgs/login-cadastro/bg-login.svg');
-    background-repeat: no-repeat;
+    background: var(--gradiend);
+    min-height: 100vh;
+
+     
 }
 main{
     display: flex;

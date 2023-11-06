@@ -24,6 +24,7 @@
 }
 
 .container-termos {
+    scroll-behavior: smooth;
     max-width: 700px;
     padding: 30px;
     border-radius: 10px;
@@ -39,7 +40,7 @@
     padding: 8px;
     border-radius: 5px;
     margin: 0 50px;
-    transition: all linear 0.3s ;
+    transition: all linear 0.2s ;
 }
 .Usolicença2 > p {
     margin: 15px 0;
@@ -49,7 +50,7 @@
     display: flex;
     justify-content: center;
     position: relative;
-    padding: 15px;
+    padding: 10px;
     
     
 
@@ -60,7 +61,7 @@
     position: absolute;
     height: 5px;
     bottom:0 ;
-    background: violet;
+    background: #000;
  
 }
 
@@ -70,7 +71,7 @@
     color: var(--orange);
     background: none;
 }
-@media(max-width:1100px){
+@media(max-width:1350px){
     main{
         flex-direction: column;
         width: 100%;
@@ -81,6 +82,7 @@
     }
     .links-Privaci{
         margin-top: 30px;
+
  
     }
     .Sobre-fretus{
@@ -97,6 +99,7 @@
         max-width: 100%;
         text-align: justify;
         padding: 15px;
+        scroll-behavior: smooth;
     
     }
 
