@@ -18,7 +18,7 @@
     text-align: center;
 }
 
-.container-termos  h3 {
+.container-termos h3 {
     margin: 15px 0;
     font-size: 1.5rem;
 }
@@ -40,29 +40,32 @@
     padding: 8px;
     border-radius: 5px;
     margin: 0 50px;
-    transition: all linear 0.2s ;
+    transition: all linear 0.2s;
 }
-.Usolicença2 > p {
+
+.Usolicença2>p {
     margin: 15px 0;
     padding-left: 10px;
 }
-.poli-ef{
+
+.poli-ef {
     display: flex;
     justify-content: center;
     position: relative;
     padding: 10px;
-    
-    
+
+
 
 }
-.poli-ef::after{
+
+.poli-ef::after {
     content: '';
     width: 90%;
     position: absolute;
     height: 5px;
-    bottom:0 ;
+    bottom: 0;
     background: #000;
- 
+
 }
 
 
@@ -71,41 +74,45 @@
     color: var(--orange);
     background: none;
 }
-@media(max-width:1350px){
-    main{
+
+@media(max-width:1350px) {
+    main {
         flex-direction: column;
         width: 100%;
     }
-    p,ol{
+
+    p,
+    ol {
         padding: 10px;
         font-size: 1.5rem;
     }
-    .links-Privaci{
+
+    .links-Privaci {
         margin-top: 30px;
 
- 
+
     }
-    .Sobre-fretus{
-        
+
+    .Sobre-fretus {
+
         padding: 0;
         text-align: justify;
         width: 97%;
         max-width: none;
-        
+
     }
-    .container-termos{
+
+    .container-termos {
         max-height: 100%;
         background: none;
         max-width: 100%;
         text-align: justify;
         padding: 15px;
-        scroll-behavior: smooth;
-    
     }
 
-    .links-itens{
+    .links-itens {
         max-width: none;
         width: 100%;
-        
+
     }
 }
