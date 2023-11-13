@@ -6,7 +6,7 @@
 
 .Sobre-fretus {
     max-width: 600px;
-    margin: 20px 10px;
+    margin: 10px 0;
     padding: 10px;
     font-size: 1.3rem;
     text-align: justify;
@@ -43,10 +43,7 @@
     transition: all linear 0.2s;
 }
 
-.Usolicença2>p {
-    margin: 15px 0;
-    padding-left: 10px;
-}
+
 
 .poli-ef {
     display: flex;
@@ -64,7 +61,7 @@
     position: absolute;
     height: 5px;
     bottom: 0;
-    background: #000;
+    background: #696969;
 
 }
 
@@ -85,6 +82,7 @@
     ol {
         padding: 10px;
         font-size: 1.5rem;
+        margin: 15px 0; 
     }
 
     .links-Privaci {
