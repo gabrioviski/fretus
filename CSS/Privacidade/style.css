@@ -92,20 +92,20 @@
         padding: 0;
         text-align: justify;
         width: 97%;
-        max-width: none;
+        max-width: unset;
 
     }
 
     .container-termos {
         max-height: 100%;
-        background: none;
+        background: unset;
         max-width: 100%;
         text-align: justify;
         padding: 15px;
     }
 
     .links-itens {
-        max-width: none;
+        max-width: unset;
         width: 100%;
 
     }
