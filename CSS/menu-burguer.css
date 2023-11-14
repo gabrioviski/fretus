@@ -19,7 +19,7 @@ header > nav > .burguer {
 .menu-burguer .burguer {
     position: absolute;
     top: 35px;
-    right: 60px;
+    right: 50px;
 }
 
 .menu-burguer ul {
