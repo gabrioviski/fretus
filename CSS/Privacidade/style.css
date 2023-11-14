@@ -39,11 +39,9 @@
     border: 2px solid var(--orange);
     padding: 8px;
     border-radius: 5px;
-    margin: 0 50px;
+    margin: 0 25px;
     transition: all linear 0.2s;
 }
-
-
 
 .poli-ef {
     display: flex;
@@ -65,8 +63,6 @@
 
 }
 
-
-
 .link-bar:hover {
     color: var(--orange);
     background: none;
@@ -75,11 +71,11 @@
 @media(max-width:1350px) {
     main {
         flex-direction: column;
-        width: 100%;
+        /* width: 100%; */
     }
 
-    p,
-    ol {
+    main p,
+    main ol {
         padding: 10px;
         font-size: 1.5rem;
         margin: 15px 0; 

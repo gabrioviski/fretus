@@ -1,40 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Rubik:ital@0;1&display=swap');
-
-*{
-    padding: 0;
-    margin: 0;
-
-}
-:root{
-    --orange: orange;
-    --gradiend:linear-gradient(to bottom left, #dbdee3 1.17%, #dee3e9 23.12%, #e5e9ed 40.8%, #eef1f4 68%); 
-    
-
-}
 html {
     scroll-behavior: smooth;
 }
-body{
-    background: var(--gradiend);
-    min-height: 100vh;
 
-     
+body {
+    background: var(--gray-gradient);
+    min-height: 100vh;     
+    
 }
-main{
+
+main {
+    padding-top: 100px;
+    margin: 0 auto;
+    width: min(1366px, 90%);
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #333;
 }
-h1{
+
+main h1 {
     text-align: center;
     margin: 20px;
 }
 
-p{
+main p {
     margin: 10px 0;
-    font-size: 1.5rem; 
+    font-size: 1.5rem;
     padding: 10px;
+    font-family: var(--font-2);
 }
+
 .links-Privaci a {
     font-size: 1.2rem;
     text-decoration: none;
@@ -47,7 +42,7 @@ p{
 
 /* todo: temporario  */
 
-footer,header{
+/* footer,header{
     padding: 20px;
     margin: 20px;
-}
+} */
