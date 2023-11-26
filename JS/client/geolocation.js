@@ -56,10 +56,14 @@ end.on('dragend', async () => {
 
 const dataResult = async (query) => {
     const bbox = "-53.305664,-25.204941,-45.439453,-19.849394"
-    const url = `https://api.mapbox.com/geocoding/v5/mapbox.places/${typeof query == 'string'?
-                                                                    `${query}.json?access_token=${accessToken}&limit=3`:
-                                                                    `${query.lng},${query.lat}.json?access_token=${accessToken}&limit=1`}
-                                                                    &language=pt&bbox=${bbox}`
+    /* const url = `https://api.mapbox.com/geocoding/v5/mapbox.places/${typeof query == 'string'?
+    `${query}.json?access_token=${accessToken}&limit=3`:
+    `${query.lng},${query.lat}.json?access_token=${accessToken}&limit=1`}
+    &language=pt&bbox=${bbox}` */
+    let url = 'https://mapbox-hidden-api.vercel.app/api/${query}'
+    if (typeof query != 'string') {
+        url = `https://mapbox-hidden-api.vercel.app/api/${query.lng},${query.lat}?reverse=true`
+    }
     const res = await fetch(url)
     const dataRes = await res.json()
     return dataRes
