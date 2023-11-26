@@ -60,7 +60,7 @@ const dataResult = async (query) => {
     `${query}.json?access_token=${accessToken}&limit=3`:
     `${query.lng},${query.lat}.json?access_token=${accessToken}&limit=1`}
     &language=pt&bbox=${bbox}` */
-    let url = 'https://mapbox-hidden-api.vercel.app/api/${query}'
+    let url = `https://mapbox-hidden-api.vercel.app/api/${query}`
     if (typeof query != 'string') {
         url = `https://mapbox-hidden-api.vercel.app/api/${query.lng},${query.lat}?reverse=true`
     }
