@@ -55,14 +55,10 @@ end.on('dragend', async () => {
 })
 
 const dataResult = async (query) => {
-    const bbox = "-53.305664,-25.204941,-45.439453,-19.849394"
-    /* const url = `https://api.mapbox.com/geocoding/v5/mapbox.places/${typeof query == 'string'?
-    `${query}.json?access_token=${accessToken}&limit=3`:
-    `${query.lng},${query.lat}.json?access_token=${accessToken}&limit=1`}
-    &language=pt&bbox=${bbox}` */
-    let url = `https://mapbox-hidden-api.vercel.app/api/${query}`
+    // const bbox = "-53.305664,-25.204941,-45.439453,-19.849394"
+    let url = `https://mapbox-hidden-api.vercel.app/geocoding/${query}`
     if (typeof query != 'string') {
-        url = `https://mapbox-hidden-api.vercel.app/api/${query.lng},${query.lat}?reverse=true`
+        url = `https://mapbox-hidden-api.vercel.app/geocoding/${query.lng},${query.lat}?reverse=true`
     }
     const res = await fetch(url)
     const dataRes = await res.json()
@@ -105,7 +101,8 @@ async function getRoute(start, end) {
     const endCoords = end._lngLat
 
     if (startCoords && endCoords) {
-        const url = `https://api.mapbox.com/directions/v5/mapbox/cycling/${startCoords.lng},${startCoords.lat};${endCoords.lng},${endCoords.lat}?steps=false&overview=full&geometries=geojson&access_token=${mapboxgl.accessToken}`
+        /* const url = `https://api.mapbox.com/directions/v5/mapbox/cycling/${startCoords.lng},${startCoords.lat};${endCoords.lng},${endCoords.lat}?steps=false&overview=full&geometries=geojson&access_token=${mapboxgl.accessToken}` */
+        const url = `https://mapbox-hidden-api.vercel.app/routes/?startLng=${startCoords.lng}&startLat=${startCoords.lat}&endLng=${endCoords.lng}&endLat=${endCoords.lat}`
         const res = await fetch(url)
         const data = await res.json()
         route = data.routes[0]
