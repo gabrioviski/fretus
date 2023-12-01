@@ -1,6 +1,6 @@
 const inputs = document.querySelectorAll('.address')
 const results = document.querySelectorAll('.suggestions-options')
-const accessToken = 'pk.eyJ1IjoiZ2FicmllbGNhcnZhbGgwIiwiYSI6ImNsbzljZWJ6ejA4NGIyam1uZjJhenoxMHoifQ.sYUKHYrpphfP63rK9sFHUA'
+const accessToken = 'pk.eyJ1IjoiZ2FicmllbGNhcnZhbGgwIiwiYSI6ImNscG14ZDB6OTAwc3Eya29pM2dvZm5uamYifQ.IPac1tcfJTcmQLrrn937wQ'
 let route
 
 mapboxgl.accessToken = accessToken
@@ -101,7 +101,6 @@ async function getRoute(start, end) {
     const endCoords = end._lngLat
 
     if (startCoords && endCoords) {
-        /* const url = `https://api.mapbox.com/directions/v5/mapbox/cycling/${startCoords.lng},${startCoords.lat};${endCoords.lng},${endCoords.lat}?steps=false&overview=full&geometries=geojson&access_token=${mapboxgl.accessToken}` */
         const url = `https://mapbox-hidden-api.vercel.app/routes/?startLng=${startCoords.lng}&startLat=${startCoords.lat}&endLng=${endCoords.lng}&endLat=${endCoords.lat}`
         const res = await fetch(url)
         const data = await res.json()
