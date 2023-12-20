@@ -1,8 +1,110 @@
+main {
+    color: #333;
+}
+
 .hero {
-    height: 70vh;
+    height: 75vh;
     background-image: url("../../imgs/Sobre/mealpro-efgpRGeu9tg-unsplash.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    
+
+
+}
+
+.h1-Connhe {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 80vh;
+    flex-direction: column;
+    text-align: center;
+
+
+}
+
+.h1-Connhe h1 {
+    font-size: 4rem;
+    margin: 18px;
+    /* filter: drop-shadow(1px 1px 4px #333);  */
+
+}
+
+.h1-Connhe p {
+    font-size: 1.7rem;
+    margin: 0 30px;
+    /* filter: drop-shadow(1px 2px 5px #333); */
+
+}
+
+.container-Sobre {
+    color: #333;
+    display: flex;
+    margin-top: 60px;
+    padding: 20px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+.container-Sobre>.left {
+    max-width: 50%;
+    text-align: left;
+    flex: 1 1 auto;
+}
+
+.container-Sobre>.left h1 {
+    font-size: 3rem;
+    max-width: max-content;
+    position: relative;
+}
+
+.container-Sobre>.left h1::before {
+    content: '';
+    height: 3px;
+    width: 100%;
+    background-color: #333;
+    position: absolute;
+    bottom: 0;
+}
+
+.container-Sobre>.left h3 {
+    margin-top: 20px;
+}
+
+.container-Sobre .right {
+    max-width: 40%;
+    max-height: 35vw;
+
+}
+
+.container-Sobre .right img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0 7px 0 7px;
+    box-shadow: 1px 3px 3px #333;
+}
+
+
+@media(max-width: 950px) {
+    .h1-Connhe h1 {
+        font-size: 3rem;
+    }
+
+    .container-Sobre {
+        display: flex;
+        flex-flow: column;
+        padding: 20px;
+
+    }
+
+    .container-Sobre>.left {
+        max-width: 100%;
+    }
+
+    .container-Sobre .right {
+        margin-top: 30px;
+        min-width: 100%;
+        max-height: 30%;
+    }
 }
