@@ -1,5 +1,6 @@
 main {
     color: #333;
+    background-image: var(--gray-gradient);
 }
 
 .hero {
@@ -40,7 +41,7 @@ main {
 .container-Sobre {
     color: #333;
     display: flex;
-    margin-top: 60px;
+    margin-top: 20px;
     padding: 20px;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -48,9 +49,10 @@ main {
 }
 
 .container-Sobre>.left {
-    max-width: 50%;
     text-align: left;
     flex: 1 1 auto;
+    padding: 20px;
+
 }
 
 .container-Sobre>.left h1 {
@@ -70,20 +72,32 @@ main {
 
 .container-Sobre>.left h3 {
     margin-top: 20px;
+    font-size: 1.2rem;
 }
 
-.container-Sobre .right {
-    max-width: 40%;
-    max-height: 35vw;
+.card {
+    width: 350px;
+    height: 350px;
+    border: 2px solid #333;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.top-cards {
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
 
 }
 
-.container-Sobre .right img {
-    width: 100%;
-    height: 100%;
-    border-radius: 0 7px 0 7px;
-    box-shadow: 1px 3px 3px #333;
+.bottom-cards {
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
+
 
 
 @media(max-width: 950px) {
