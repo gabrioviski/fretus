@@ -307,40 +307,41 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
+        function initSwiper() {
+            var screenWidth = window.innerWidth;
+            var swiperConfig = {
+                spaceBetween: 30,
+                loop: false,
+                loopFillGroupWithBlank: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+            };
+            if (screenWidth > 700) {
+                swiperConfig.slidesPerView = 3;
+                swiperConfig.slidesPerGroup = 3;
+            } else if (screenWidth > 400) {
+                swiperConfig.slidesPerView = 2;
+                swiperConfig.slidesPerGroup = 2;
+            } else {
+                swiperConfig.slidesPerView = 1;
+                swiperConfig.slidesPerGroup = 1;
+            }
+            if (window.mySwiper) {
+                window.mySwiper.destroy();
+            }
+            window.mySwiper = new Swiper(".mySwiper", swiperConfig);
+        }
+        initSwiper();
+        window.addEventListener('resize', function () {
 
-
-    var screenWidth = window.innerWidth;
-
-    var swiperConfig = {
-        spaceBetween: 30,
-        loop: false,
-        loopFillGroupWithBlank: true,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-    };
-
-    if (screenWidth > 700) {
-        swiperConfig.slidesPerView = 3;
-        swiperConfig.slidesPerGroup = 3;
-    } else {
-        swiperConfig.slidesPerView = 2;
-        swiperConfig.slidesPerGroup = 2;
-    }
-
-    // Destroi a instância do Swiper existente
-    if (window.mySwiper) {
-        window.mySwiper.destroy();
-    }
-
-    // Inicializa o novo Swiper
-    window.mySwiper = new Swiper(".mySwiper", swiperConfig);
-
+            initSwiper();
+        });
     </script>
 </body>
 
