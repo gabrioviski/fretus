@@ -95,7 +95,7 @@
 
         <section>
 
-            
+
 
             <div class="swiper mySwiper container">
                 <h1>Conheça nosso time</h1>
@@ -124,7 +124,7 @@
                                 <span class="profession">Web Developer</span>
                                 <span class="profession">Backend Developer</span>
                                 <p class="descria__name">
-                                    
+
                                 </p>
                             </div>
 
@@ -251,9 +251,9 @@
                         </div>
                     </div>
 
-                    
+
                 </div>
-                
+
             </div>
 
 
@@ -307,21 +307,40 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 4,
-            spaceBetween: 30,
-            slidesPerGroup: 3,
-            loop: false,
-            loopFillGroupWithBlank: true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-        });
+
+
+    var screenWidth = window.innerWidth;
+
+    var swiperConfig = {
+        spaceBetween: 30,
+        loop: false,
+        loopFillGroupWithBlank: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    };
+
+    if (screenWidth > 700) {
+        swiperConfig.slidesPerView = 3;
+        swiperConfig.slidesPerGroup = 3;
+    } else {
+        swiperConfig.slidesPerView = 2;
+        swiperConfig.slidesPerGroup = 2;
+    }
+
+    // Destroi a instância do Swiper existente
+    if (window.mySwiper) {
+        window.mySwiper.destroy();
+    }
+
+    // Inicializa o novo Swiper
+    window.mySwiper = new Swiper(".mySwiper", swiperConfig);
+
     </script>
 </body>
 

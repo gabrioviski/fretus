@@ -4,16 +4,18 @@
 section {
   position: relative;
   height: 620px;
-  width: 1075px;
   display: flex;
   align-items: center;
   background: #2C6493;
   width: 100%;
+/*   overflow-x: hidden;
+  scroll-behavior: smooth; */
 }
 
 .swiper {
   max-width: 950px;
-
+  border: 1px solid red ;
+  
 
 }
 
@@ -27,6 +29,9 @@ section {
   font-weight: 700;
   font-size: 2.3rem;
 }
+.swiper-wrapper {
+  
+}
 
 .card {
   position: relative;
@@ -34,7 +39,8 @@ section {
   border-radius: 20px;
   height: 420px;
   margin: 50px 0;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  overflow-y: hidden;
+
 
 
 }
@@ -56,12 +62,6 @@ section {
   position: relative;
   z-index: 100;
 }
-
-
-
-
-
-
 
 section .card .image {
   height: 140px;
@@ -124,8 +124,11 @@ section .card .image img {
 
 .button__conteiner {
   position: absolute;
-  left: 0;
+
   right: 0;
+  left: 0;
+  border: 1px solid black;
+ 
 
 }
 
