@@ -307,6 +307,7 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
+        // Função para criar ou atualizar o Swiper com base no tamanho da tela
         function initSwiper() {
             var screenWidth = window.innerWidth;
             var swiperConfig = {
@@ -321,7 +322,11 @@
                     nextEl: ".swiper-button-next",
                     prevEl: ".swiper-button-prev",
                 },
+                autoplay: {
+                    delay: 5000, //tempo
+                },
             };
+    
             if (screenWidth > 700) {
                 swiperConfig.slidesPerView = 3;
                 swiperConfig.slidesPerGroup = 3;
@@ -332,17 +337,19 @@
                 swiperConfig.slidesPerView = 1;
                 swiperConfig.slidesPerGroup = 1;
             }
+    
             if (window.mySwiper) {
                 window.mySwiper.destroy();
             }
+    
             window.mySwiper = new Swiper(".mySwiper", swiperConfig);
         }
         initSwiper();
-        window.addEventListener('resize', function () {
-
+        window.addEventListener('resize', function() {
             initSwiper();
         });
     </script>
+    
 </body>
 
 </html>
