@@ -3,19 +3,20 @@
 
 section {
   position: relative;
-  height: 620px;
+  height: 700px;
   display: flex;
   align-items: center;
   background: #2C6493;
-  width: 100%;
-/*   overflow-x: hidden;
+  width: 100vw;
+  /*   overflow-x: hidden;
   scroll-behavior: smooth; */
 }
 
 .swiper {
   max-width: 950px;
-  border: 1px solid red ;
-  
+  width: 100%;
+  position: relative;
+  padding: 8px;
 
 }
 
@@ -23,15 +24,13 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 30px;
-  margin-top: 20px;
+  margin-bottom: 10px;
+  padding-bottom:20px ;
   color: #fff;
   font-weight: 700;
-  font-size: 2.3rem;
+  font-size: 2.8rem;
 }
-.swiper-wrapper {
-  
-}
+
 
 .card {
   position: relative;
@@ -40,8 +39,7 @@ section {
   height: 420px;
   margin: 50px 0;
   overflow-y: hidden;
-
-
+  
 
 }
 
@@ -61,6 +59,7 @@ section {
   padding: 20px;
   position: relative;
   z-index: 100;
+  
 }
 
 section .card .image {
@@ -124,11 +123,8 @@ section .card .image img {
 
 .button__conteiner {
   position: absolute;
-
   right: 0;
   left: 0;
-  border: 1px solid black;
- 
 
 }
 
@@ -157,4 +153,39 @@ section .card .image img {
 .swiper-button-prev:hover {
   opacity: 1;
   color: #fff;
+}
+.box_swiper{
+  padding-bottom: 15px;
+}
+
+
+@media(max-width:710px) {
+
+  .swiper h1 {
+    margin: 35px 0;
+    font-size: 2.6rem;
+  }
+
+  .button__conteiner {
+    margin: 5px;
+
+  }
+
+
+}
+
+@media(max-width: 450px) {
+
+  .swiper h1 {
+    margin: 0 5px 30px 5px;
+    font-size: 2.1rem;
+  }
+
+}
+@media(max-width: 356px) {
+
+  .swiper h1 {
+    font-size: 1.9rem;
+  }
+
 }
