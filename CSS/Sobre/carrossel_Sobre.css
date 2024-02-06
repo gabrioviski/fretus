@@ -7,7 +7,7 @@ section {
   display: flex;
   align-items: center;
   background: #2C6493;
-  width: 100vw;
+  width: 100%;
   /*   overflow-x: hidden;
   scroll-behavior: smooth; */
 }
@@ -25,7 +25,7 @@ section {
   justify-content: center;
   align-items: center;
   margin-bottom: 10px;
-  padding-bottom:20px ;
+  padding-bottom: 20px;
   color: #fff;
   font-weight: 700;
   font-size: 2.8rem;
@@ -39,7 +39,7 @@ section {
   height: 420px;
   margin: 50px 0;
   overflow-y: hidden;
-  
+
 
 }
 
@@ -59,7 +59,7 @@ section {
   padding: 20px;
   position: relative;
   z-index: 100;
-  
+
 }
 
 section .card .image {
@@ -138,7 +138,7 @@ section .card .image img {
 
 .swiper-button-next,
 .swiper-button-prev {
-  
+
   color: #fff;
   transition: all 0.3s ease;
   border: 2px solid orange;
@@ -154,7 +154,8 @@ section .card .image img {
   opacity: 1;
   color: #fff;
 }
-.box_swiper{
+
+.box_swiper {
   padding-bottom: 15px;
 }
 
@@ -182,6 +183,7 @@ section .card .image img {
   }
 
 }
+
 @media(max-width: 356px) {
 
   .swiper h1 {
