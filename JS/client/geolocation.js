@@ -174,15 +174,20 @@ function removeSuggestions(input, i) {
 ///areas periosas/////////////////
 
 
-
-var areas = [
+  var areas = [
     {
-      center: [-46.809745, -23.485262],
-      size: 0.01, // Tamanho do quadrado
-      fillColor: 'red'
+        center: [-46.809745, -23.485262],
+        size: 0.01, // Tamanho do quadrado
+        fillColor: 'red'
+    },
+    {
+        center: [-46.648486, -23.554119], // Nova coordenada
+        size: 0.01, 
+        fillColor: 'red' 
     },
     // Adicionar mais áreas conforme necessário
-  ];
+];
+
   
   map.on('load', function () {
     areas.forEach(function (area, index) {
@@ -223,5 +228,3 @@ var areas = [
       [center[0] - halfSize, center[1] - halfSize]
     ];
   }
-  
-
