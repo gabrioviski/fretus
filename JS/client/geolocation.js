@@ -172,34 +172,29 @@ function removeSuggestions(input, i) {
 }
 
 ///areas periosas/////////////////
-/*
-var safe = require("../client/locaisPerigosos")
-var areas = safe.local()
-*/
+
+
 
 var areas = [
     {
-      coordinates: [
-        [-46.809745, -23.485262],
-        [-46.8105, -23.4848],
-        [-46.808832, -23.484877],
-        [-46.808832, -23.485262],
-        [-46.809745, -23.485262]
-      ],
-      fillColor: 'black'
+      center: [-46.809745, -23.485262],
+      size: 0.01, // Tamanho do quadrado
+      fillColor: 'red'
     },
-    // Adicionar areas
+    // Adicionar mais áreas conforme necessário
   ];
-
-map.on('load', function () {
+  
+  map.on('load', function () {
     areas.forEach(function (area, index) {
+      var coordinates = generateSquareCoordinates(area.center, area.size);
+  
       map.addSource('area' + index, {
         'type': 'geojson',
         'data': {
           'type': 'Feature',
           'geometry': {
             'type': 'Polygon',
-            'coordinates': [area.coordinates]
+            'coordinates': [coordinates]
           }
         }
       });
@@ -216,3 +211,17 @@ map.on('load', function () {
       });
     });
   });
+  
+  // Função para gerar as coordenadas de um quadrado
+  function generateSquareCoordinates(center, size) {
+    var halfSize = size / 2;
+    return [
+      [center[0] - halfSize, center[1] - halfSize],
+      [center[0] + halfSize, center[1] - halfSize],
+      [center[0] + halfSize, center[1] + halfSize],
+      [center[0] - halfSize, center[1] + halfSize],
+      [center[0] - halfSize, center[1] - halfSize]
+    ];
+  }
+  
+
