@@ -1,16 +1,96 @@
-main {
-    color: #333;
-    background-image: var(--gray-gradient);
+.header {
+    position: relative;
+    background-image: url("../../imgs/Sobre/header.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
 }
 
-.hero {
-    height: 75vh;
-    background-image: url("../../imgs/Sobre/mealpro-efgpRGeu9tg-unsplash.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+.inner-header {
+    height: 65vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
 
+.inner-header h1 {
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin: 10px;
+    font-size: 3rem;
+}
 
+.inner-header p {
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin: 10px;
+    font-size: 1.5rem;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.waves {
+    position: relative;
+    width: 100%;
+    height: 15vh;
+    margin-bottom: -25px;
+    min-height: 100px;
+    max-height: 150px;
+
+}
+
+.content {
+    position: relative;
+    height: 20vh;
+    text-align: center;
+    background-color: white;
+}
+
+/* Animation */
+
+.parallax>use {
+    animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
+}
+
+.parallax>use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+
+.parallax>use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+}
+
+.parallax>use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+}
+
+.parallax>use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+}
+
+@keyframes move-forever {
+    0% {
+        transform: translate3d(-90px, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(85px, 0, 0);
+    }
+}
+
+main {
+    color: #333;
+    background: #fff;
 }
 
 .h1-Connhe {
@@ -21,20 +101,19 @@ main {
     flex-direction: column;
     text-align: center;
 
-
 }
 
 .h1-Connhe h1 {
     font-size: 4rem;
     margin: 18px;
-    /* filter: drop-shadow(1px 1px 4px #333);  */
+
 
 }
 
 .h1-Connhe p {
     font-size: 1.7rem;
     margin: 0 30px;
-    /* filter: drop-shadow(1px 2px 5px #333); */
+
 
 }
 
@@ -56,26 +135,19 @@ main {
 }
 
 .container-Sobre>.left h1 {
+    display: flex;
+    justify-content: center;
     font-size: 3rem;
-    max-width: max-content;
-    position: relative;
-}
-
-.container-Sobre>.left h1::before {
-    content: '';
-    height: 3px;
-    width: 100%;
-    background-color: #333;
-    position: absolute;
-    bottom: 0;
+    text-decoration: underline;
+    margin: 10px;
+    padding-bottom: 50x;
+    letter-spacing: 4px;
 }
 
 .container-Sobre>.left h3 {
     margin-top: 20px;
     font-size: 1.2rem;
 }
-
-
 
 @media(max-width: 950px) {
     .h1-Connhe h1 {
@@ -86,16 +158,30 @@ main {
         display: flex;
         flex-flow: column;
         padding: 10px;
-        
 
     }
 
     .container-Sobre>.left {
         max-width: 100%;
         padding: 5px;
-        
-        
+
     }
 
 
+}
+
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+    .waves {
+        height: 40px;
+        min-height: 40px;
+    }
+
+    .content {
+        height: 30vh;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
 }
