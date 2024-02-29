@@ -162,9 +162,18 @@ section .card .image img {
 
 @media(max-width:710px) {
 
+  .container_carrl {
+
+    height: 760px;
+
+
+  }
+  
+
   .swiper h1 {
     margin: 35px 0;
     font-size: 2.6rem;
+    text-align: center;
   }
 
   .button__conteiner {
@@ -179,7 +188,7 @@ section .card .image img {
 
   .swiper h1 {
     margin: 0 5px 30px 5px;
-    font-size: 2.1rem;
+    font-size: 2rem;
   }
 
 }

@@ -25,6 +25,7 @@
     font-weight: 300;
     letter-spacing: 1px;
     font-size: 1.5rem;
+    margin: 0 20px;
 }
 
 .flex {
@@ -147,6 +148,15 @@ main {
     font-size: 1.2rem;
 }
 
+@media(max-width:1073px) {
+    .inner-header p {
+        font-weight: 300;
+        font-size: 1.27rem;
+       
+    }
+}
+
+
 @media(max-width: 950px) {
     .h1-Connhe h1 {
         font-size: 3rem;
@@ -166,12 +176,17 @@ main {
 
 
     }
+    .inner-header p {
+        font-weight: 300;
+        font-size: 1.1rem;
+        margin: 0 2px;
+       
+    }
 
 
 }
 
-/*Shrinking for mobile*/
-@media (max-width: 768px) {
+@media (max-width: 790px) {
     .waves {
         height: 70px;
         min-height: 70px;
@@ -179,6 +194,18 @@ main {
 
     .content {
         height: 30vh;
+    }
+    .inner-header p {
+        font-weight: 300;
+        margin: 20px;
+        text-align: center;
+       
+    }
+    .inner-header h1 {
+        font-size: 2.1rem;
+        text-align: center;
+        margin: 0;
+    
     }
 
 
