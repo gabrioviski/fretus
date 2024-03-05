@@ -14,33 +14,34 @@
 </head>
 
 <body>
-  <div class="fretus">
+  <header class="fretus">
     <h1 class="logo-container"><a href="../../index.html"><img class="logo" src="../../imgs/logotca.png"></a></h1>
-  </div>
-  <div class="container">
+  </header>
+
+  <section class="container">
     <h1>Bem-vindo de volta! </h1>
     <form action="../cliente/solicitar-entrega.html" id="form">
 
       <!-- Email validação -->  
 
-      <div>
+      <section>
         <input type="email" placeholder="Email" class="inputs" autocomplete="off" oninput="emailValido()" id="inputEmail" required>
         <p id="messageEmail"></p>
-      </div>
+      </section>
 
       <!-- Email Fim  -->
 
       <!--  Password validação  -->
       
-      <div class="box-icon">
-        <div class="input__wrapper">
+      <section class="box-icon">
+        <section class="input__wrapper">
           <input id="password" type="password" class="input__field"  pattern=".{1,}" placeholder="Senha" oninput="senhaValidada()"
              required>
              <p id="messageSenha"></p>
           <label for="password" class="input__label"></label>
           <img alt="Eye Icon" title="Eye Icon" src="../../imgs/login-cadastro/eye-off.svg" class="input__icon">
-        </div>     
-      </div>
+        </section>     
+      </section>
 
       <!-- Fim  Password -->
 
@@ -50,11 +51,11 @@
       </p>
       <input type="submit" value="Entrar" id="entrar">
       <main>
-        <div class="alternative">
+        <aside class="alternative">
           <span>ou</span>
-        </div>
+        </aside>
       </main>
-      <div class="social-media">
+      <aside class="social-media">
         <a href="#" class="social-icon">
           <img src="../../imgs/login-cadastro/icons8-google-logo.svg" width="45" height="45">
         </a>
@@ -64,9 +65,9 @@
         <a href="#" class="social-icon">
           <img src="../../imgs/login-cadastro/icons8-linkedin.svg" width="45" height="45">
         </a>
-      </div>
+      </aside>
     </form>
-  </div>
+  </section>
   <script src="../../JS/Login/index.js"></script>
   <script src="../../JS/Login/Valida.js"></script> <!--  Js onde vc pode fazer a vaalidação  -->
 </body>
