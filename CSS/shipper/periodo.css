@@ -17,3 +17,10 @@ input[type="time"]{
 .edit-periodo span{
    font-size:20px;
 }
+
+@media(max-width:407px){
+    .edit-periodo{
+        display:flex;
+        flex-direction:column;
+    }
+}
