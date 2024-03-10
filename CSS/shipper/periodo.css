@@ -1,0 +1,17 @@
+input[type="time"]{
+    padding:5px;
+    border-radius:10px;
+    border:1px solid rgba(184, 175, 175, 0.596);
+    height:40px;
+    width:120px;
+    font-size:20px;
+}
+
+.edit-periodo {
+    column-gap:10px;
+
+}
+
+.edit-periodo span{
+   font-size:20px;
+}
