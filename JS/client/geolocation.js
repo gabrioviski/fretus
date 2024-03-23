@@ -172,7 +172,38 @@ function removeSuggestions(input, i) {
 }
 
 ///areas periosas/////////////////
-
+async function apiLugares() {
+    const options = {
+      method: 'GET',
+      url: 'https://crimeometer.p.rapidapi.comraw-data/',
+      params: {
+        datetime_end: '2024-03-22T12:00:00',
+        lat: '-23.512929',
+        datetime_ini: '2024-03-22T00:00:00',
+        lon: '-46.883900',
+        distance: '10km'
+      },
+      headers: {
+        'x-api-key': 'k3RAzKN1Ag14xTPlculT39RZb38LGgsG8n27ZycG',
+        'X-RapidAPI-Key': '1a6f3b17ebmsh03bfa950d89b1ecp1ef1f2jsn1915b95728ff',
+        'X-RapidAPI-Host': 'crimeometer.p.rapidapi.com'
+      }
+    };
+  
+    try {
+      const response = await fetch(options.url, {
+        method: options.method,
+        headers: options.headers
+      });
+      const data = await response.json();
+      console.log(data);
+    } catch (error) {
+      console.error(error);
+    }
+  }
+  
+//apiLugares()
+//===========================
 
   var areas = [
     {
